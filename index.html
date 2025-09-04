@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.cdnfonts.com/css/azonix  " rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/azonix" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="  https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Owlin - Sua Plataforma Digital</title>
     <style>
         @font-face {
             font-family: 'Azonix';
-            src: url('  https://cdn.jsdelivr.net/gh/azodrigues/azonix-font@main/Azonix.otf  ') format('opentype');
+            src: url('https://cdn.jsdelivr.net/gh/azodrigues/azonix-font@main/Azonix.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
@@ -37,7 +37,7 @@
             background-image: url('https://images.unsplash.com/photo-1533563906091-fdfdffc3e3c4?q=80&w=870&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
-            z-index: -2; /* fica atrás de tudo */
+            z-index: -2;
         }
 
         .glass-bg {
@@ -46,10 +46,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 255, 255, 0.065);  /* ajuste a opacidade como quiser */
-            backdrop-filter: blur(15px);           /* desfoque */
-            -webkit-backdrop-filter: blur(10px);   /* Safari */
-            z-index: -1;                            /* acima da bg-img, mas atrás do conteúdo */
+            background: rgba(255, 255, 255, 0.065);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: -1;
         }
         
         .header {
@@ -206,16 +206,18 @@
         }
         
         .sections-container {
+            display: flex;
+            flex-direction: column;
+            min-height: calc(100vh - 80px);
             position: relative;
             width: 100%;
-            /* deixa crescer no mobile/desktop sem cortar */
             min-height: calc(100dvh - 80px);
-            overflow: visible;           /* antes estava hidden */
+            overflow: visible;
             margin-top: 80px;
         }
 
         .section {
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
             width: 100%;
@@ -225,9 +227,17 @@
             transition: opacity 0.8s ease-in-out;
             opacity: 0;
             visibility: hidden;
+            flex: 1;
+            display: none;
+            padding: 6rem 2rem;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
         }
 
         .section.active {
+            display: flex;
             opacity: 1;
             visibility: visible;
             position: relative;
@@ -281,7 +291,7 @@
             margin-bottom: 20px;
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.1s ease-in-out, visibility 0.1    s ease-in-out;
+            transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
         }
 
         .section.active .social-links {
@@ -321,6 +331,12 @@
                 align-items: center;
                 gap: 1.5rem;
                 padding: 0 1rem;
+                padding: 3rem 1rem;
+                min-height: auto;
+            }
+
+            .sections-container {
+                min-height: calc(100vh - 60px);
             }
 
             #home .section-content,
@@ -503,7 +519,7 @@
 
         .highlight {
             color: #f1c40f;
-            font-weight: bold; /* Opcional: para dar mais destaque */
+            font-weight: bold;
         }
         
 
@@ -519,6 +535,11 @@
             color: #ffffff;
             text-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
         }
+        
+        /* Para ancoragem suave */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body>
@@ -526,10 +547,10 @@
     <div class="glass-bg"></div>
     <nav class="navigation">
         <ul class="nav-links">
-            <li><a href="#" data-section="home">Home</a></li>
-            <li><a href="#" data-section="sobre">Sobre Nós</a></li>
-            <li><a href="#" data-section="servicos">Serviços</a></li>
-            <li><a href="#" data-section="contato">Contato</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
     <header class="header">
@@ -602,14 +623,14 @@
                     Entre em contato conosco hoje mesmo e descubra como a Owlin pode ajudar você a alcançar seus objetivos digitais.<br>
                     Estamos ansiosos para colaborar com você!</p>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/ffbaumhard" target="_blank">
+                        <a href="https://www.instagram.com/owlin.agency/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                         </svg>
                         </a>
-                        <a href="https://api.whatsapp.com/message/34G3FMABYWJUH1?autoload=1&app_absent=0" target="_blank">
+                        <a href="https://wa.me/5511979550970?src=qr" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                         </svg>
@@ -628,6 +649,56 @@
             const navLinks = document.querySelectorAll('.nav-links a');
             const sections = document.querySelectorAll('.section');
             
+            // Função para mostrar uma seção específica
+            function showSection(sectionId) {
+                // Esconder todas as seções
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                
+                // Mostrar a seção solicitada
+                const targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                    
+                    // Atualizar links ativos
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            }
+            
+            // Verificar URL na carga da página
+            function checkUrlHash() {
+                const hash = window.location.hash.substring(1);
+                if (hash) {
+                    showSection(hash);
+                } else {
+                    // Se não tiver hash, mostrar home por padrão
+                    showSection('home');
+                }
+            }
+            
+            // Adiciona evento de clique aos links de navegação
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Deixa o comportamento padrão do link acontecer (scroll e mudança de URL)
+                    const sectionId = this.getAttribute('href').substring(1);
+                    
+                    // Mostrar a seção
+                    showSection(sectionId);
+                });
+            });
+            
+            // Verificar hash quando a página carregar
+            checkUrlHash();
+            
+            // Verificar hash quando o usuário usar os botões de voltar/avançar
+            window.addEventListener('hashchange', checkUrlHash);
+            
             // Função para atualizar a cor dos links de navegação
             function updateNavColors() {
                 const scrollPosition = window.scrollY;
@@ -644,29 +715,6 @@
                     }
                 });
             }
-            
-            // Adiciona evento de clique aos links de navegação
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    const targetSection = document.getElementById(this.getAttribute('data-section'));
-
-                    // Scroll suave até a seção
-                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-                    // Atualiza a classe active das seções
-                    sections.forEach(section => section.classList.remove('active'));
-                    targetSection.classList.add('active');
-
-                    // Atualiza a classe active dos links
-                    navLinks.forEach(navLink => navLink.classList.remove('active'));
-                    this.classList.add('active');
-
-                    // Atualiza cores dos links
-                    updateNavColors();
-                });
-            });
             
             // Atualiza as cores dos links quando a página carrega
             updateNavColors();
