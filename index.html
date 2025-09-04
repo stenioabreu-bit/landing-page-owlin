@@ -109,8 +109,8 @@
         
         .logo-img {
             align-items: center;
-            padding-top: 3.7%;
-            height: 500px;
+            padding-top: 5%;
+            height: 700px;
             width: auto;
             margin-bottom: 1rem;
         }
@@ -120,7 +120,7 @@
             font-family: 'Exo 2', sans-serif;
             font-size: 3rem; 
             font-weight: 700;
-            color: #ffffff; 
+            color: #f1c40f; 
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 1rem;
@@ -166,7 +166,7 @@
         
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 10rem;
             list-style: none;
         }
         
@@ -175,11 +175,11 @@
             color: #ffffff;
             font-family: 'Exo 2', sans-serif;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 2rem;
             transition: all 0.3s ease;
             position: relative;
             padding: 0.5rem 0;
-        }
+        }   
         
         .nav-links a:hover {
             color: #f1c40f;
@@ -359,6 +359,18 @@
                 font-size: 1rem;
             }
 
+            #sobre .section-text p {
+                font-size: 1rem;
+            }
+
+            #servicos .section-text p {
+                font-size: 1rem;
+            }
+
+            #contato .section-text p {
+                font-size: 1rem;
+            }
+
             .contato-buttons {
                 flex-direction: column;
                 gap: 1rem;
@@ -388,11 +400,11 @@
             }
             
             .nav-links {
-                gap: 1rem;
+                gap: 2.5rem;
             }
             
             .nav-links a {
-                font-size: 0.9rem;
+                font-size: 1.2rem;
             }
         }
 
@@ -488,7 +500,25 @@
             text-align: center;
             padding: 2rem;
         }
+
+        .highlight {
+            color: #f1c40f;
+            font-weight: bold; /* Opcional: para dar mais destaque */
+        }
         
+
+        .service-link {
+            color: #f1c40f;
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .service-link:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -514,11 +544,13 @@
         <!-- HOME -->
         <section id="home" class="section active">
             <div class="section-content">
-                <img src='https://images.unsplash.com/photo-1533563906091-fdfdffc3e3c4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt="Imagem Home" class="section-img">
                 <div class="section-text">
-                    <h2>Bem-vindo à Owlin</h2>
-                    <p>Somos uma empresa inovadora dedicada a transformar ideias em realidade digital.<br>
-                    Com nossa expertise em tecnologia e design, criamos soluções que posicionam nossos clientes à frente da concorrência.</p>
+                    <h2>Bem-vindo à <span class="highlight">OWLIN</span></h2>
+                    <p>Somos uma empresa <span class="highlight">inovadora</span> dedicada a <span class="highlight">transformar</span> suas <span class="highlight">ideias</span> em <span class="highlight">realidade</span>!<br>
+                    Com nossa <span class="highlight">expertise</span> em <span class="highlight">tecnologia</span> e <span class="highlight">design</span>, <span class="highlight">criamos</span> <span class="highlight">soluções</span> que <span class="highlight">posicionam</span> nossos clientes à frente da <span class="highlight">concorrência</span>.<br>
+                    <span class="highlight">Transformamos</span> seu evento com <span class="highlight">fotografia</span>, <span class="highlight">vídeos</span> e até <span class="highlight">transmissão ao vivo</span>!<br>
+                    Quer <span class="highlight">dar</span> uma cara nova ao seu <span class="highlight">negócio</span> ou <span class="highlight">aumentar</span> seu <span class="highlight">engajamento</span>?</p>
+                    <h2>Então você <span class="highlight">conheceu</span> a equipe <span class="highlight">certa</span>!</h2>
                 </div>
             </div>
         </section>
@@ -527,10 +559,13 @@
         <section id="sobre" class="section">
             <div class="section-content">
                 <div class="section-text">
-                    <h2>Sobre Nós</h2>
-                    <p>Fundada com a missão de revolucionar o mercado digital, a Owlin combina criatividade, tecnologia e estratégia para entregar resultados excepcionais. Nossa equipe de especialistas trabalha incansavelmente para superar expectativas e criar experiências memoráveis para nossos clientes.</p>
+                    <h2><span class="highlight">Sobre Nós</span></h2>
+                    <p>A OWLIN <span class="highlight">foi fundada</span> em 2019. No início, <span class="highlight">realizávamos</span> fotografias em eventos, como casamentos, aniversários e outras celebrações.<br>
+                    Com o tempo, <span class="highlight">notamos</span> a necessidade de <span class="highlight">se adaptar</span> e <span class="highlight">crescer</span>, então <span class="highlight">surgiu</span> a OWLIN - a nossa querida corujinha, uma nova empresa com uma nova visão.<br>
+                    <span class="highlight">Visamos</span> te beneficiar com os melhores "clicks" e takes das nossas câmeras.<br>
+                    <span class="highlight">Oferecemos</span> o melhor visual para o seu site e página no Instagram.<br>
+                    E <span class="highlight">fornecemos</span> a melhor consultoria para o seu tráfego pago.</p>
                 </div>
-                <img src = 'https://images.unsplash.com/photo-1533563906091-fdfdffc3e3c4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt="Imagem Sobre" class="section-img">
             </div>
         </section>
 
@@ -539,8 +574,21 @@
             <div class="section-content">
                 <img src='https://images.unsplash.com/photo-1533563906091-fdfdffc3e3c4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt="Imagem Serviços" class="section-img">
                 <div class="section-text">
-                    <h2>Nossos Serviços</h2>
-                    <p>Oferecemos uma gama completa de serviços digitais, desde desenvolvimento web e mobile até estratégias de marketing digital e design de experiência do usuário. Cada projeto é cuidadosamente elaborado para atender às necessidades específicas de cada cliente.</p>
+                    <h2>Nossos <span class="highlight">Serviços</span></h2>
+                    <p><span class="highlight">Oferecemos</span> uma gama completa de serviços digitais, desde <span class="highlight">desenvolvimento</span> web e mobile até <span class="highlight">estratégias</span> de marketing digital e <span class="highlight">design</span> de experiência do usuário.<br>
+                    Cada projeto é <span class="highlight">cuidadosamente elaborado</span> para <span class="highlight">atender</span> às necessidades específicas de cada cliente.</p>
+
+                    <h3><a href="https://wa.me/5511979550970?text=Olá,%20gostaria%20de%20conversar%20sobre:%20Social%20Media" target="_blank" class="service-link">Social Media</a></h3>
+                    <p><span class="highlight">Gerenciamos</span> suas redes sociais com conteúdo criativo e estratégico, <span class="highlight">aumentando</span> seu engajamento e presença digital.</p>
+
+                    <h3><a href="https://wa.me/5511979550970?text=Olá,%20gostaria%20de%20conversar%20sobre:%20Tráfego" target="_blank" class="service-link">Tráfego</a></h3>
+                    <p><span class="highlight">Impulsionamos</span> seu negócio com campanhas de tráfego pago otimizadas, <span class="highlight">direcionando</span> o público certo para sua marca.</p>
+
+                    <h3><a href="https://wa.me/5511979550970?text=Olá,%20gostaria%20de%20conversar%20sobre:%20Audiovisual" target="_blank" class="service-link">Audiovisual</a></h3>
+                    <p><span class="highlight">Criamos</span> conteúdos audiovisuais impactantes, desde vídeos institucionais até <span class="highlight">transmissões</span> ao vivo e cobertura de eventos.</p>
+
+                    <h3><a href="https://wa.me/5511979550970?text=Olá,%20gostaria%20de%20conversar%20sobre:%20Web" target="_blank" class="service-link">Web</a></h3>
+                    <p><span class="highlight">Desenvolvemos</span> websites e sistemas personalizados, <span class="highlight">criando</span> experiências digitais modernas e funcionais para o seu negócio.</p>
                 </div>
             </div>
         </section>
