@@ -564,6 +564,15 @@ section {
 
 /* Responsive Design */
 @media (max-width: 992px) {
+
+    .hero-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     .hero-text h1 {
         font-size: 2rem;
         line-height: 2;
@@ -588,6 +597,15 @@ section {
 }
 
 @media (max-width: 768px) {
+
+    .hero-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     .header .container {
         padding: 1rem;
     }
@@ -666,6 +684,15 @@ section {
 }
 
 @media (max-width: 480px) {
+
+    .hero-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
     .container {
         padding: 0 15px;
         padding-top: 75px;
