@@ -120,11 +120,11 @@ section {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 50px;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
+
 
 .hero-slider {
     position: absolute;
@@ -149,12 +149,15 @@ section {
 }
 
 .slide-bg {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: brightness(0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* cobre 100% do hero */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
 }
 
 .hero-content {
@@ -576,6 +579,10 @@ main {
 /* Responsive Design */
 @media (max-width: 992px) {
 
+    .slide-bg {
+        background-position: top center; /* mostra mais do topo em telas verticais */
+    }
+
     .slider-dots {
         margin-top: 0;
         bottom: 10px;
@@ -624,6 +631,10 @@ main {
 }
 
 @media (max-width: 768px) {
+
+    .slide-bg {
+        background-position: top center; /* mostra mais do topo em telas verticais */
+    }
 
     .slider-dots {
         margin-top: 0;
@@ -731,6 +742,10 @@ main {
 }
 
 @media (max-width: 480px) {
+
+    .slide-bg {
+        background-position: top center; /* mostra mais do topo em telas verticais */
+    }
 
     section {
         padding: 40px 0; /* Reduz o padding vertical em mobile */
