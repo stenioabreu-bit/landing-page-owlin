@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary-color: #0d4b25; /* Verde escuro "meio florestal" */
+    --primary-color: #24682f;
     --secondary-color: #1a5c30;
-    --accent-color: #d4af37; /* Dourado */
+    --accent-color: #e4e324;
     --accent-color-2: #b8860b;
     --text-color: #333;
     --bg-color: #fff;
@@ -32,6 +32,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-top: 70px;
 }
 
 /* Header Styles */
@@ -43,6 +44,11 @@ body {
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
+}
+
+section {
+    padding: 80px 0;
+    padding-top: 150px;
 }
 
 .header .container {
@@ -95,13 +101,21 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
 .mobile-menu-btn span {
     width: 25px;
     height: 3px;
     background: var(--text-color);
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.mobile-menu-btn span {
+    position: relative;
+    display: block;
 }
 
 /* Hero Section */
@@ -109,7 +123,7 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 .hero-slider {
@@ -141,6 +155,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     filter: brightness(0.7);
+    margin-bottom: 85px;
 }
 
 .hero-content {
@@ -218,8 +233,9 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(to right, var(--accent-color), var(--accent-color-2));
-    color: white;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #e4e324;
 }
 
 .btn-primary:hover {
@@ -230,7 +246,7 @@ body {
 .btn-secondary {
     background: transparent;
     color: white;
-    border: 2px solid white;
+    border: 2px solid #e4e324;
 }
 
 .btn-secondary:hover {
@@ -457,6 +473,7 @@ section {
     background: var(--primary-color);
     color: white;
     padding: 3rem 0 1rem;
+    margin-top: -50px;
 }
 
 .footer-content {
@@ -475,6 +492,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    text-decoration: none;
 }
 
 .footer-links a {
@@ -485,14 +503,17 @@ section {
 
 .footer-links a:hover {
     opacity: 0.8;
+    text-decoration: none;
 }
 
 .footer-social {
     display: flex;
+    text-decoration: none;
     gap: 1rem;
 }
 
 .footer-social a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -506,6 +527,7 @@ section {
 }
 
 .footer-social a:hover {
+    text-decoration: none;
     background: var(--accent-color);
     transform: translateY(-3px);
 }
@@ -544,6 +566,12 @@ section {
 @media (max-width: 992px) {
     .hero-text h1 {
         font-size: 2rem;
+        line-height: 2;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+        line-height: 2;
     }
     
     .sobre-content {
@@ -562,6 +590,11 @@ section {
 @media (max-width: 768px) {
     .header .container {
         padding: 1rem;
+    }
+
+    .container {
+        padding: 0 15px;
+        padding-top: 75px;
     }
     
     .nav-menu {
@@ -604,6 +637,12 @@ section {
     
     .hero-text h1 {
         font-size: 1.8rem;
+        line-height: 2;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+        line-height: 2;
     }
     
     .hero-buttons {
@@ -629,15 +668,18 @@ section {
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
+        padding-top: 75px;
     }
     
     .hero-text h1 {
         font-size: 1.5rem;
+        line-height: 2;
     }
     
     .hero-text p {
-        font-size: 1rem;
-    }
+        font-size: 1.5rem;
+        line-height: 2;
+    }   
     
     .section-header h2 {
         font-size: 1.8rem;

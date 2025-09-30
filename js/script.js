@@ -2,36 +2,45 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navMenu = document.querySelector('.nav-menu');
-    
+
     if (mobileMenuBtn && navMenu) {
         mobileMenuBtn.addEventListener('click', function() {
             navMenu.classList.toggle('active');
             
             // Animação do botão hamburguer
             const spans = mobileMenuBtn.querySelectorAll('span');
+            
             if (navMenu.classList.contains('active')) {
+                // Transforma em X
                 spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
                 spans[1].style.opacity = '0';
-                spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
             } else {
+                // Volta ao estado original (hamburguer)
                 spans[0].style.transform = 'none';
                 spans[1].style.opacity = '1';
                 spans[2].style.transform = 'none';
             }
         });
     }
+        function adjustScrollOffset(element) {
+        const headerHeight = document.querySelector('.header').offsetHeight;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+        return offsetPosition;
+    }
     
     // Smooth Scrolling
     const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach(link => {
+        links.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
+            if (targetId === '#' || !targetId.startsWith('#')) return; // Ajuste para páginas externas
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                const offsetTop = targetElement.offsetTop - 70;
+                const offsetTop = adjustScrollOffset(targetElement);
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
