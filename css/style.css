@@ -130,16 +130,16 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .slide {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -149,8 +149,8 @@ section {
 }
 
 .slide-bg {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -564,38 +564,6 @@ section {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-
-    .hero-slider {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 50%;
-    }
-
-    .slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 50%;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-
-    .slide.active {
-        opacity: 1;
-    }
-
-    .slide-bg {
-        width: 50%;
-        height: 50%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: brightness(0.7);
-        margin-bottom: 85px;
-    }
     .hero-text h1 {
         font-size: 2rem;
         line-height: 2;
@@ -620,39 +588,6 @@ section {
 }
 
 @media (max-width: 768px) {
-
-    .hero-slider {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 50%;
-    }
-
-    .slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 50%;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-
-    .slide.active {
-        opacity: 1;
-    }
-
-    .slide-bg {
-        width: 50%;
-        height: 50%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: brightness(0.7);
-        margin-bottom: 85px;
-    }
-
     .header .container {
         padding: 1rem;
     }
@@ -734,38 +669,6 @@ section {
     .container {
         padding: 0 15px;
         padding-top: 75px;
-    }
-
-    .hero-slider {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 50%;
-    }
-
-    .slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 50%;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-
-    .slide.active {
-        opacity: 1;
-    }
-
-    .slide-bg {
-        width: 50%;
-        height: 50%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: brightness(0.7);
-        margin-bottom: 85px;
     }
     
     .hero-text h1 {
