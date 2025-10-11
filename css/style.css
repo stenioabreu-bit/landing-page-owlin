@@ -196,9 +196,24 @@ a:hover .far {
     padding: 1rem 20px;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
 .logo img {
     height: 60px;
     transition: all 0.3s ease;
+}
+
+.logo-text {
+    font-family: 'Azonix', sans-serif;
+    font-size: 28px;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: normal;
 }
 
 .nav-menu ul {
@@ -539,7 +554,7 @@ section {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: var(--space-16);
-    align-items: start;
+    align-items: center;
     margin-bottom: var(--space-20);
 }
 
@@ -1575,6 +1590,11 @@ section {
 
     .logo img {
         height: 50px;
+    }
+
+    .logo-text {
+        font-size: 22px;
+        letter-spacing: 1px;
     }
 
     .nav-menu {
