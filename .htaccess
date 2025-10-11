@@ -1,0 +1,24 @@
+# Enable Rewrite Engine
+RewriteEngine On
+RewriteBase /
+
+# Redirect .html URLs to clean URLs (do this first)
+RewriteCond %{THE_REQUEST} ^GET\ /(.*)\.html\ HTTP
+RewriteRule (.*)\.html$ /$1 [R=301,L]
+
+# Remove trailing slash (optional)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+# Add .html extension internally
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Force HTTPS (optional but recommended)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Custom 404 page (optional)
+ErrorDocument 404 /404.html
