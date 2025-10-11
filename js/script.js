@@ -393,3 +393,98 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
+// Tornar cards de serviços clicáveis por inteiro
+document.addEventListener('DOMContentLoaded', function() {
+    const servicoCards = document.querySelectorAll('.servico-card');
+    
+    servicoCards.forEach(card => {
+        const link = card.querySelector('.btn-details');
+        if (link) {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', function(e) {
+                // Não redirecionar se clicar diretamente no link
+                if (e.target.closest('.btn-details')) {
+                    return;
+                }
+                window.location.href = link.href;
+            });
+        }
+    });
+});
+
+
+// Form submission with custom thank you popup
+document.addEventListener('DOMContentLoaded', function() {
+    const forms = document.querySelectorAll('.contact-form-simple');
+    
+    forms.forEach(form => {
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+            
+            // Disable button and show loading
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Show success popup
+                    showThankYouPopup();
+                    // Reset form
+                    form.reset();
+                } else {
+                    throw new Error('Erro ao enviar formulário');
+                }
+            } catch (error) {
+                alert('Ops! Houve um erro ao enviar sua mensagem. Por favor, tente novamente ou entre em contato pelo WhatsApp.');
+            } finally {
+                // Re-enable button
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonText;
+            }
+        });
+    });
+});
+
+function showThankYouPopup() {
+    // Create popup element
+    const popup = document.createElement('div');
+    popup.className = 'thank-you-popup';
+    popup.innerHTML = `
+        <div class="thank-you-content">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Mensagem Enviada!</h3>
+            <p>Obrigado pelo contato! Entraremos em contato em breve.</p>
+        </div>
+    `;
+    
+    document.body.appendChild(popup);
+    
+    // Trigger animation
+    setTimeout(() => {
+        popup.classList.add('show');
+    }, 10);
+    
+    // Remove after 6 seconds
+    setTimeout(() => {
+        popup.classList.remove('show');
+        setTimeout(() => {
+            popup.remove();
+        }, 300);
+    }, 6000);
+}

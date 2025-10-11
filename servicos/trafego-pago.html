@@ -162,18 +162,42 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="service-cta">
+    <!-- Contact Form Section -->
+    <section class="service-contact">
         <div class="container">
-            <div class="cta-content">
-                <h2>Pronto para acelerar suas vendas?</h2>
-                <p>Solicite um orçamento personalizado e descubra como podemos ajudar</p>
+            <div class="contact-form-box">
+                <h3>Solicite um Orçamento</h3>
+                <p>Preencha o formulário abaixo e entraremos em contato para falar sobre Tráfego Pago!</p>
+                <form action="https://formspree.io/f/mrbyyoll" method="POST" class="contact-form-simple">
+                    <input type="hidden" name="service" value="Tráfego Pago">
+                    <div class="form-row-simple">
+                        <div class="form-field">
+                            <input type="text" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <input type="tel" name="phone" placeholder="Seu telefone (opcional)">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="message" rows="4" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+            
+            <div class="cta-whatsapp">
+                <p>Prefere falar diretamente?</p>
                 <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá, gostaria de solicitar um orçamento para Tráfego Pago&type=phone_number&app_absent=0" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    class="btn-whatsapp"
                    aria-label="Solicitar orçamento para Tráfego Pago via WhatsApp">
-                    <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
                 </a>
             </div>
         </div>

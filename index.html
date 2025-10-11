@@ -852,30 +852,54 @@
                 <p class="scroll-reveal delay-100">Pronto para transformar seu negócio? Vamos conversar!</p>
             </div>
             <div class="contato-content-simple">
-                <div class="contato-info scroll-reveal">
+                <!-- Contact Form -->
+                <div class="contact-form-box scroll-reveal">
+                    <h3>Solicite um Orçamento</h3>
+                    <p>Preencha o formulário abaixo e entraremos em contato em breve!</p>
+                    <form action="https://formspree.io/f/mrbyyoll" method="POST" class="contact-form-simple">
+                        <div class="form-row-simple">
+                            <div class="form-field">
+                                <input type="text" name="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-field">
+                                <input type="email" name="email" placeholder="Seu e-mail" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <input type="tel" name="phone" placeholder="Seu telefone (opcional)">
+                        </div>
+                        <div class="form-field">
+                            <textarea name="message" rows="4" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contato-info scroll-reveal delay-100">
                     <h3>Outras Formas de Contato</h3>
                     <p>Prefere falar diretamente? Entre em contato pelos nossos canais!</p>
 
-                    <div class="info-item">
+                    <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vim pelo site.&type=phone_number&app_absent=0" target="_blank" class="info-item info-item-clickable">
                         <div class="info-icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
                         <div class="info-content">
                             <h4>WhatsApp</h4>
-                            <p><a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vim pelo site.&type=phone_number&app_absent=0"
-                                    target="_blank">+55 11 97955-0970</a></p>
+                            <p>+55 11 97955-0970</p>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="info-item">
+                    <a href="https://www.instagram.com/owlin.agency/" target="_blank" class="info-item info-item-clickable">
                         <div class="info-icon">
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div class="info-content">
                             <h4>Instagram</h4>
-                            <p><a href="https://www.instagram.com/owlin.agency/" target="_blank">@owlin.agency</a></p>
+                            <p>@owlin.agency</p>
                         </div>
-                    </div>
+                    </a>
 
                     <div class="info-item">
                         <div class="info-icon">
