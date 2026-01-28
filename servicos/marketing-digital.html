@@ -45,12 +45,23 @@
             </div>
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="../index.html#sobre">Sobre Nós</a></li>
-                    <li><a href="../index.html#servicos" class="active">Serviços</a></li>
-                    <li><a href="../index.html#cases">Cases</a></li>
-                    <li><a href="../index.html#contato">Contato</a></li>
+                    <li><a href="../index.html" data-i18n="nav.home">Início</a></li>
+                    <li><a href="../index.html#sobre" data-i18n="nav.about">Sobre Nós</a></li>
+                    <li><a href="../index.html#servicos" class="active" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="../portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+                    <li><a href="../index.html#contato" data-i18n="nav.contact">Contato</a></li>
                 </ul>
+                <div class="lang-selector-wrapper">
+                    <button class="lang-btn active" onclick="changeLanguage('pt-BR')" title="Português">
+                        <img src="https://flagcdn.com/w20/br.png" alt="BR"> PT
+                    </button>
+                    <button class="lang-btn" onclick="changeLanguage('en')" title="English">
+                        <img src="https://flagcdn.com/w20/us.png" alt="US"> EN
+                    </button>
+                    <button class="lang-btn" onclick="changeLanguage('es')" title="Español">
+                        <img src="https://flagcdn.com/w20/es.png" alt="ES"> ES
+                    </button>
+                </div>
             </nav>
             <div class="mobile-menu-btn">
                 <span></span>
@@ -166,37 +177,37 @@
     <section class="service-contact">
         <div class="container">
             <div class="cta-whatsapp">
-                <p>Fale conosco diretamente pelo WhatsApp!</p>
+                <p data-i18n="contact.cta.desc">Fale conosco diretamente pelo WhatsApp!</p>
                 <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá, gostaria de solicitar um orçamento para Marketing Digital Estratégico&type=phone_number&app_absent=0" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    class="btn-whatsapp"
                    aria-label="Solicitar orçamento para Marketing Digital Estratégico via WhatsApp">
-                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                    <i class="fab fa-whatsapp"></i> <span data-i18n="contact.cta.btn">Falar no WhatsApp</span>
                 </a>
             </div>
 
             <div class="contact-form-box">
-                <h3>Ou Solicite um Orçamento</h3>
-                <p>Preencha o formulário abaixo e entraremos em contato para falar sobre Marketing Digital Estratégico!</p>
+                <h3 data-i18n="contact.form.title">Ou Solicite um Orçamento</h3>
+                <p data-i18n="contact.form.desc">Preencha o formulário abaixo e entraremos em contato para falar sobre Marketing Digital Estratégico!</p>
                 <form action="https://formspree.io/f/mrbyyoll" method="POST" class="contact-form-simple">
                     <input type="hidden" name="service" value="Marketing Digital Estratégico">
                     <div class="form-row-simple">
                         <div class="form-field">
-                            <input type="text" name="name" placeholder="Seu nome" required>
+                            <input type="text" name="name" placeholder="Seu nome" data-i18n-placeholder="contact.form.name" required>
                         </div>
                         <div class="form-field">
-                            <input type="email" name="email" placeholder="Seu e-mail" required>
+                            <input type="email" name="email" placeholder="Seu e-mail" data-i18n-placeholder="contact.form.email" required>
                         </div>
                     </div>
                     <div class="form-field">
-                        <input type="tel" name="phone" placeholder="Seu telefone (opcional)">
+                        <input type="tel" name="phone" placeholder="Seu telefone (opcional)" data-i18n-placeholder="contact.form.phone">
                     </div>
                     <div class="form-field">
-                        <textarea name="message" rows="4" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+                        <textarea name="message" rows="4" placeholder="Conte-nos sobre seu projeto..." data-i18n-placeholder="contact.form.message" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">
-                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        <i class="fas fa-paper-plane"></i> <span data-i18n="contact.form.submit">Enviar Mensagem</span>
                     </button>
                 </form>
             </div>
@@ -231,7 +242,7 @@
                     </div>
 
                     <div class="footer-col">
-                        <h4>Serviços</h4>
+                        <h4 data-i18n="footer.services">Serviços</h4>
                         <ul class="footer-links">
                             <li><a href="marketing-digital">Marketing Digital</a></li>
                             <li><a href="gestao-redes-sociais">Gestão de Redes Sociais</a></li>
@@ -245,14 +256,12 @@
                     </div>
 
                     <div class="footer-col">
-                        <h4>Empresa</h4>
+                        <h4 data-i18n="footer.company">Empresa</h4>
                         <ul class="footer-links">
-                            <li><a href="../index.html#sobre">Sobre Nós</a></li>
+                            <li><a href="../index.html#sobre" data-i18n="nav.about">Sobre Nós</a></li>
                             <li><a href="../index.html#processo">Nosso Processo</a></li>
-                            <li><a href="../index.html#cases">Cases de Sucesso</a></li>
-                            <li><a href="../index.html#depoimentos">Depoimentos</a></li>
                             <li><a href="../index.html#blog">Blog</a></li>
-                            <li><a href="../index.html#contato">Contato</a></li>
+                            <li><a href="../index.html#contato" data-i18n="nav.contact">Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -262,11 +271,11 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
-                    <p>&copy; 2025 OWLIN - Agência de Marketing Digital. Todos os direitos reservados.</p>
+                    <p data-i18n="footer.rights">&copy; 2025 OWLIN - Agência de Marketing Digital. Todos os direitos reservados.</p>
                     <div class="footer-legal">
-                        <a href="#">Política de Privacidade</a>
+                        <a href="#" data-i18n="footer.privacy">Política de Privacidade</a>
                         <span>|</span>
-                        <a href="#">Termos de Uso</a>
+                        <a href="#" data-i18n="footer.terms">Termos de Uso</a>
                     </div>
                 </div>
             </div>
@@ -274,6 +283,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="../js/i18n.js"></script>
     <script src="../js/script.js"></script>
 
     <!-- Structured Data -->

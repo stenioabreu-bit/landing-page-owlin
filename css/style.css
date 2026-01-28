@@ -2710,3 +2710,62 @@ tter Form */
         font-size: 14px;
     }
 }
+
+
+/* Language Selector */
+li.lang-selector-wrapper,
+div.lang-selector-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: none !important;
+    padding: 0 !important;
+    margin-left: 10px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-dark);
+}
+
+.lang-btn img {
+    width: 18px;
+    height: 12px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.lang-btn:hover {
+    border-color: var(--owlin-green);
+    background: rgba(40, 167, 69, 0.1);
+}
+
+.lang-btn.active {
+    background: var(--owlin-green);
+    border-color: var(--owlin-green);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    li.lang-selector-wrapper,
+    div.lang-selector-wrapper {
+        justify-content: center;
+        padding: 1rem 2rem !important;
+        gap: 10px;
+    }
+    
+    .lang-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | OWLIN - Agência de Marketing Digital</title>
+    <meta name="description" content="Conheça nossos projetos de desenvolvimento web e marketing digital. Sites modernos e estratégias que geram resultados reais.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/OWLIN.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/OWLIN.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/OWLIN.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/OWLIN.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <style>
+        /* Portfolio Page Styles */
+        .portfolio-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 160px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2328a745' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .portfolio-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .portfolio-hero h1 span {
+            color: var(--owlin-green);
+        }
+
+        .portfolio-hero p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.8);
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Portfolio Grid */
+        .portfolio-section {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .portfolio-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .portfolio-preview {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            background: #1a1a2e;
+        }
+
+        .portfolio-preview iframe {
+            width: 200%;
+            height: 200%;
+            transform: scale(0.5);
+            transform-origin: top left;
+            border: none;
+            pointer-events: none;
+        }
+
+        .portfolio-preview-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.8));
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-card:hover .portfolio-preview-overlay {
+            opacity: 1;
+        }
+
+        .btn-visit {
+            background: var(--owlin-green);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-visit:hover {
+            background: #1e7e34;
+            transform: scale(1.05);
+        }
+
+        .portfolio-info {
+            padding: 30px;
+        }
+
+        .portfolio-info h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .portfolio-info .client-type {
+            color: var(--owlin-green);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .portfolio-info p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .portfolio-tags span {
+            background: #f0f0f0;
+            color: #555;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Services CTA Section */
+        .services-cta {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .services-cta .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .services-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .services-cta h2 span {
+            color: var(--owlin-green);
+        }
+
+        .services-mini-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .service-mini-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .service-mini-card:hover {
+            border-color: var(--owlin-green);
+            transform: translateY(-5px);
+        }
+
+        .service-mini-card i {
+            font-size: 2.5rem;
+            color: var(--owlin-green);
+            margin-bottom: 20px;
+        }
+
+        .service-mini-card h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .service-mini-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* CTA Final */
+        .cta-final {
+            background: linear-gradient(135deg, var(--owlin-green) 0%, #1e7e34 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-final h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .cta-final p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-cta-white {
+            background: white;
+            color: var(--owlin-green);
+            padding: 16px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-cta-white:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .btn-cta-outline {
+            background: transparent;
+            color: white;
+            padding: 16px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid white;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-cta-outline:hover {
+            background: white;
+            color: var(--owlin-green);
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-preview {
+                height: 250px;
+            }
+
+            .cta-final h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/OWLIN.png" alt="OWLIN - Agência de Marketing Digital">
+                    <span class="logo-text">OWLIN</span>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Início</a></li>
+                    <li><a href="index.html#sobre" data-i18n="nav.about">Sobre Nós</a></li>
+                    <li><a href="index.html#servicos" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="portfolio.html" class="active" data-i18n="nav.portfolio">Portfólio</a></li>
+                    <li><a href="index.html#contato" data-i18n="nav.contact">Contato</a></li>
+                    <li class="lang-selector-wrapper">
+                        <button class="lang-btn active" onclick="changeLanguage('pt-BR')" title="Português">
+                            <img src="https://flagcdn.com/w20/br.png" alt="BR"> PT
+                        </button>
+                        <button class="lang-btn" onclick="changeLanguage('en')" title="English">
+                            <img src="https://flagcdn.com/w20/us.png" alt="US"> EN
+                        </button>
+                        <button class="lang-btn" onclick="changeLanguage('es')" title="Español">
+                            <img src="https://flagcdn.com/w20/es.png" alt="ES"> ES
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1>Nosso <span>Portfólio</span></h1>
+            <p>Conheça alguns dos projetos que desenvolvemos com excelência e dedicação para nossos clientes</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- FF Baumhard -->
+                <div class="portfolio-card scroll-reveal">
+                    <div class="portfolio-preview">
+                        <iframe src="https://ffbaumhard.com.br/" loading="lazy" title="FF Baumhard"></iframe>
+                        <div class="portfolio-preview-overlay">
+                            <a href="https://ffbaumhard.com.br/" target="_blank" rel="noopener noreferrer" class="btn-visit">
+                                <i class="fas fa-external-link-alt"></i> Visitar Site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="client-type">Advocacia</span>
+                        <h3>FF Baumhard Advogados</h3>
+                        <p>Site institucional moderno e profissional para escritório de advocacia, com design elegante, navegação intuitiva e otimizado para conversão de clientes.</p>
+                        <div class="portfolio-tags">
+                            <span>Desenvolvimento Web</span>
+                            <span>Design Responsivo</span>
+                            <span>SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IP Odontologia -->
+                <div class="portfolio-card scroll-reveal delay-200">
+                    <div class="portfolio-preview">
+                        <iframe src="https://ipodontologia.com.br/" loading="lazy" title="IP Odontologia"></iframe>
+                        <div class="portfolio-preview-overlay">
+                            <a href="https://ipodontologia.com.br/" target="_blank" rel="noopener noreferrer" class="btn-visit">
+                                <i class="fas fa-external-link-alt"></i> Visitar Site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="client-type">Saúde & Odontologia</span>
+                        <h3>IP Odontologia</h3>
+                        <p>Site completo para clínica odontológica com apresentação dos serviços, equipe profissional e sistema de agendamento, transmitindo confiança e profissionalismo.</p>
+                        <div class="portfolio-tags">
+                            <span>Desenvolvimento Web</span>
+                            <span>UI/UX Design</span>
+                            <span>Otimização</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services CTA -->
+    <section class="services-cta">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transforme sua <span>Presença Digital</span></h2>
+                <p>Oferecemos soluções completas para levar seu negócio ao próximo nível</p>
+            </div>
+
+            <div class="services-mini-grid">
+                <div class="service-mini-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Desenvolvimento Web</h4>
+                    <p>Sites modernos, responsivos e otimizados para conversão</p>
+                </div>
+                <div class="service-mini-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h4>Marketing Digital</h4>
+                    <p>Estratégias personalizadas para aumentar sua visibilidade</p>
+                </div>
+                <div class="service-mini-card">
+                    <i class="fab fa-instagram"></i>
+                    <h4>Gestão de Redes Sociais</h4>
+                    <p>Conteúdo estratégico que engaja e converte</p>
+                </div>
+                <div class="service-mini-card">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Tráfego Pago</h4>
+                    <p>Campanhas otimizadas no Google, Meta e TikTok Ads</p>
+                </div>
+                <div class="service-mini-card">
+                    <i class="fas fa-palette"></i>
+                    <h4>Branding</h4>
+                    <p>Identidade visual que destaca sua marca no mercado</p>
+                </div>
+                <div class="service-mini-card">
+                    <i class="fas fa-video"></i>
+                    <h4>Produção Audiovisual</h4>
+                    <p>Fotos e vídeos profissionais para sua comunicação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Pronto para ter um projeto como esses?</h2>
+            <p>Entre em contato conosco e vamos transformar sua ideia em realidade!</p>
+            <div class="cta-buttons">
+                <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vi o portfólio de vocês e gostaria de um orçamento.&type=phone_number&app_absent=0" target="_blank" class="btn-cta-white">
+                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                </a>
+                <a href="index.html#contato" class="btn-cta-outline">
+                    <i class="fas fa-envelope"></i> Solicitar Orçamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-about">
+                        <div class="footer-logo">
+                            <img src="img/OWLIN.png" alt="OWLIN Logo">
+                        </div>
+                        <p>Agência de marketing digital especializada em soluções inovadoras para empresas. Excelência e calmaria em cada projeto.</p>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/owlin.agency/" target="_blank" title="Instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@owlin.agency" target="_blank" title="TikTok" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=5511979550970&text&type=phone_number&app_absent=0" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.services">Serviços</h4>
+                        <ul class="footer-links">
+                            <li><a href="servicos/marketing-digital">Marketing Digital</a></li>
+                            <li><a href="servicos/gestao-redes-sociais">Gestão de Redes Sociais</a></li>
+                            <li><a href="servicos/trafego-pago">Tráfego Pago</a></li>
+                            <li><a href="servicos/desenvolvimento-web">Desenvolvimento Web</a></li>
+                            <li><a href="servicos/seo-conteudo">SEO & Conteúdo</a></li>
+                            <li><a href="servicos/branding">Branding</a></li>
+                            <li><a href="servicos/producao-audiovisual">Produção Audiovisual</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.company">Empresa</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html#sobre" data-i18n="nav.about">Sobre Nós</a></li>
+                            <li><a href="portfolio.html">Portfólio</a></li>
+                            <li><a href="index.html#contato" data-i18n="nav.contact">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p data-i18n="footer.rights">&copy; 2025 OWLIN - Agência de Marketing Digital. Todos os direitos reservados.</p>
+                    <div class="footer-legal">
+                        <a href="#" data-i18n="footer.privacy">Política de Privacidade</a>
+                        <span>|</span>
+                        <a href="#" data-i18n="footer.terms">Termos de Uso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vim pelo site e gostaria de mais informações.&type=phone_number&app_absent=0" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
