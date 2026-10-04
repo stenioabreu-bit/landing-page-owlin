@@ -3,39 +3,65 @@ const translations = {
     'pt-BR': {
         // Header
         'nav.home': 'Início',
-        'nav.about': 'Sobre Nós',
+        'nav.about': 'Sobre nós',
         'nav.services': 'Serviços',
         'nav.portfolio': 'Portfólio',
         'nav.cases': 'Cases',
         'nav.contact': 'Contato',
+        'nav.menu': 'Abrir menu',
+        'nav.blog': 'Blog',
+        'page.sections': 'Seções da página',
         
+        // Language selector
+        'lang.label': 'Idioma',
+
         // Hero Slides
-        'hero.title1': 'Transforme seu Negócio com Marketing Digital',
-        'hero.desc1': 'Estratégias personalizadas que geram resultados reais. Aumente suas vendas, fortaleça sua marca e conquiste novos clientes com excelência e calmaria em cada projeto.',
-        'hero.cta1': 'Começar Agora',
-        'hero.cta2': 'Nossos Serviços',
-        'hero.title2': 'Estratégias que Geram Vendas Reais',
-        'hero.desc2': 'Campanhas de tráfego pago otimizadas, SEO estratégico e automação de marketing. Transformamos investimento em resultados mensuráveis e crescimento sustentável.',
-        'hero.cta3': 'Ver Cases de Sucesso',
-        'hero.cta4': 'Falar com Especialista',
-        'hero.title3': 'Sua Marca Forte nas Redes Sociais',
-        'hero.desc3': 'Gestão completa de redes sociais com conteúdo estratégico, design impactante e engajamento autêntico. Construa uma comunidade fiel e aumente sua presença digital.',
-        'hero.cta5': 'Gestão de Redes',
-        'hero.cta6': 'Agendar Reunião',
-        'hero.title4': 'Sites que Convertem Visitantes em Clientes',
-        'hero.desc4': 'Desenvolvimento de sites responsivos, landing pages de alta conversão e e-commerce completo. Design moderno, performance otimizada e experiência do usuário impecável.',
-        'hero.cta7': 'Criar Meu Site',
-        'hero.cta8': 'Ver Portfólio',
-        'hero.title5': 'Marketing Digital com Propósito e Resultados',
-        'hero.desc5': 'Mais que uma agência, somos seu parceiro estratégico. Trabalhamos com transparência, dedicação e foco total no crescimento do seu negócio. Excelência e calmaria em cada projeto.',
+        'hero.label': 'Destaques da OWLIN',
+        'hero.title1': 'Marketing digital que gera',
+        'hero.rotate1': 'mais clientes|mais vendas|autoridade|resultados reais',
+        'hero.desc1': 'Sites, tráfego pago, redes sociais e branding trabalhando juntos para atrair, convencer e converter o cliente ideal do seu negócio. Excelência e calmaria em cada projeto.',
+        'hero.cta1': 'Quero um orçamento',
+        'hero.cta2': 'Conhecer serviços',
+        'hero.title2': 'Anúncios que viram vendas, não só cliques',
+        'hero.desc2': 'Campanhas no Google, Meta e TikTok Ads com gestores certificados, metas claras e relatórios que mostram o retorno de cada real investido.',
+        'hero.cta3': 'Ver projetos',
+        'hero.cta4': 'Falar com especialista',
+        'hero.title3': 'Redes sociais que engajam e vendem',
+        'hero.desc3': 'Planejamento, design e conteúdo estratégico com constância e a cara do seu negócio, para transformar seguidores em clientes fiéis.',
+        'hero.cta5': 'Gestão de redes',
+        'hero.cta6': 'Agendar reunião',
+        'hero.title4': 'Sites que vendem por você 24 horas por dia',
+        'hero.desc4': 'Sites rápidos, responsivos e prontos para o Google, com WhatsApp integrado e foco total em transformar visitas em contatos.',
+        'hero.cta7': 'Criar meu site',
+        'hero.cta8': 'Ver portfólio',
+        'hero.title5': 'Um parceiro, não só um fornecedor',
+        'hero.desc5': 'Trabalhamos lado a lado com você, com transparência, estratégia e foco total nos resultados do seu negócio. Excelência e calmaria em cada projeto.',
         'hero.cta9': 'Conhecer a OWLIN',
-        'hero.cta10': 'Ser Nosso Cliente',
-        
+        'hero.cta10': 'Ser nosso cliente',
+
+        // Hero: seletor de destaques
+        'hero.nav': 'Escolher destaque',
+        'hero.tab1': 'Marketing',
+        'hero.tab2': 'Tráfego pago',
+        'hero.tab3': 'Redes sociais',
+        'hero.tab4': 'Sites',
+        'hero.tab5': 'Parceria',
+
+        // Faixa de confiança
+        'trust.1.title': 'Desde 2019',
+        'trust.1.desc': 'no mercado digital',
+        'trust.2.title': 'Gestores certificados',
+        'trust.2.desc': 'Meta, Google e TikTok Ads',
+        'trust.3.title': 'Soluções 360°',
+        'trust.3.desc': 'marketing, web e audiovisual',
+        'trust.4.title': 'Atendimento ágil',
+        'trust.4.desc': 'direto pelo WhatsApp',
+
         // About
         'about.title': 'Conheça a OWLIN',
         'about.subtitle': 'Mais que uma agência, somos seu parceiro estratégico de crescimento',
-        'about.who': 'Quem Somos',
-        'about.values': 'Nossos Valores',
+        'about.who': 'Quem somos',
+        'about.values': 'Nossos valores',
         
         // Values
         'value.excellence': 'Excelência',
@@ -52,72 +78,57 @@ const translations = {
         'value.partnership.desc': 'Seu sucesso é o nosso maior objetivo. Trabalhamos lado a lado, com dedicação e comprometimento, como verdadeiros parceiros estratégicos que celebram cada conquista.',
         
         // Services
-        'services.title': 'Nossos Serviços',
-        'services.subtitle': 'Soluções completas de marketing digital para transformar seu negócio',
-        'services.learnmore': 'Saiba Mais',
+        'services.title': 'Nossos serviços',
+        'services.subtitle': 'Tudo o que o seu negócio precisa para ser encontrado, lembrado e escolhido, em um só lugar',
+        'services.learnmore': 'Saiba mais',
         
         // Service names and descriptions
-        'service.marketing': 'Marketing Digital Estratégico',
-        'service.marketing.desc': 'Estratégias completas e personalizadas de marketing digital para aumentar sua presença online, conquistar novos clientes e gerar resultados consistentes e mensuráveis.',
-        'service.social': 'Gestão de Redes Sociais',
+        'service.social': 'Gestão de redes sociais',
         'service.social.desc': 'Criação de conteúdo estratégico, planejamento editorial completo e gestão profissional das suas redes sociais para engajar seu público e construir uma comunidade fiel.',
-        'service.ads': 'Tráfego Pago',
+        'service.ads': 'Tráfego pago',
         'service.ads.desc': 'Campanhas otimizadas no Google Ads, Meta Ads (Facebook/Instagram) e TikTok Ads para gerar leads qualificados, aumentar suas vendas e maximizar o retorno sobre investimento.',
-        'service.web': 'Desenvolvimento Web & E-commerce',
+        'service.web': 'Desenvolvimento web & e-commerce',
         'service.web.desc': 'Sites responsivos, landing pages de alta conversão e e-commerce completo desenvolvidos com foco em performance, experiência do usuário e resultados de vendas.',
-        'service.seo': 'SEO & Conteúdo',
+        'service.seo': 'SEO & conteúdo',
         'service.seo.desc': 'Otimização para mecanismos de busca e produção de conteúdo estratégico para posicionar sua marca no topo do Google e atrair tráfego orgânico qualificado.',
-        'service.branding': 'Branding & Identidade Visual',
+        'service.branding': 'Branding & identidade visual',
         'service.branding.desc': 'Criação e desenvolvimento de identidade visual completa, naming, posicionamento de marca e estratégias para fortalecer sua presença no mercado.',
-        'service.audiovisual': 'Produção Audiovisual',
+        'service.audiovisual': 'Produção audiovisual',
         'service.audiovisual.desc': 'Sessões fotográficas profissionais e vídeos de eventos como casamentos, festas, eventos corporativos e muito mais para eternizar seus momentos especiais.',
-        'service.analytics': 'Analytics & Business Intelligence',
-        'service.analytics.desc': 'Monitoramento avançado, análise de métricas e relatórios inteligentes para otimizar suas estratégias e maximizar o retorno sobre investimento.',
-        'service.consulting': 'Consultoria Digital',
-        'service.consulting.desc': 'Consultoria especializada em marketing digital, análise de processos, diagnóstico de oportunidades e desenvolvimento de estratégias personalizadas de crescimento.',
         
         // Service features
-        'feature.planning': 'Planejamento Estratégico',
-        'feature.market': 'Análise de Mercado',
-        'feature.personas': 'Definição de Personas',
-        'feature.content': 'Criação de Conteúdo',
-        'feature.design': 'Design de Posts',
-        'feature.community': 'Gestão de Comunidade',
+        'feature.content': 'Criação de conteúdo',
+        'feature.design': 'Design de posts',
+        'feature.community': 'Gestão de comunidade',
         'feature.google': 'Google Ads',
         'feature.meta': 'Meta Ads (Facebook/Instagram)',
         'feature.tiktok': 'TikTok Ads',
-        'feature.sites': 'Sites Institucionais',
-        'feature.landing': 'Landing Pages',
-        'feature.stores': 'Lojas Virtuais',
-        'feature.seo': 'SEO On-Page e Off-Page',
-        'feature.contentmkt': 'Marketing de Conteúdo',
-        'feature.blog': 'Blog Corporativo',
-        'feature.logo': 'Criação de Logo',
-        'feature.brand': 'Manual de Marca',
+        'feature.sites': 'Sites institucionais',
+        'feature.landing': 'Landing pages',
+        'feature.stores': 'Lojas virtuais',
+        'feature.seo': 'SEO on-page e off-page',
+        'feature.contentmkt': 'Marketing de conteúdo',
+        'feature.blog': 'Blog corporativo',
+        'feature.logo': 'Criação de logo',
+        'feature.brand': 'Manual de marca',
         'feature.positioning': 'Posicionamento',
-        'feature.photo': 'Fotografia Profissional',
-        'feature.video': 'Vídeos de Eventos',
-        'feature.coverage': 'Cobertura Completa',
-        'feature.analytics': 'Google Analytics',
-        'feature.dashboards': 'Dashboards Personalizados',
-        'feature.reports': 'Relatórios de Performance',
-        'feature.diagnostic': 'Diagnóstico Digital',
-        'feature.action': 'Plano de Ação',
-        'feature.mentoring': 'Mentoria Estratégica',
+        'feature.photo': 'Fotografia profissional',
+        'feature.video': 'Vídeos de eventos',
+        'feature.coverage': 'Cobertura completa',
         
         // Cases
-        'cases.title': 'Nossos Cases de Sucesso',
+        'cases.title': 'Nossos cases de sucesso',
         'cases.subtitle': 'Resultados reais que transformaram negócios',
         'cases.filter.all': 'Todos',
-        'cases.filter.social': 'Redes Sociais',
+        'cases.filter.social': 'Redes sociais',
         'cases.filter.ecommerce': 'E-commerce',
         'cases.filter.branding': 'Branding',
-        'cases.filter.ads': 'Tráfego Pago',
+        'cases.filter.ads': 'Tráfego pago',
         'cases.filter.web': 'Desenvolvimento',
         
         // Process
-        'process.title': 'Nosso Processo de Trabalho',
-        'process.subtitle': 'Um método comprovado para transformar seu negócio',
+        'process.title': 'Como trabalhamos',
+        'process.subtitle': 'Um método claro, do primeiro contato aos resultados: você sabe o que acontece em cada etapa',
         'process.step1': 'Descoberta',
         'process.step1.desc': 'Entendemos profundamente seu negócio, objetivos, público-alvo e desafios atuais.',
         'process.step2': 'Estratégia',
@@ -132,24 +143,24 @@ const translations = {
         'process.step6.desc': 'Entregamos relatórios detalhados e celebramos o crescimento do seu negócio.',
         
         // Process Deliverables
-        'process.step1.item1': 'Reunião de Briefing',
-        'process.step1.item2': 'Análise de Mercado',
-        'process.step1.item3': 'Definição de Personas',
-        'process.step2.item1': 'Plano de Marketing',
-        'process.step2.item2': 'Definição de Metas',
-        'process.step2.item3': 'Cronograma de Ações',
-        'process.step3.item1': 'Criação de Conteúdo',
-        'process.step3.item2': 'Design de Materiais',
-        'process.step3.item3': 'Desenvolvimento Técnico',
-        'process.step4.item1': 'Lançamento de Campanhas',
-        'process.step4.item2': 'Publicação de Conteúdo',
-        'process.step4.item3': 'Ativação de Canais',
-        'process.step5.item1': 'Análise de Métricas',
+        'process.step1.item1': 'Reunião de briefing',
+        'process.step1.item2': 'Análise de mercado',
+        'process.step1.item3': 'Definição de personas',
+        'process.step2.item1': 'Plano de marketing',
+        'process.step2.item2': 'Definição de metas',
+        'process.step2.item3': 'Cronograma de ações',
+        'process.step3.item1': 'Criação de conteúdo',
+        'process.step3.item2': 'Design de materiais',
+        'process.step3.item3': 'Desenvolvimento técnico',
+        'process.step4.item1': 'Lançamento de campanhas',
+        'process.step4.item2': 'Publicação de conteúdo',
+        'process.step4.item3': 'Ativação de canais',
+        'process.step5.item1': 'Análise de métricas',
         'process.step5.item2': 'Testes A/B',
-        'process.step5.item3': 'Ajustes Estratégicos',
-        'process.step6.item1': 'Relatórios Mensais',
-        'process.step6.item2': 'Reuniões de Resultados',
-        'process.step6.item3': 'Planejamento Futuro',
+        'process.step5.item3': 'Ajustes estratégicos',
+        'process.step6.item1': 'Relatórios mensais',
+        'process.step6.item2': 'Reuniões de resultados',
+        'process.step6.item3': 'Planejamento futuro',
         
         // About - Who We Are (full text)
         'about.text1': 'Na OWLIN, não apenas criamos presença digital; nós a posicionamos. Atuamos desde 2019 e somos a fusão perfeita entre uma agência de marketing digital completa e uma produtora audiovisual de excelência, com soluções 360° para marcas, empresas, infoprodutores, profissionais liberais, igrejas e podcasts que buscam liderança e autoridade online.',
@@ -168,75 +179,177 @@ const translations = {
         'about.text9': '<strong>Pronto para ter uma VISÃO QUE POSICIONA sua marca no lugar certo?</strong> Conheça nossos cases e descubra como podemos fazer a diferença para você!',
         
         // Portfolio Page
-        'portfolio.title': 'Nosso Portfólio',
-        'portfolio.subtitle': 'Conheça alguns dos projetos que desenvolvemos com excelência e dedicação para nossos clientes',
-        'portfolio.visit': 'Visitar Site',
-        'portfolio.ff.type': 'Studio Automotivo',
+        'portfolio.title': 'Nosso portfólio',
+        'portfolio.subtitle': 'Vídeos e sites que criamos para clientes reais, além de modelos prontos para o seu segmento',
+        'portfolio.visit': 'Visitar site',
+        'portfolio.clients.subtitle': 'Sites que desenvolvemos para negócios de diferentes segmentos',
+        'portfolio.ff.type': 'Studio automotivo',
         'portfolio.ff.desc': 'Site moderno e profissional para um studio automotivo, com design elegante, navegação intuitiva e otimizado para conversão de clientes.',
-        'portfolio.ip.type': 'Saúde & Odontologia',
+        'portfolio.ip.type': 'Saúde & odontologia',
         'portfolio.ip.desc': 'Site completo para clínica odontológica com apresentação dos serviços, equipe profissional e sistema de agendamento, transmitindo confiança e profissionalismo.',
-        'portfolio.tag.web': 'Desenvolvimento Web',
-        'portfolio.tag.responsive': 'Design Responsivo',
+        'portfolio.davi.type': 'Floricultura',
+        'portfolio.davi.desc': 'Site-catálogo para uma floricultura com 15 anos de mercado: produtos com preços, filtros por categoria, pedido direto pelo WhatsApp e perguntas frequentes que tiram dúvidas antes da compra.',
+        'portfolio.nz.type': 'Distribuidora de vidros',
+        'portfolio.nz.desc': 'Site institucional para uma distribuidora com 26 anos de tradição: páginas de serviços e história, localização no mapa e orçamento pelo WhatsApp, com SEO local para ser encontrada em São Paulo.',
+        'portfolio.tag.web': 'Desenvolvimento web',
+        'portfolio.tag.responsive': 'Design responsivo',
         'portfolio.tag.seo': 'SEO',
-        'portfolio.tag.uiux': 'UI/UX Design',
+        'portfolio.tag.uiux': 'Design UI/UX',
         'portfolio.tag.optimization': 'Otimização',
-        'portfolio.cta.title': 'Transforme sua Presença Digital',
+        'portfolio.tag.catalog': 'Catálogo online',
+        'portfolio.tag.whatsapp': 'WhatsApp integrado',
+        'portfolio.tag.institutional': 'Site institucional',
+        'portfolio.tag.localseo': 'SEO local',
+        'portfolio.tag.quotes': 'Geração de orçamentos',
+
+        // Portfolio: modelos por segmento (B2B)
+        'models.badge': 'Soluções para empresas',
+        'models.title': 'Exemplos de sites que o seu negócio pode ter',
+        'models.subtitle': 'Pontos de partida completos, pensados para gerar contatos qualificados e fáceis de administrar. Escolha um modelo e nós personalizamos com a identidade, o conteúdo e as integrações da sua empresa.',
+        'models.re.segment': 'Imobiliárias · Incorporadoras · Corretores',
+        'models.re.title': 'Portal imobiliário com painel de gestão',
+        'models.re.desc': 'Vitrine de empreendimentos com filtros por fase da obra, ficha completa de cada imóvel e captação de leads direto no WhatsApp do corretor, já com o imóvel de interesse na mensagem.',
+        'models.re.f1': 'Catálogo filtrável: lançamentos, em obras, prontos para morar e alto padrão',
+        'models.re.f2': 'Ficha do imóvel com galeria de fotos, quartos, área, vagas e valor',
+        'models.re.f3': 'Lead qualificado no WhatsApp, com nome, imóvel e interesse do cliente',
+        'models.re.f4': 'Painel administrativo para cadastrar e editar imóveis sem programador',
+        'models.re.f5': 'Responsivo e preparado para o Google e para campanhas de tráfego pago',
+        'models.re.demo': 'Ver demonstração',
+        'models.re.cta': 'Quero um site assim',
+        'models.re.note': 'Projeto demonstrativo: marca e dados fictícios.',
+        'models.live': 'Demonstração ao vivo',
+        'models.re.open': 'Abrir a demonstração do portal imobiliário',
+        'models.why.title': 'Por que empresas escolhem um site OWLIN',
+        'models.why.1.title': 'Feito para gerar leads',
+        'models.why.1.desc': 'Cada página conduz a uma ação: WhatsApp, orçamento ou agendamento.',
+        'models.why.2.title': 'Autonomia para a equipe',
+        'models.why.2.desc': 'Painel simples para atualizar produtos, imóveis e conteúdos quando precisar.',
+        'models.why.3.title': 'Pronto para campanhas',
+        'models.why.3.desc': 'Estrutura preparada para Google Ads, Meta Ads e acompanhamento de resultados.',
+        'models.why.4.title': 'Com a cara da sua marca',
+        'models.why.4.desc': 'Identidade visual, textos e fotos personalizados para o seu negócio.',
+        'models.segments.title': 'O mesmo cuidado para outros segmentos:',
+        'models.seg.1': 'Clínicas e consultórios',
+        'models.seg.2': 'Advocacia e contabilidade',
+        'models.seg.3': 'Construtoras',
+        'models.seg.4': 'Indústria e distribuição',
+        'models.seg.5': 'Varejo e catálogos',
+        'models.seg.6': 'Prestadores de serviço',
+        'models.custom': 'Não encontrou o seu segmento? Criamos o modelo ideal do zero para a sua empresa.',
+        'portfolio.cta.title': 'Transforme sua presença digital',
         'portfolio.cta.subtitle': 'Oferecemos soluções completas para levar seu negócio ao próximo nível',
-        'portfolio.cta.web': 'Desenvolvimento Web',
+        'portfolio.cta.web': 'Desenvolvimento web',
         'portfolio.cta.web.desc': 'Sites modernos, responsivos e otimizados para conversão',
-        'portfolio.cta.marketing': 'Marketing Digital',
-        'portfolio.cta.marketing.desc': 'Estratégias personalizadas para aumentar sua visibilidade',
-        'portfolio.cta.social': 'Gestão de Redes Sociais',
+        'portfolio.cta.social': 'Gestão de redes sociais',
         'portfolio.cta.social.desc': 'Conteúdo estratégico que engaja e converte',
-        'portfolio.cta.ads': 'Tráfego Pago',
+        'portfolio.cta.ads': 'Tráfego pago',
         'portfolio.cta.ads.desc': 'Campanhas otimizadas no Google, Meta e TikTok Ads',
         'portfolio.cta.branding': 'Branding',
         'portfolio.cta.branding.desc': 'Identidade visual que destaca sua marca no mercado',
-        'portfolio.cta.audiovisual': 'Produção Audiovisual',
+        'portfolio.cta.audiovisual': 'Produção audiovisual',
         'portfolio.cta.audiovisual.desc': 'Fotos e vídeos profissionais para sua comunicação',
         'portfolio.final.title': 'Pronto para ter um projeto como esses?',
         'portfolio.final.subtitle': 'Entre em contato conosco e vamos transformar sua ideia em realidade!',
         'portfolio.final.whatsapp': 'Falar no WhatsApp',
-        'portfolio.final.quote': 'Solicitar Orçamento',
+        'portfolio.final.quote': 'Solicitar orçamento',
         
         // Blog
-        'blog.title': 'Blog & Conteúdo',
-        'blog.subtitle': 'Dicas, tendências e insights sobre marketing digital',
-        'blog.readmore': 'Ler mais',
-        'blog.category.marketing': 'Marketing Digital',
-        'blog.category.social': 'Redes Sociais',
-        'blog.category.ecommerce': 'E-commerce',
-        'blog.post1.title': 'Tendências do Marketing Digital em 2025',
-        'blog.post1.excerpt': 'Inteligência artificial, personalização e experiências imersivas lideram as transformações no marketing digital para este ano.',
-        'blog.post2.title': 'Como as Redes Sociais Transformam Negócios',
-        'blog.post2.excerpt': 'Empresas brasileiras investem cada vez mais em estratégias de redes sociais para alcançar novos públicos e aumentar vendas.',
-        'blog.post3.title': 'O Futuro do E-commerce brasileiro',
-        'blog.post3.excerpt': 'Setor de comércio eletrônico no Brasil registra crescimento expressivo impulsionado por inovações tecnológicas e mudanças no comportamento do consumidor.',
-        
+        'blog.title': 'Blog & conteúdo',
+        'blog.subtitle': 'Guias práticos sobre sites, SEO, anúncios, redes sociais e vídeo para empresas',
+
+        // Home: projetos no ar
+        'projects.title': 'Projetos reais, no ar',
+        'projects.subtitle': 'Alguns sites que desenvolvemos para negócios de diferentes segmentos',
+        'projects.visit': 'Ver site ao vivo',
+        'projects.davi.desc': 'Catálogo de produtos com filtros por categoria e pedido direto pelo WhatsApp.',
+        'projects.nz.desc': 'Site institucional com serviços, história, mapa e orçamento pelo WhatsApp.',
+        'projects.ip.desc': 'Especialidades, equipe e agendamento de consultas pelo WhatsApp.',
+        'projects.next.title': 'Seu negócio pode ser o próximo',
+        'projects.next.desc': 'Veja modelos de site por segmento e escolha o ponto de partida ideal para a sua empresa.',
+        'projects.next.cta': 'Ver modelos',
+        'projects.all': 'Ver portfólio completo',
+
+        // Home: resumos que levam às páginas internas
+        'home.about.cta': 'Sobre nós e como trabalhamos',
+        'home.services.all': 'Ver todos os serviços',
+        'svc.seo.short': 'Conteúdo e otimização para aparecer no topo do Google',
+        'cta.title': 'Vamos conversar sobre o seu projeto?',
+
+        // FAQ
+        'faq.title': 'Perguntas frequentes',
+        'faq.subtitle': 'Tire suas dúvidas antes de falar com a gente',
+        'faq.q1': 'Para quais tipos de negócio a OWLIN trabalha?',
+        'faq.a1': 'Atendemos empresas, marcas, profissionais liberais, infoprodutores, igrejas e podcasts. No portfólio você encontra projetos para clínica odontológica, floricultura, distribuidora de vidros e studio automotivo.',
+        'faq.q2': 'Quanto custa um projeto?',
+        'faq.a2': 'Depende do escopo e dos objetivos do seu negócio, por isso cada proposta é personalizada. Conte o que você precisa pelo WhatsApp ou pelo formulário e enviamos um orçamento sem compromisso.',
+        'faq.q3': 'O site vai funcionar no celular e aparecer no Google?',
+        'faq.a3': 'Sim. Os sites são responsivos e desenvolvidos com boas práticas de SEO, para funcionar bem em qualquer tela e ajudar o seu negócio a ser encontrado nas buscas.',
+        'faq.q5': 'Em quais plataformas vocês fazem tráfego pago?',
+        'faq.a5': 'Google Ads, Meta Ads (Facebook e Instagram) e TikTok Ads, com gestores certificados, acompanhamento constante e relatórios de desempenho.',
+        'faq.q6': 'Como funciona o primeiro contato?',
+        'faq.a6': 'Você chama a gente no WhatsApp ou preenche o formulário. Fazemos uma conversa de briefing para entender o seu negócio e, a partir dela, apresentamos uma proposta com estratégia, prazos e investimento.',
+
         // Contact
-        'contact.title': 'Entre em Contato',
-        'contact.subtitle': 'Pronto para transformar seu negócio? Vamos conversar!',
-        'contact.form.title': 'Ou Solicite um Orçamento',
+        'contact.title': 'Entre em contato',
+        'contact.subtitle': 'Pronto para crescer? Conte o seu desafio e receba uma proposta sob medida, sem compromisso.',
+        'contact.form.title': 'Ou solicite um orçamento',
         'contact.form.desc': 'Preencha o formulário abaixo e entraremos em contato em breve!',
         'contact.form.name': 'Seu nome',
         'contact.form.email': 'Seu e-mail',
         'contact.form.phone': 'Seu telefone (opcional)',
         'contact.form.message': 'Conte-nos sobre seu projeto...',
-        'contact.form.submit': 'Enviar Mensagem',
-        'contact.info.title': 'Fale Conosco',
+        'contact.form.submit': 'Enviar mensagem',
+        'contact.info.title': 'Fale conosco',
         'contact.info.desc': 'Entre em contato pelos nossos canais!',
         'contact.whatsapp': 'Entre em contato!',
         'contact.instagram': 'Nos siga no instagram!',
-        'contact.cta.title': 'Atendimento Rápido',
+        'contact.cta.title': 'Atendimento rápido',
         'contact.cta.desc': 'Fale conosco agora pelo WhatsApp e receba uma resposta imediata!',
         'contact.cta.btn': 'Falar no WhatsApp',
         
         // Footer
         'footer.services': 'Serviços',
         'footer.company': 'Empresa',
-        'footer.rights': '© 2025 OWLIN - Agência de Marketing Digital. Todos os direitos reservados.',
-        'footer.privacy': 'Política de Privacidade',
-        'footer.terms': 'Termos de Uso'
+        'footer.process': 'Como trabalhamos',
+        'footer.rights': '© {year} OWLIN - Agência de marketing digital. CNPJ 53.407.563/0001-65. Todos os direitos reservados.',
+        'footer.privacy': 'Política de privacidade',
+        'footer.terms': 'Termos de uso',
+
+        // Página 404
+        'notfound.title': 'Página não encontrada',
+        'notfound.text': 'O endereço que você acessou não existe ou mudou de lugar. Escolha um dos caminhos abaixo para continuar.',
+        'notfound.nav': 'Atalhos',
+        'notfound.services': 'Talvez você esteja procurando',
+
+        // Submenu do portfólio, vídeos, cookies, formulários e páginas legais
+        'nav.portfolio.videos': 'Vídeos',
+        'nav.portfolio.web': 'Desenvolvimento web',
+        'nav.portfolio.toggle': 'Mostrar opções do portfólio',
+        'portfolio.videos.title': 'Vídeos',
+        'portfolio.videos.subtitle': 'Produção audiovisual para igrejas, eventos, criadores e empresas, da captação à edição',
+        'portfolio.videos.long': 'Eventos, igrejas e criadores',
+        'portfolio.videos.short': 'Vídeos curtos para redes sociais',
+        'portfolio.videos.play': 'Assistir ao vídeo',
+        'portfolio.videos.cta': 'Conheça a produção audiovisual',
+        'video.type.creator': 'Criador de conteúdo',
+        'video.type.church': 'Igreja',
+        'video.type.event': 'Evento',
+        'video.type.conference': 'Conferência',
+        'video.type.construction': 'Construção civil',
+        'video.type.auto': 'Setor automotivo',
+        'video.type.glass': 'Distribuidora de vidros',
+        'video.type.drone': 'Imagens aéreas',
+        'cookies.title': 'Sua privacidade',
+        'cookies.text': 'Usamos cookies essenciais para o site funcionar e, só com a sua permissão, cookies de medição e publicidade. Veja a <a href="/privacidade">política de privacidade</a>.',
+        'cookies.accept': 'Aceitar',
+        'cookies.reject': 'Recusar',
+        'cookies.settings': 'Preferências de cookies',
+        'form.privacy': 'Ao enviar, você concorda com o uso dos seus dados para responder ao seu contato, conforme a nossa <a href="/privacidade">política de privacidade</a>.',
+        'form.sending': 'Enviando...',
+        'form.sent.title': 'Mensagem enviada!',
+        'form.sent.text': 'Obrigado pelo contato! Responderemos em breve.',
+        'form.error': 'Não foi possível enviar sua mensagem. Tente de novo ou fale com a gente pelo WhatsApp.',
+        'legal.updated': 'Atualizada em 3 de outubro de 2026'
     },
     'en': {
         // Header
@@ -246,29 +359,55 @@ const translations = {
         'nav.portfolio': 'Portfolio',
         'nav.cases': 'Cases',
         'nav.contact': 'Contact',
+        'nav.menu': 'Open menu',
+        'nav.blog': 'Blog',
+        'page.sections': 'Page sections',
         
+        // Language selector
+        'lang.label': 'Language',
+
         // Hero Slides
-        'hero.title1': 'Transform Your Business with Digital Marketing',
-        'hero.desc1': 'Personalized strategies that generate real results. Increase your sales, strengthen your brand and win new customers with excellence and calm in every project.',
-        'hero.cta1': 'Get Started',
-        'hero.cta2': 'Our Services',
-        'hero.title2': 'Strategies that Generate Real Sales',
-        'hero.desc2': 'Optimized paid traffic campaigns, strategic SEO and marketing automation. We transform investment into measurable results and sustainable growth.',
-        'hero.cta3': 'View Success Cases',
-        'hero.cta4': 'Talk to Specialist',
-        'hero.title3': 'Your Strong Brand on Social Media',
-        'hero.desc3': 'Complete social media management with strategic content, impactful design and authentic engagement. Build a loyal community and increase your digital presence.',
+        'hero.label': 'OWLIN highlights',
+        'hero.title1': 'Digital marketing that brings',
+        'hero.rotate1': 'more clients|more sales|authority|real results',
+        'hero.desc1': 'Websites, paid traffic, social media and branding working together to attract, persuade and convert your business\'s ideal customer. Excellence and calm in every project.',
+        'hero.cta1': 'Get a Quote',
+        'hero.cta2': 'Explore Services',
+        'hero.title2': 'Ads that turn into sales, not just clicks',
+        'hero.desc2': 'Google, Meta and TikTok Ads campaigns run by certified managers, with clear goals and reports that show the return on every cent invested.',
+        'hero.cta3': 'See Our Work',
+        'hero.cta4': 'Talk to a Specialist',
+        'hero.title3': 'Social media that builds brands and sells',
+        'hero.desc3': 'Planning, design and strategic content, consistent and true to your business, to turn followers into loyal customers.',
         'hero.cta5': 'Social Media Management',
         'hero.cta6': 'Schedule Meeting',
-        'hero.title4': 'Websites that Convert Visitors into Customers',
-        'hero.desc4': 'Development of responsive websites, high-conversion landing pages and complete e-commerce. Modern design, optimized performance and impeccable user experience.',
+        'hero.title4': 'Websites that sell for you around the clock',
+        'hero.desc4': 'Fast, responsive, Google-ready websites with built-in WhatsApp and a total focus on turning visits into leads.',
         'hero.cta7': 'Create My Website',
         'hero.cta8': 'View Portfolio',
-        'hero.title5': 'Digital Marketing with Purpose and Results',
-        'hero.desc5': 'More than an agency, we are your strategic partner. We work with transparency, dedication and total focus on growing your business. Excellence and calm in every project.',
+        'hero.title5': 'A growth partner, not just a vendor',
+        'hero.desc5': 'We work side by side with you, with transparency, strategy and total focus on your business results. Excellence and calm in every project.',
         'hero.cta9': 'Meet OWLIN',
         'hero.cta10': 'Become Our Client',
-        
+
+        // Hero: highlight selector
+        'hero.nav': 'Choose highlight',
+        'hero.tab1': 'Marketing',
+        'hero.tab2': 'Paid Traffic',
+        'hero.tab3': 'Social Media',
+        'hero.tab4': 'Websites',
+        'hero.tab5': 'Partnership',
+
+        // Trust strip
+        'trust.1.title': 'Since 2019',
+        'trust.1.desc': 'in digital marketing',
+        'trust.2.title': 'Certified Managers',
+        'trust.2.desc': 'Meta, Google and TikTok Ads',
+        'trust.3.title': '360° Solutions',
+        'trust.3.desc': 'marketing, web and video',
+        'trust.4.title': 'Fast Support',
+        'trust.4.desc': 'straight through WhatsApp',
+
         // About
         'about.title': 'Meet OWLIN',
         'about.subtitle': 'More than an agency, we are your strategic growth partner',
@@ -291,12 +430,10 @@ const translations = {
         
         // Services
         'services.title': 'Our Services',
-        'services.subtitle': 'Complete digital marketing solutions to transform your business',
+        'services.subtitle': 'Everything your business needs to be found, remembered and chosen, all in one place',
         'services.learnmore': 'Learn More',
         
         // Service names and descriptions
-        'service.marketing': 'Strategic Digital Marketing',
-        'service.marketing.desc': 'Complete and personalized digital marketing strategies to increase your online presence, win new customers and generate consistent and measurable results.',
         'service.social': 'Social Media Management',
         'service.social.desc': 'Strategic content creation, complete editorial planning and professional management of your social media to engage your audience and build a loyal community.',
         'service.ads': 'Paid Traffic',
@@ -309,15 +446,8 @@ const translations = {
         'service.branding.desc': 'Creation and development of complete visual identity, naming, brand positioning and strategies to strengthen your market presence.',
         'service.audiovisual': 'Audiovisual Production',
         'service.audiovisual.desc': 'Professional photo sessions and event videos such as weddings, parties, corporate events and much more to eternalize your special moments.',
-        'service.analytics': 'Analytics & Business Intelligence',
-        'service.analytics.desc': 'Advanced monitoring, metrics analysis and intelligent reports to optimize your strategies and maximize return on investment.',
-        'service.consulting': 'Digital Consulting',
-        'service.consulting.desc': 'Specialized consulting in digital marketing, process analysis, opportunity diagnosis and development of personalized growth strategies.',
         
         // Service features
-        'feature.planning': 'Strategic Planning',
-        'feature.market': 'Market Analysis',
-        'feature.personas': 'Persona Definition',
         'feature.content': 'Content Creation',
         'feature.design': 'Post Design',
         'feature.community': 'Community Management',
@@ -336,12 +466,6 @@ const translations = {
         'feature.photo': 'Professional Photography',
         'feature.video': 'Event Videos',
         'feature.coverage': 'Complete Coverage',
-        'feature.analytics': 'Google Analytics',
-        'feature.dashboards': 'Custom Dashboards',
-        'feature.reports': 'Performance Reports',
-        'feature.diagnostic': 'Digital Diagnostic',
-        'feature.action': 'Action Plan',
-        'feature.mentoring': 'Strategic Mentoring',
         // Cases
         'cases.title': 'Our Success Cases',
         'cases.subtitle': 'Real results that transformed businesses',
@@ -353,8 +477,8 @@ const translations = {
         'cases.filter.web': 'Development',
         
         // Process
-        'process.title': 'Our Work Process',
-        'process.subtitle': 'A proven method to transform your business',
+        'process.title': 'How We Work',
+        'process.subtitle': 'A clear method, from first contact to results: you know what happens at every step',
         'process.step1': 'Discovery',
         'process.step1.desc': 'We deeply understand your business, goals, target audience and current challenges.',
         'process.step2': 'Strategy',
@@ -406,23 +530,66 @@ const translations = {
         
         // Portfolio Page
         'portfolio.title': 'Our Portfolio',
-        'portfolio.subtitle': 'Discover some of the projects we developed with excellence and dedication for our clients',
+        'portfolio.subtitle': 'Videos and websites we created for real clients, plus ready-made models for your industry',
         'portfolio.visit': 'Visit Website',
+        'portfolio.clients.subtitle': 'Websites we built for businesses in different industries',
         'portfolio.ff.type': 'Automotive Studio',
         'portfolio.ff.desc': 'Modern and professional website for an automotive studio, with elegant design, intuitive navigation and optimized for customer conversion.',
         'portfolio.ip.type': 'Health & Dentistry',
         'portfolio.ip.desc': 'Complete website for dental clinic with presentation of services, professional team and scheduling system, conveying trust and professionalism.',
+        'portfolio.davi.type': 'Flower Shop',
+        'portfolio.davi.desc': 'Catalog website for a flower shop with 15 years in business: products with prices, category filters, ordering straight through WhatsApp and an FAQ that answers questions before purchase.',
+        'portfolio.nz.type': 'Glass Distributor',
+        'portfolio.nz.desc': 'Corporate website for a distributor with 26 years of tradition: service and history pages, map location and WhatsApp quotes, with local SEO to be found in São Paulo.',
         'portfolio.tag.web': 'Web Development',
         'portfolio.tag.responsive': 'Responsive Design',
         'portfolio.tag.seo': 'SEO',
         'portfolio.tag.uiux': 'UI/UX Design',
         'portfolio.tag.optimization': 'Optimization',
+        'portfolio.tag.catalog': 'Online Catalog',
+        'portfolio.tag.whatsapp': 'WhatsApp Integration',
+        'portfolio.tag.institutional': 'Corporate Website',
+        'portfolio.tag.localseo': 'Local SEO',
+        'portfolio.tag.quotes': 'Quote Generation',
+
+        // Portfolio: models by industry (B2B)
+        'models.badge': 'Business Solutions',
+        'models.title': 'Examples of Websites Your Business Can Have',
+        'models.subtitle': 'Complete starting points, designed to generate qualified leads and easy to manage. Pick a model and we customize it with your company\'s identity, content and integrations.',
+        'models.re.segment': 'Real Estate Agencies · Developers · Brokers',
+        'models.re.title': 'Real Estate Portal with Management Panel',
+        'models.re.desc': 'A showcase of developments with filters by construction stage, a full sheet for each property and lead capture straight to the broker\'s WhatsApp, with the property of interest already in the message.',
+        'models.re.f1': 'Filterable catalog: launches, under construction, ready to move in and luxury',
+        'models.re.f2': 'Property sheet with photo gallery, bedrooms, area, parking and price',
+        'models.re.f3': 'Qualified WhatsApp leads, with the client\'s name, property and interest',
+        'models.re.f4': 'Admin panel to add and edit properties without a developer',
+        'models.re.f5': 'Responsive and ready for Google and paid traffic campaigns',
+        'models.re.demo': 'View Demo',
+        'models.re.cta': 'I Want a Site Like This',
+        'models.re.note': 'Demo project: fictional brand and data.',
+        'models.live': 'Live demo',
+        'models.re.open': 'Open the real estate portal demo',
+        'models.why.title': 'Why companies choose an OWLIN website',
+        'models.why.1.title': 'Built to Generate Leads',
+        'models.why.1.desc': 'Every page leads to an action: WhatsApp, quote or booking.',
+        'models.why.2.title': 'Autonomy for Your Team',
+        'models.why.2.desc': 'A simple panel to update products, properties and content whenever you need.',
+        'models.why.3.title': 'Campaign-Ready',
+        'models.why.3.desc': 'Structure ready for Google Ads, Meta Ads and results tracking.',
+        'models.why.4.title': 'True to Your Brand',
+        'models.why.4.desc': 'Visual identity, copy and photos customized for your business.',
+        'models.segments.title': 'The same care for other industries:',
+        'models.seg.1': 'Clinics and Practices',
+        'models.seg.2': 'Law and Accounting Firms',
+        'models.seg.3': 'Construction Companies',
+        'models.seg.4': 'Industry and Distribution',
+        'models.seg.5': 'Retail and Catalogs',
+        'models.seg.6': 'Service Providers',
+        'models.custom': 'Don\'t see your industry? We\'ll build the ideal model from scratch for your company.',
         'portfolio.cta.title': 'Transform Your Digital Presence',
         'portfolio.cta.subtitle': 'We offer complete solutions to take your business to the next level',
         'portfolio.cta.web': 'Web Development',
         'portfolio.cta.web.desc': 'Modern, responsive websites optimized for conversion',
-        'portfolio.cta.marketing': 'Digital Marketing',
-        'portfolio.cta.marketing.desc': 'Personalized strategies to increase your visibility',
         'portfolio.cta.social': 'Social Media Management',
         'portfolio.cta.social.desc': 'Strategic content that engages and converts',
         'portfolio.cta.ads': 'Paid Traffic',
@@ -438,21 +605,43 @@ const translations = {
         
         // Blog
         'blog.title': 'Blog & Content',
-        'blog.subtitle': 'Tips, trends and insights about digital marketing',
-        'blog.readmore': 'Read more',
-        'blog.category.marketing': 'Digital Marketing',
-        'blog.category.social': 'Social Media',
-        'blog.category.ecommerce': 'E-commerce',
-        'blog.post1.title': 'Digital Marketing Trends in 2025',
-        'blog.post1.excerpt': 'Artificial intelligence, personalization and immersive experiences lead the transformations in digital marketing for this year.',
-        'blog.post2.title': 'How Social Media Transforms Businesses',
-        'blog.post2.excerpt': 'Brazilian companies are increasingly investing in social media strategies to reach new audiences and increase sales.',
-        'blog.post3.title': 'The Future of Brazilian E-commerce',
-        'blog.post3.excerpt': 'E-commerce sector in Brazil registers significant growth driven by technological innovations and changes in consumer behavior.',
-        
+        'blog.subtitle': 'Practical guides on websites, SEO, ads, social media and video for businesses',
+
+        // Home: live projects
+        'projects.title': 'Real Projects, Live',
+        'projects.subtitle': 'Some of the websites we built for businesses in different industries',
+        'projects.visit': 'View live site',
+        'projects.davi.desc': 'Product catalog with category filters and ordering straight through WhatsApp.',
+        'projects.nz.desc': 'Corporate website with services, company history, map and WhatsApp quotes.',
+        'projects.ip.desc': 'Specialties, team and appointment booking through WhatsApp.',
+        'projects.next.title': 'Your business could be next',
+        'projects.next.desc': 'Browse website models by industry and pick the ideal starting point for your company.',
+        'projects.next.cta': 'See Models',
+        'projects.all': 'View Full Portfolio',
+
+        // Home: teasers leading to the inner pages
+        'home.about.cta': 'About Us & How We Work',
+        'home.services.all': 'See All Services',
+        'svc.seo.short': 'Content and optimization to rank at the top of Google',
+        'cta.title': 'Ready to talk about your project?',
+
+        // FAQ
+        'faq.title': 'Frequently Asked Questions',
+        'faq.subtitle': 'Get your questions answered before talking to us',
+        'faq.q1': 'What kinds of businesses does OWLIN work with?',
+        'faq.a1': 'We work with companies, brands, independent professionals, digital product creators, churches and podcasts. In our portfolio you\'ll find projects for a dental clinic, a flower shop, a glass distributor and an automotive studio.',
+        'faq.q2': 'How much does a project cost?',
+        'faq.a2': 'It depends on the scope and goals of your business, so every proposal is tailored. Tell us what you need on WhatsApp or through the form and we\'ll send you a no-obligation quote.',
+        'faq.q3': 'Will my website work on phones and show up on Google?',
+        'faq.a3': 'Yes. Our websites are responsive and built with SEO best practices, so they work well on any screen and help your business get found in search.',
+        'faq.q5': 'Which platforms do you run paid traffic on?',
+        'faq.a5': 'Google Ads, Meta Ads (Facebook and Instagram) and TikTok Ads, with certified managers, ongoing monitoring and performance reports.',
+        'faq.q6': 'How does the first contact work?',
+        'faq.a6': 'You message us on WhatsApp or fill out the form. We hold a briefing call to understand your business and then present a proposal with strategy, timeline and investment.',
+
         // Contact
         'contact.title': 'Get in Touch',
-        'contact.subtitle': 'Ready to transform your business? Let\'s talk!',
+        'contact.subtitle': 'Ready to grow? Tell us your challenge and get a tailored, no-obligation proposal.',
         'contact.form.title': 'Or Request a Quote',
         'contact.form.desc': 'Fill out the form below and we will contact you soon!',
         'contact.form.name': 'Your name',
@@ -471,9 +660,46 @@ const translations = {
         // Footer
         'footer.services': 'Services',
         'footer.company': 'Company',
-        'footer.rights': '© 2025 OWLIN - Digital Marketing Agency. All rights reserved.',
+        'footer.process': 'How We Work',
+        'footer.rights': '© {year} OWLIN - Digital Marketing Agency. CNPJ 53.407.563/0001-65. All rights reserved.',
         'footer.privacy': 'Privacy Policy',
-        'footer.terms': 'Terms of Use'
+        'footer.terms': 'Terms of Use',
+
+        // Página 404
+        'notfound.title': 'Page Not Found',
+        'notfound.text': 'The address you tried doesn\'t exist or has moved. Pick one of the paths below to keep going.',
+        'notfound.nav': 'Shortcuts',
+        'notfound.services': 'Maybe You Were Looking For',
+
+        // Submenu do portfólio, vídeos, cookies, formulários e páginas legais
+        'nav.portfolio.videos': 'Videos',
+        'nav.portfolio.web': 'Web Development',
+        'nav.portfolio.toggle': 'Show portfolio options',
+        'portfolio.videos.title': 'Videos',
+        'portfolio.videos.subtitle': 'Audiovisual production for churches, events, creators and businesses, from filming to editing',
+        'portfolio.videos.long': 'Events, Churches and Creators',
+        'portfolio.videos.short': 'Short Videos for Social Media',
+        'portfolio.videos.play': 'Watch the video',
+        'portfolio.videos.cta': 'See Our Audiovisual Production',
+        'video.type.creator': 'Content Creator',
+        'video.type.church': 'Church',
+        'video.type.event': 'Event',
+        'video.type.conference': 'Conference',
+        'video.type.construction': 'Construction',
+        'video.type.auto': 'Automotive',
+        'video.type.glass': 'Glass Distributor',
+        'video.type.drone': 'Aerial Footage',
+        'cookies.title': 'Your Privacy',
+        'cookies.text': 'We use essential cookies to run the site and, only with your permission, measurement and advertising cookies. See our <a href="/privacidade">privacy policy</a>.',
+        'cookies.accept': 'Accept',
+        'cookies.reject': 'Decline',
+        'cookies.settings': 'Cookie Preferences',
+        'form.privacy': 'By sending, you agree that we use your data to reply to you, as described in our <a href="/privacidade">privacy policy</a>.',
+        'form.sending': 'Sending...',
+        'form.sent.title': 'Message Sent!',
+        'form.sent.text': 'Thanks for reaching out! We\'ll reply soon.',
+        'form.error': 'We couldn\'t send your message. Please try again or reach us on WhatsApp.',
+        'legal.updated': 'Last updated on October 3, 2026'
     },
     'es': {
         // Header
@@ -483,29 +709,55 @@ const translations = {
         'nav.portfolio': 'Portafolio',
         'nav.cases': 'Casos',
         'nav.contact': 'Contacto',
+        'nav.menu': 'Abrir menú',
+        'nav.blog': 'Blog',
+        'page.sections': 'Secciones de la página',
         
+        // Language selector
+        'lang.label': 'Idioma',
+
         // Hero Slides
-        'hero.title1': 'Transforma tu Negocio con Marketing Digital',
-        'hero.desc1': 'Estrategias personalizadas que generan resultados reales. Aumenta tus ventas, fortalece tu marca y conquista nuevos clientes con excelencia y calma en cada proyecto.',
-        'hero.cta1': 'Comenzar Ahora',
-        'hero.cta2': 'Nuestros Servicios',
-        'hero.title2': 'Estrategias que Generan Ventas Reales',
-        'hero.desc2': 'Campañas de tráfico pago optimizadas, SEO estratégico y automatización de marketing. Transformamos inversión en resultados medibles y crecimiento sostenible.',
-        'hero.cta3': 'Ver Casos de Éxito',
-        'hero.cta4': 'Hablar con Especialista',
-        'hero.title3': 'Tu Marca Fuerte en Redes Sociales',
-        'hero.desc3': 'Gestión completa de redes sociales con contenido estratégico, diseño impactante y engagement auténtico. Construye una comunidad fiel y aumenta tu presencia digital.',
+        'hero.label': 'Destacados de OWLIN',
+        'hero.title1': 'Marketing digital que genera',
+        'hero.rotate1': 'más clientes|más ventas|autoridad|resultados',
+        'hero.desc1': 'Sitios web, tráfico pago, redes sociales y branding trabajando juntos para atraer, convencer y convertir al cliente ideal de tu negocio. Excelencia y calma en cada proyecto.',
+        'hero.cta1': 'Quiero un Presupuesto',
+        'hero.cta2': 'Conocer Servicios',
+        'hero.title2': 'Anuncios que generan ventas, no solo clics',
+        'hero.desc2': 'Campañas en Google, Meta y TikTok Ads con gestores certificados, metas claras e informes que muestran el retorno de cada centavo invertido.',
+        'hero.cta3': 'Ver Proyectos',
+        'hero.cta4': 'Hablar con un Especialista',
+        'hero.title3': 'Redes sociales que conectan y venden',
+        'hero.desc3': 'Planificación, diseño y contenido estratégico, con constancia y la identidad de tu negocio, para convertir seguidores en clientes fieles.',
         'hero.cta5': 'Gestión de Redes',
         'hero.cta6': 'Agendar Reunión',
-        'hero.title4': 'Sitios que Convierten Visitantes en Clientes',
-        'hero.desc4': 'Desarrollo de sitios responsivos, landing pages de alta conversión y e-commerce completo. Diseño moderno, rendimiento optimizado y experiencia de usuario impecable.',
+        'hero.title4': 'Sitios web que venden por ti las 24 horas',
+        'hero.desc4': 'Sitios rápidos, responsivos y preparados para Google, con WhatsApp integrado y enfoque total en convertir visitas en contactos.',
         'hero.cta7': 'Crear Mi Sitio',
         'hero.cta8': 'Ver Portafolio',
-        'hero.title5': 'Marketing Digital con Propósito y Resultados',
-        'hero.desc5': 'Más que una agencia, somos tu socio estratégico. Trabajamos con transparencia, dedicación y enfoque total en el crecimiento de tu negocio. Excelencia y calma en cada proyecto.',
+        'hero.title5': 'Un socio, no solo un proveedor',
+        'hero.desc5': 'Trabajamos a tu lado, con transparencia, estrategia y enfoque total en los resultados de tu negocio. Excelencia y calma en cada proyecto.',
         'hero.cta9': 'Conocer OWLIN',
         'hero.cta10': 'Ser Nuestro Cliente',
-        
+
+        // Hero: selector de destacados
+        'hero.nav': 'Elegir destacado',
+        'hero.tab1': 'Marketing',
+        'hero.tab2': 'Tráfico Pago',
+        'hero.tab3': 'Redes Sociales',
+        'hero.tab4': 'Sitios Web',
+        'hero.tab5': 'Alianza',
+
+        // Franja de confianza
+        'trust.1.title': 'Desde 2019',
+        'trust.1.desc': 'en el mercado digital',
+        'trust.2.title': 'Gestores Certificados',
+        'trust.2.desc': 'Meta, Google y TikTok Ads',
+        'trust.3.title': 'Soluciones 360°',
+        'trust.3.desc': 'marketing, web y audiovisual',
+        'trust.4.title': 'Atención Ágil',
+        'trust.4.desc': 'directo por WhatsApp',
+
         // About
         'about.title': 'Conoce OWLIN',
         'about.subtitle': 'Más que una agencia, somos tu socio estratégico de crecimiento',
@@ -528,12 +780,10 @@ const translations = {
         
         // Services
         'services.title': 'Nuestros Servicios',
-        'services.subtitle': 'Soluciones completas de marketing digital para transformar tu negocio',
+        'services.subtitle': 'Todo lo que tu negocio necesita para ser encontrado, recordado y elegido, en un solo lugar',
         'services.learnmore': 'Saber Más',
         
         // Service names and descriptions
-        'service.marketing': 'Marketing Digital Estratégico',
-        'service.marketing.desc': 'Estrategias completas y personalizadas de marketing digital para aumentar tu presencia online, conquistar nuevos clientes y generar resultados consistentes y medibles.',
         'service.social': 'Gestión de Redes Sociales',
         'service.social.desc': 'Creación de contenido estratégico, planificación editorial completa y gestión profesional de tus redes sociales para enganchar a tu público y construir una comunidad fiel.',
         'service.ads': 'Tráfico Pago',
@@ -546,15 +796,8 @@ const translations = {
         'service.branding.desc': 'Creación y desarrollo de identidad visual completa, naming, posicionamiento de marca y estrategias para fortalecer tu presencia en el mercado.',
         'service.audiovisual': 'Producción Audiovisual',
         'service.audiovisual.desc': 'Sesiones fotográficas profesionales y videos de eventos como bodas, fiestas, eventos corporativos y mucho más para eternizar tus momentos especiales.',
-        'service.analytics': 'Analytics & Business Intelligence',
-        'service.analytics.desc': 'Monitoreo avanzado, análisis de métricas e informes inteligentes para optimizar tus estrategias y maximizar el retorno sobre inversión.',
-        'service.consulting': 'Consultoría Digital',
-        'service.consulting.desc': 'Consultoría especializada en marketing digital, análisis de procesos, diagnóstico de oportunidades y desarrollo de estrategias personalizadas de crecimiento.',
         
         // Service features
-        'feature.planning': 'Planificación Estratégica',
-        'feature.market': 'Análisis de Mercado',
-        'feature.personas': 'Definición de Personas',
         'feature.content': 'Creación de Contenido',
         'feature.design': 'Diseño de Posts',
         'feature.community': 'Gestión de Comunidad',
@@ -573,12 +816,6 @@ const translations = {
         'feature.photo': 'Fotografía Profesional',
         'feature.video': 'Videos de Eventos',
         'feature.coverage': 'Cobertura Completa',
-        'feature.analytics': 'Google Analytics',
-        'feature.dashboards': 'Dashboards Personalizados',
-        'feature.reports': 'Informes de Rendimiento',
-        'feature.diagnostic': 'Diagnóstico Digital',
-        'feature.action': 'Plan de Acción',
-        'feature.mentoring': 'Mentoría Estratégica',
         // Cases
         'cases.title': 'Nuestros Casos de Éxito',
         'cases.subtitle': 'Resultados reales que transformaron negocios',
@@ -590,8 +827,8 @@ const translations = {
         'cases.filter.web': 'Desarrollo',
         
         // Process
-        'process.title': 'Nuestro Proceso de Trabajo',
-        'process.subtitle': 'Un método comprobado para transformar tu negocio',
+        'process.title': 'Cómo Trabajamos',
+        'process.subtitle': 'Un método claro, del primer contacto a los resultados: sabes lo que pasa en cada etapa',
         'process.step1': 'Descubrimiento',
         'process.step1.desc': 'Entendemos profundamente tu negocio, objetivos, público objetivo y desafíos actuales.',
         'process.step2': 'Estrategia',
@@ -643,23 +880,66 @@ const translations = {
         
         // Portfolio Page
         'portfolio.title': 'Nuestro Portafolio',
-        'portfolio.subtitle': 'Conoce algunos de los proyectos que desarrollamos con excelencia y dedicación para nuestros clientes',
+        'portfolio.subtitle': 'Videos y sitios web que creamos para clientes reales, además de modelos listos para tu sector',
         'portfolio.visit': 'Visitar Sitio',
+        'portfolio.clients.subtitle': 'Sitios que desarrollamos para negocios de distintos sectores',
         'portfolio.ff.type': 'Studio Automotriz',
         'portfolio.ff.desc': 'Sitio web moderno y profesional para un studio automotriz, con diseño elegante, navegación intuitiva y optimizado para conversión de clientes.',
         'portfolio.ip.type': 'Salud & Odontología',
         'portfolio.ip.desc': 'Sitio web completo para clínica odontológica con presentación de servicios, equipo profesional y sistema de agendamiento, transmitiendo confianza y profesionalismo.',
+        'portfolio.davi.type': 'Floristería',
+        'portfolio.davi.desc': 'Sitio-catálogo para una floristería con 15 años en el mercado: productos con precios, filtros por categoría, pedidos directos por WhatsApp y preguntas frecuentes que resuelven dudas antes de la compra.',
+        'portfolio.nz.type': 'Distribuidora de Vidrios',
+        'portfolio.nz.desc': 'Sitio institucional para una distribuidora con 26 años de tradición: páginas de servicios e historia, ubicación en el mapa y presupuestos por WhatsApp, con SEO local para ser encontrada en São Paulo.',
         'portfolio.tag.web': 'Desarrollo Web',
         'portfolio.tag.responsive': 'Diseño Responsivo',
         'portfolio.tag.seo': 'SEO',
         'portfolio.tag.uiux': 'Diseño UI/UX',
         'portfolio.tag.optimization': 'Optimización',
+        'portfolio.tag.catalog': 'Catálogo Online',
+        'portfolio.tag.whatsapp': 'WhatsApp Integrado',
+        'portfolio.tag.institutional': 'Sitio Institucional',
+        'portfolio.tag.localseo': 'SEO Local',
+        'portfolio.tag.quotes': 'Generación de Presupuestos',
+
+        // Portafolio: modelos por sector (B2B)
+        'models.badge': 'Soluciones para Empresas',
+        'models.title': 'Ejemplos de Sitios que tu Negocio Puede Tener',
+        'models.subtitle': 'Puntos de partida completos, pensados para generar contactos calificados y fáciles de administrar. Elige un modelo y lo personalizamos con la identidad, el contenido y las integraciones de tu empresa.',
+        'models.re.segment': 'Inmobiliarias · Desarrolladoras · Corredores',
+        'models.re.title': 'Portal Inmobiliario con Panel de Gestión',
+        'models.re.desc': 'Vitrina de emprendimientos con filtros por etapa de obra, ficha completa de cada inmueble y captación de leads directo en el WhatsApp del corredor, ya con el inmueble de interés en el mensaje.',
+        'models.re.f1': 'Catálogo filtrable: lanzamientos, en obra, listos para habitar y alta gama',
+        'models.re.f2': 'Ficha del inmueble con galería de fotos, habitaciones, área, estacionamientos y precio',
+        'models.re.f3': 'Lead calificado en WhatsApp, con nombre, inmueble e interés del cliente',
+        'models.re.f4': 'Panel administrativo para registrar y editar inmuebles sin programador',
+        'models.re.f5': 'Responsivo y preparado para Google y para campañas de tráfico pago',
+        'models.re.demo': 'Ver Demostración',
+        'models.re.cta': 'Quiero un Sitio Así',
+        'models.re.note': 'Proyecto demostrativo: marca y datos ficticios.',
+        'models.live': 'Demostración en vivo',
+        'models.re.open': 'Abrir la demostración del portal inmobiliario',
+        'models.why.title': 'Por qué las empresas eligen un sitio OWLIN',
+        'models.why.1.title': 'Hecho para Generar Leads',
+        'models.why.1.desc': 'Cada página conduce a una acción: WhatsApp, presupuesto o agendamiento.',
+        'models.why.2.title': 'Autonomía para el Equipo',
+        'models.why.2.desc': 'Panel simple para actualizar productos, inmuebles y contenidos cuando lo necesites.',
+        'models.why.3.title': 'Listo para Campañas',
+        'models.why.3.desc': 'Estructura preparada para Google Ads, Meta Ads y seguimiento de resultados.',
+        'models.why.4.title': 'Con la Identidad de tu Marca',
+        'models.why.4.desc': 'Identidad visual, textos y fotos personalizados para tu negocio.',
+        'models.segments.title': 'El mismo cuidado para otros sectores:',
+        'models.seg.1': 'Clínicas y Consultorios',
+        'models.seg.2': 'Despachos Jurídicos y Contables',
+        'models.seg.3': 'Constructoras',
+        'models.seg.4': 'Industria y Distribución',
+        'models.seg.5': 'Comercio y Catálogos',
+        'models.seg.6': 'Prestadores de Servicios',
+        'models.custom': '¿No encontraste tu sector? Creamos el modelo ideal desde cero para tu empresa.',
         'portfolio.cta.title': 'Transforma tu Presencia Digital',
         'portfolio.cta.subtitle': 'Ofrecemos soluciones completas para llevar tu negocio al siguiente nivel',
         'portfolio.cta.web': 'Desarrollo Web',
         'portfolio.cta.web.desc': 'Sitios modernos, responsivos y optimizados para conversión',
-        'portfolio.cta.marketing': 'Marketing Digital',
-        'portfolio.cta.marketing.desc': 'Estrategias personalizadas para aumentar tu visibilidad',
         'portfolio.cta.social': 'Gestión de Redes Sociales',
         'portfolio.cta.social.desc': 'Contenido estratégico que engancha y convierte',
         'portfolio.cta.ads': 'Tráfico Pago',
@@ -675,21 +955,43 @@ const translations = {
         
         // Blog
         'blog.title': 'Blog & Contenido',
-        'blog.subtitle': 'Tips, tendencias e insights sobre marketing digital',
-        'blog.readmore': 'Leer más',
-        'blog.category.marketing': 'Marketing Digital',
-        'blog.category.social': 'Redes Sociales',
-        'blog.category.ecommerce': 'E-commerce',
-        'blog.post1.title': 'Tendencias del Marketing Digital en 2025',
-        'blog.post1.excerpt': 'Inteligencia artificial, personalización y experiencias inmersivas lideran las transformaciones en el marketing digital para este año.',
-        'blog.post2.title': 'Cómo las Redes Sociales Transforman Negocios',
-        'blog.post2.excerpt': 'Empresas brasileñas invierten cada vez más en estrategias de redes sociales para alcanzar nuevos públicos y aumentar ventas.',
-        'blog.post3.title': 'El Futuro del E-commerce brasileño',
-        'blog.post3.excerpt': 'Sector de comercio electrónico en Brasil registra crecimiento expresivo impulsado por innovaciones tecnológicas y cambios en el comportamiento del consumidor.',
-        
+        'blog.subtitle': 'Guías prácticas sobre sitios web, SEO, anuncios, redes sociales y video para empresas',
+
+        // Home: proyectos en línea
+        'projects.title': 'Proyectos Reales, en Línea',
+        'projects.subtitle': 'Algunos sitios que desarrollamos para negocios de distintos sectores',
+        'projects.visit': 'Ver sitio en vivo',
+        'projects.davi.desc': 'Catálogo de productos con filtros por categoría y pedidos directos por WhatsApp.',
+        'projects.nz.desc': 'Sitio institucional con servicios, historia, mapa y presupuestos por WhatsApp.',
+        'projects.ip.desc': 'Especialidades, equipo y agendamiento de citas por WhatsApp.',
+        'projects.next.title': 'Tu negocio puede ser el próximo',
+        'projects.next.desc': 'Mira modelos de sitio por sector y elige el punto de partida ideal para tu empresa.',
+        'projects.next.cta': 'Ver Modelos',
+        'projects.all': 'Ver Portafolio Completo',
+
+        // Home: resúmenes que llevan a las páginas internas
+        'home.about.cta': 'Sobre Nosotros y Cómo Trabajamos',
+        'home.services.all': 'Ver Todos los Servicios',
+        'svc.seo.short': 'Contenido y optimización para aparecer en lo más alto de Google',
+        'cta.title': '¿Hablamos de tu proyecto?',
+
+        // FAQ
+        'faq.title': 'Preguntas Frecuentes',
+        'faq.subtitle': 'Resuelve tus dudas antes de hablar con nosotros',
+        'faq.q1': '¿Con qué tipos de negocio trabaja OWLIN?',
+        'faq.a1': 'Atendemos empresas, marcas, profesionales independientes, infoproductores, iglesias y podcasts. En el portafolio encontrarás proyectos para una clínica odontológica, una floristería, una distribuidora de vidrios y un studio automotriz.',
+        'faq.q2': '¿Cuánto cuesta un proyecto?',
+        'faq.a2': 'Depende del alcance y de los objetivos de tu negocio, por eso cada propuesta es personalizada. Cuéntanos lo que necesitas por WhatsApp o por el formulario y te enviamos un presupuesto sin compromiso.',
+        'faq.q3': '¿El sitio funcionará en el celular y aparecerá en Google?',
+        'faq.a3': 'Sí. Los sitios son responsivos y se desarrollan con buenas prácticas de SEO, para funcionar bien en cualquier pantalla y ayudar a que tu negocio sea encontrado en las búsquedas.',
+        'faq.q5': '¿En qué plataformas hacen tráfico pago?',
+        'faq.a5': 'Google Ads, Meta Ads (Facebook e Instagram) y TikTok Ads, con gestores certificados, seguimiento constante e informes de rendimiento.',
+        'faq.q6': '¿Cómo funciona el primer contacto?',
+        'faq.a6': 'Nos escribes por WhatsApp o completas el formulario. Hacemos una conversación de briefing para entender tu negocio y, a partir de ella, presentamos una propuesta con estrategia, plazos e inversión.',
+
         // Contact
         'contact.title': 'Contáctanos',
-        'contact.subtitle': '¿Listo para transformar tu negocio? ¡Hablemos!',
+        'contact.subtitle': '¿Listo para crecer? Cuéntanos tu desafío y recibe una propuesta a medida, sin compromiso.',
         'contact.form.title': 'O Solicita un Presupuesto',
         'contact.form.desc': '¡Completa el formulario y te contactaremos pronto!',
         'contact.form.name': 'Tu nombre',
@@ -708,9 +1010,46 @@ const translations = {
         // Footer
         'footer.services': 'Servicios',
         'footer.company': 'Empresa',
-        'footer.rights': '© 2025 OWLIN - Agencia de Marketing Digital. Todos los derechos reservados.',
+        'footer.process': 'Cómo Trabajamos',
+        'footer.rights': '© {year} OWLIN - Agencia de Marketing Digital. CNPJ 53.407.563/0001-65. Todos los derechos reservados.',
         'footer.privacy': 'Política de Privacidad',
-        'footer.terms': 'Términos de Uso'
+        'footer.terms': 'Términos de Uso',
+
+        // Página 404
+        'notfound.title': 'Página no encontrada',
+        'notfound.text': 'La dirección que buscaste no existe o cambió de lugar. Elige uno de los caminos de abajo para continuar.',
+        'notfound.nav': 'Atajos',
+        'notfound.services': 'Quizás estabas buscando',
+
+        // Submenu do portfólio, vídeos, cookies, formulários e páginas legais
+        'nav.portfolio.videos': 'Videos',
+        'nav.portfolio.web': 'Desarrollo web',
+        'nav.portfolio.toggle': 'Mostrar opciones del portafolio',
+        'portfolio.videos.title': 'Videos',
+        'portfolio.videos.subtitle': 'Producción audiovisual para iglesias, eventos, creadores y empresas, de la grabación a la edición',
+        'portfolio.videos.long': 'Eventos, iglesias y creadores',
+        'portfolio.videos.short': 'Videos cortos para redes sociales',
+        'portfolio.videos.play': 'Ver el video',
+        'portfolio.videos.cta': 'Conoce la producción audiovisual',
+        'video.type.creator': 'Creador de contenido',
+        'video.type.church': 'Iglesia',
+        'video.type.event': 'Evento',
+        'video.type.conference': 'Conferencia',
+        'video.type.construction': 'Construcción',
+        'video.type.auto': 'Sector automotriz',
+        'video.type.glass': 'Distribuidora de vidrios',
+        'video.type.drone': 'Imágenes aéreas',
+        'cookies.title': 'Tu privacidad',
+        'cookies.text': 'Usamos cookies esenciales para que el sitio funcione y, solo con tu permiso, cookies de medición y publicidad. Consulta la <a href="/privacidade">política de privacidad</a>.',
+        'cookies.accept': 'Aceptar',
+        'cookies.reject': 'Rechazar',
+        'cookies.settings': 'Preferencias de cookies',
+        'form.privacy': 'Al enviar, aceptas que usemos tus datos para responderte, según nuestra <a href="/privacidade">política de privacidad</a>.',
+        'form.sending': 'Enviando...',
+        'form.sent.title': '¡Mensaje enviado!',
+        'form.sent.text': '¡Gracias por tu mensaje! Te responderemos pronto.',
+        'form.error': 'No pudimos enviar tu mensaje. Inténtalo de nuevo o escríbenos por WhatsApp.',
+        'legal.updated': 'Actualizada el 3 de octubre de 2026'
     }
 };
 
@@ -732,23 +1071,36 @@ function detectLanguage() {
     return 'pt-BR';
 }
 
+// Idioma em uso na página (atualizado por applyTranslations)
+let currentLang = 'pt-BR';
+
+// Texto de uma chave no idioma atual, com fallback para pt-BR (usado pelos scripts da página)
+function i18nText(key) {
+    return (translations[currentLang] && translations[currentLang][key])
+        || translations['pt-BR'][key]
+        || '';
+}
+
 // Aplica traduções
 function applyTranslations(lang) {
     const t = translations[lang];
     if (!t) return;
-    
+    currentLang = lang;
+    const year = String(new Date().getFullYear());
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (t[key]) {
+            const value = t[key].replace('{year}', year);
             // Se o texto contém HTML (como <strong>), usa innerHTML
-            if (t[key].includes('<')) {
-                el.innerHTML = t[key];
+            if (value.includes('<')) {
+                el.innerHTML = value;
             } else {
-                el.textContent = t[key];
+                el.textContent = value;
             }
         }
     });
-    
+
     // Placeholders
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
         const key = el.getAttribute('data-i18n-placeholder');
@@ -756,26 +1108,37 @@ function applyTranslations(lang) {
             el.placeholder = t[key];
         }
     });
-    
-    // Atualiza lang do HTML
-    document.documentElement.lang = lang === 'pt-BR' ? 'pt-BR' : lang;
-    
-    // Atualiza botões de idioma (novo sistema com bandeiras)
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-        // Verifica o onclick para identificar o idioma do botão
-        const onclick = btn.getAttribute('onclick');
-        if (onclick && onclick.includes(`'${lang}'`)) {
-            btn.classList.add('active');
+
+    // Rótulos de acessibilidade (botões só com ícone, grupos etc.)
+    document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+        const key = el.getAttribute('data-i18n-aria');
+        if (t[key]) {
+            el.setAttribute('aria-label', t[key]);
         }
     });
-    
+
+    // Atualiza lang do HTML
+    document.documentElement.lang = lang === 'pt-BR' ? 'pt-BR' : lang;
+
+    // Atualiza botões de idioma (novo sistema com bandeiras)
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        // data-lang nas páginas novas; nas antigas o idioma vem do onclick
+        const onclick = btn.getAttribute('onclick') || '';
+        const btnLang = btn.dataset.lang || (onclick.match(/'([^']+)'/) || [])[1];
+        const isActive = btnLang === lang;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+
     // Fallback para seletor antigo (compatibilidade)
     const selector = document.getElementById('lang-selector');
     if (selector) selector.value = lang;
-    
+
     // Salva preferência
     localStorage.setItem('owlin-lang', lang);
+
+    // Avisa os componentes que montam texto via JS (ex.: palavra rotativa do hero)
+    document.dispatchEvent(new CustomEvent('owlin:langchange', { detail: { lang } }));
 }
 
 // Troca idioma

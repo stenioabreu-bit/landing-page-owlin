@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenuBtn.addEventListener('click', function () {
             mobileMenuBtn.classList.toggle('active');
             navMenu.classList.toggle('active');
+            mobileMenuBtn.setAttribute('aria-expanded', navMenu.classList.contains('active') ? 'true' : 'false');
         });
 
         // Fechar menu ao clicar em um link
@@ -16,9 +17,54 @@ document.addEventListener('DOMContentLoaded', function () {
             link.addEventListener('click', () => {
                 mobileMenuBtn.classList.remove('active');
                 navMenu.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
             });
         });
     }
+
+    // ===== SUBMENU DO PORTFÓLIO =====
+    // No desktop abre com o mouse; a setinha abre e fecha pelo clique ou teclado (Esc fecha)
+    document.querySelectorAll('.has-submenu').forEach(item => {
+        const toggle = item.querySelector('.submenu-toggle');
+        if (!toggle) return;
+        const setOpen = open => {
+            item.classList.toggle('open', open);
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        };
+        toggle.addEventListener('click', e => {
+            e.stopPropagation();
+            setOpen(!item.classList.contains('open'));
+        });
+        item.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && item.classList.contains('open')) {
+                setOpen(false);
+                toggle.focus();
+            }
+        });
+        item.addEventListener('focusout', e => {
+            if (!item.contains(e.relatedTarget)) setOpen(false);
+        });
+        item.addEventListener('mouseleave', () => setOpen(false));
+        document.addEventListener('click', e => {
+            if (!item.contains(e.target)) setOpen(false);
+        });
+    });
+
+    // ===== VÍDEOS DO YOUTUBE =====
+    // A página mostra só a miniatura; o player (e os cookies do YouTube) só carrega no clique
+    document.querySelectorAll('.yt-lite').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const frame = document.createElement('iframe');
+            frame.className = 'yt-frame';
+            frame.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(btn.dataset.yt) + '?autoplay=1&rel=0&playsinline=1';
+            frame.title = btn.dataset.title || 'Vídeo do YouTube';
+            frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            frame.referrerPolicy = 'strict-origin-when-cross-origin';
+            frame.allowFullscreen = true;
+            btn.replaceWith(frame);
+            frame.focus();
+        });
+    });
 
     // ===== SMOOTH SCROLLING =====
     const links = document.querySelectorAll('a[href^="#"]');
@@ -68,39 +114,67 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScrollTop = scrollTop;
     });
 
-    // ===== HERO SLIDER =====
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
+    // ===== HERO: PALAVRA ROTATIVA NO TÍTULO =====
+    // (os slides do hero são controlados pelo OwlinCarousel, em carousel.js)
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
+    document.querySelectorAll('[data-rotate]').forEach(rotator => {
+        let wordIndex = 0;
+        const words = () => (typeof i18nText === 'function' ? i18nText(rotator.dataset.rotate) : '')
+            .split('|').map(word => word.trim()).filter(Boolean);
+        const showWord = (index) => {
+            const list = words();
+            if (!list.length) return;
+            wordIndex = index % list.length;
+            rotator.textContent = list[wordIndex];
+        };
 
-        if (slides[index]) {
-            slides[index].classList.add('active');
-        }
-        if (dots[index]) {
-            dots[index].classList.add('active');
-        }
-        currentSlide = index;
-    }
+        // Reserva a largura da palavra mais longa (em em, acompanha o tamanho da fonte),
+        // assim a quebra de linha do título é a mesma para todas as palavras
+        const reserveWidth = () => {
+            const probe = rotator.cloneNode();
+            probe.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;min-width:0';
+            rotator.parentNode.appendChild(probe);
+            const fontSize = parseFloat(getComputedStyle(rotator).fontSize);
+            let widest = 0;
+            words().forEach(word => {
+                probe.textContent = word;
+                widest = Math.max(widest, probe.getBoundingClientRect().width);
+            });
+            probe.remove();
+            if (widest && fontSize) rotator.style.minWidth = `${widest / fontSize}em`;
+        };
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
+        showWord(0);
+        reserveWidth();
+        if (document.fonts) document.fonts.ready.then(reserveWidth);
+        document.addEventListener('owlin:langchange', () => {
+            showWord(0);
+            reserveWidth();
+        });
+        if (prefersReducedMotion) return;
 
-    // Auto slide a cada 5 segundos
-    if (slides.length > 0) {
-        setInterval(nextSlide, 5000);
-    }
+        setInterval(() => {
+            if (document.hidden) return;
+            rotator.classList.add('is-leaving');
+            setTimeout(() => {
+                showWord(wordIndex + 1);
+                rotator.classList.remove('is-leaving');
+                rotator.classList.add('is-entering');
+                rotator.offsetWidth; // Trigger reflow
+                rotator.classList.remove('is-entering');
+            }, 350);
+        }, 2800);
+    });
 
-    // Controle dos dots
-    dots.forEach(dot => {
-        dot.addEventListener('click', function () {
-            const slideIndex = parseInt(this.getAttribute('data-slide'));
-            showSlide(slideIndex);
+    // ===== FAQ: UMA RESPOSTA ABERTA POR VEZ =====
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        item.addEventListener('toggle', () => {
+            if (!item.open) return;
+            faqItems.forEach(other => {
+                if (other !== item) other.open = false;
+            });
         });
     });
 
@@ -120,41 +194,38 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll(); // Verificar elementos visíveis na carga inicial
 
-    // ===== ACTIVE MENU LINK =====
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-menu a');
+    // ===== MENU ATIVO =====
+    // Cada página marca o próprio item no HTML (class="active" + aria-current="page")
 
-    function highlightNavLink() {
-        const scrollY = window.pageYOffset;
-
-        sections.forEach(section => {
-            const sectionHeight = section.offsetHeight;
-            const sectionTop = section.offsetTop - 100;
-            const sectionId = section.getAttribute('id');
-
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${sectionId}`) {
-                        link.classList.add('active');
-                    }
-                });
+    // ===== PRÉVIAS AO VIVO (IFRAMES) =====
+    // Os sites dos clientes são pesados: só começam a carregar depois da página pronta
+    // e quando chegam perto da tela, para não atrasar o conteúdo da própria página
+    const liveFrames = document.querySelectorAll('iframe[data-src]');
+    if (liveFrames.length) {
+        const loadFrame = (frame) => {
+            frame.src = frame.dataset.src;
+            frame.removeAttribute('data-src');
+        };
+        const watchFrames = () => {
+            if (!('IntersectionObserver' in window)) {
+                liveFrames.forEach(loadFrame);
+                return;
             }
-        });
-
-        // Highlight "Início" quando no topo
-        if (scrollY < 100) {
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === 'index.html' || link.getAttribute('href') === '#home') {
-                    link.classList.add('active');
-                }
-            });
+            const frameObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    loadFrame(entry.target);
+                    observer.unobserve(entry.target);
+                });
+            }, { rootMargin: '400px 0px' });
+            liveFrames.forEach(frame => frameObserver.observe(frame));
+        };
+        if (document.readyState === 'complete') {
+            watchFrames();
+        } else {
+            window.addEventListener('load', watchFrames, { once: true });
         }
     }
-
-    window.addEventListener('scroll', highlightNavLink);
-    highlightNavLink(); // Executar na carga inicial
 
     // ===== LAZY LOADING DE IMAGENS =====
     const images = document.querySelectorAll('img[data-src]');
@@ -221,9 +292,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // ===== CONSOLE MESSAGE =====
-    console.log('%c🦉 OWLIN - Agência de Marketing Digital', 'color: #2E7D32; font-size: 20px; font-weight: bold;');
+    console.log('%c🦉 OWLIN - Agência de marketing digital', 'color: #2E7D32; font-size: 20px; font-weight: bold;');
     console.log('%cExcelência e calmaria em cada projeto', 'color: #FFC107; font-size: 14px;');
-    console.log('%cVisite: https://owlin.agency', 'color: #666; font-size: 12px;');
+    console.log('%cVisite: https://owlin.com.br', 'color: #666; font-size: 12px;');
 });
 
 // ===== SCROLL REVEAL ANIMATION =====
@@ -415,6 +486,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// Texto traduzido com reserva em português (i18n.js pode não estar na página)
+function textoTraduzido(key, fallback) {
+    return (typeof i18nText === 'function' && i18nText(key)) || fallback;
+}
+
 // Form submission with custom thank you popup
 document.addEventListener('DOMContentLoaded', function () {
     const forms = document.querySelectorAll('.contact-form-simple');
@@ -429,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Disable button and show loading
             submitButton.disabled = true;
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ' + textoTraduzido('form.sending', 'Enviando...');
 
             try {
                 const response = await fetch(form.action, {
@@ -443,13 +519,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (response.ok) {
                     // Show success popup
                     showThankYouPopup();
+                    // Avisa o tracking.js (evento generate_lead) só quando o envio deu certo
+                    form.dataset.trackSent = '1';
+                    document.dispatchEvent(new CustomEvent('owlin:lead', {
+                        detail: { form_location: location.pathname, service: formData.get('service') || '' }
+                    }));
                     // Reset form
                     form.reset();
                 } else {
                     throw new Error('Erro ao enviar formulário');
                 }
             } catch (error) {
-                alert('Ops! Houve um erro ao enviar sua mensagem. Por favor, tente novamente ou entre em contato pelo WhatsApp.');
+                alert(textoTraduzido('form.error', 'Não foi possível enviar sua mensagem. Tente de novo ou fale com a gente pelo WhatsApp.'));
             } finally {
                 // Re-enable button
                 submitButton.disabled = false;
@@ -468,10 +549,12 @@ function showThankYouPopup() {
             <div class="thank-you-icon">
                 <i class="fas fa-check-circle"></i>
             </div>
-            <h3>Mensagem Enviada!</h3>
-            <p>Obrigado pelo contato! Entraremos em contato em breve.</p>
+            <h3></h3>
+            <p></p>
         </div>
     `;
+    popup.querySelector('h3').textContent = textoTraduzido('form.sent.title', 'Mensagem enviada!');
+    popup.querySelector('p').textContent = textoTraduzido('form.sent.text', 'Obrigado pelo contato! Responderemos em breve.');
 
     document.body.appendChild(popup);
 

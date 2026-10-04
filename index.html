@@ -4,39 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OWLIN - Agência de Marketing Digital | Transforme seu Negócio</title>
+    <title>Agência de marketing digital, sites e tráfego pago | OWLIN</title>
     <meta name="description"
-        content="OWLIN - Agência de marketing digital especializada em soluções inovadoras para empresas. Excelência e calmaria em cada projeto.">
+        content="Agência de marketing digital desde 2019: sites que convertem, tráfego pago no Google, Meta e TikTok, redes sociais e branding. Peça seu orçamento.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://owlin.com.br/">
+    <meta name="theme-color" content="#2E7D32">
+
+    <!-- Open Graph / compartilhamento (WhatsApp, LinkedIn, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="OWLIN">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:url" content="https://owlin.com.br/">
+    <meta property="og:title" content="Agência de marketing digital, sites e tráfego pago | OWLIN">
+    <meta property="og:description"
+        content="Sites que convertem, tráfego pago, redes sociais e branding para o seu negócio crescer com estratégia. Excelência e calmaria em cada projeto.">
+    <meta property="og:image" content="https://owlin.com.br/img/og-owlin.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logo da OWLIN, agência de marketing digital">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Agência de marketing digital, sites e tráfego pago | OWLIN">
+    <meta name="twitter:description"
+        content="Sites que convertem, tráfego pago, redes sociais e branding para o seu negócio crescer com estratégia.">
+    <meta name="twitter:image" content="https://owlin.com.br/img/og-owlin.jpg">
 
     <!-- Favicon -->
     <link rel="icon" href="img/OWLIN.png" sizes="32x32">
     <link rel="apple-touch-icon" href="img/OWLIN.png">
 
-    <!-- Fonts -->
+    <!-- Conexões antecipadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Imagem do primeiro slide: começa a baixar antes do CSS terminar -->
+    <link rel="preload" as="image" fetchpriority="high"
+        href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop">
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <style>
+        /* Fonte do logo direto do arquivo, sem a folha de estilo extra que bloqueava a renderização */
         @font-face {
             font-family: 'Azonix';
-            src: url('https://db.onlinewebfonts.com/t/1e9e6a2e8f5704c3a3e3cc9c9e0e3e3e.woff2') format('woff2'),
-                url('https://db.onlinewebfonts.com/t/1e9e6a2e8f5704c3a3e3cc9c9e0e3e3e.woff') format('woff');
+            src: url('https://fonts.cdnfonts.com/s/16327/Azonix.woff') format('woff');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
         }
     </style>
-    <link href="https://fonts.cdnfonts.com/css/azonix" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome (carregado sem bloquear a renderização) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/carousel.css">
+
+    <!-- Links antigos da home de página única (ex.: /#contato) levam para as páginas novas -->
+    <script>
+        (function () {
+            var destinos = { '#sobre': '/sobre', '#processo': '/sobre#processo', '#servicos': '/servicos/', '#blog': '/blog', '#faq': '/contato#faq', '#contato': '/contato' };
+            var destino = destinos[location.hash];
+            if (destino) location.replace(destino);
+        })();
+    </script>
+
+    <!-- Dados estruturados (Google) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://owlin.com.br/#organization",
+                "name": "OWLIN",
+                "alternateName": "OWLIN - Agência de marketing digital",
+                "url": "https://owlin.com.br/",
+                "logo": "https://owlin.com.br/img/OWLIN.png",
+                "image": "https://owlin.com.br/img/og-owlin.jpg",
+                "description": "Agência de marketing digital e produtora audiovisual: criação de sites, tráfego pago, gestão de redes sociais, SEO, branding e produção audiovisual.",
+                "slogan": "Excelência e calmaria em cada projeto",
+                "foundingDate": "2019",
+                "taxID": "53.407.563/0001-65",
+                "email": "contato@owlin.com.br",
+                "telephone": "+55-11-97955-0970",
+                "areaServed": "BR",
+                "knowsLanguage": ["pt-BR", "en", "es"],
+                "sameAs": [
+                    "https://www.instagram.com/owlin.agency/",
+                    "https://www.tiktok.com/@owlin.agency",
+                    "https://www.youtube.com/@OWLINagency"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "sales",
+                    "telephone": "+55-11-97955-0970",
+                    "email": "contato@owlin.com.br",
+                    "availableLanguage": ["Portuguese", "English", "Spanish"]
+                },
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Serviços de marketing digital",
+                    "itemListElement": [
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Criação de site institucional e e-commerce", "url": "https://owlin.com.br/servicos/site-institucional" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO & conteúdo", "url": "https://owlin.com.br/servicos/seo" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tráfego pago", "url": "https://owlin.com.br/servicos/trafego-pago" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gestão de redes sociais", "url": "https://owlin.com.br/servicos/gestao-redes-sociais" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Branding & identidade visual", "url": "https://owlin.com.br/servicos/branding" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Produção audiovisual", "url": "https://owlin.com.br/servicos/producao-audiovisual" } }
+                    ]
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://owlin.com.br/#website",
+                "url": "https://owlin.com.br/",
+                "name": "OWLIN",
+                "inLanguage": "pt-BR",
+                "publisher": { "@id": "https://owlin.com.br/#organization" }
+            }
+        ]
+    }
+    </script>
+    <script src="/js/tracking.js" defer></script>
 </head>
 
 <body>
@@ -45,35 +148,45 @@
         <div class="container">
             <div class="logo">
                 <a href="/">
-                    <img src="img/OWLIN.png" alt="OWLIN - Agência de Marketing Digital">
+                    <img src="/img/owlin-logo.webp" alt="OWLIN - Agência de marketing digital" width="60" height="60">
                     <span class="logo-text">OWLIN</span>
                 </a>
             </div>
-            <nav class="nav-menu">
+            <nav class="nav-menu" id="menu-principal">
                 <ul>
-                    <li><a href="/" class="active" data-i18n="nav.home">Início</a></li>
-                    <li><a href="#sobre" data-i18n="nav.about">Sobre Nós</a></li>
-                    <li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
-                    <li><a href="/portfolio" data-i18n="nav.portfolio">Portfólio</a></li>
-                    <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+                    <li><a href="/" class="active" aria-current="page" data-i18n="nav.home">Início</a></li>
+                    <li><a href="/sobre" data-i18n="nav.about">Sobre nós</a></li>
+                    <li><a href="/servicos/" data-i18n="nav.services">Serviços</a></li>
+                    <li class="has-submenu">
+                        <a href="/portfolio" data-i18n="nav.portfolio">Portfólio</a>
+                        <button type="button" class="submenu-toggle" aria-expanded="false" aria-controls="submenu-portfolio" aria-label="Mostrar opções do portfólio" data-i18n-aria="nav.portfolio.toggle">
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="submenu" id="submenu-portfolio">
+                            <li><a href="/portfolio#videos"><i class="fas fa-play" aria-hidden="true"></i> <span data-i18n="nav.portfolio.videos">Vídeos</span></a></li>
+                            <li><a href="/portfolio#desenvolvimento-web"><i class="fas fa-laptop-code" aria-hidden="true"></i> <span data-i18n="nav.portfolio.web">Desenvolvimento web</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/blog" data-i18n="nav.blog">Blog</a></li>
+                    <li><a href="/contato" data-i18n="nav.contact">Contato</a></li>
                     <li class="lang-selector-wrapper">
-                        <button class="lang-btn active" onclick="changeLanguage('pt-BR')" title="Português">
-                            <img src="https://flagcdn.com/w20/br.png" alt="BR"> PT
+                        <button type="button" class="lang-btn active" data-lang="pt-BR" lang="pt-BR" aria-label="Português" aria-pressed="true" onclick="changeLanguage('pt-BR')" title="Português">
+                            <img src="https://flagcdn.com/w20/br.png" alt="" width="18" height="12"> PT
                         </button>
-                        <button class="lang-btn" onclick="changeLanguage('en')" title="English">
-                            <img src="https://flagcdn.com/w20/us.png" alt="US"> EN
+                        <button type="button" class="lang-btn" data-lang="en" lang="en" aria-label="English" aria-pressed="false" onclick="changeLanguage('en')" title="English">
+                            <img src="https://flagcdn.com/w20/us.png" alt="" width="18" height="12"> EN
                         </button>
-                        <button class="lang-btn" onclick="changeLanguage('es')" title="Español">
-                            <img src="https://flagcdn.com/w20/es.png" alt="ES"> ES
+                        <button type="button" class="lang-btn" data-lang="es" lang="es" aria-label="Español" aria-pressed="false" onclick="changeLanguage('es')" title="Español">
+                            <img src="https://flagcdn.com/w20/es.png" alt="" width="18" height="12"> ES
                         </button>
                     </li>
                 </ul>
             </nav>
-            <div class="mobile-menu-btn">
+            <button type="button" class="mobile-menu-btn" aria-label="Abrir menu" data-i18n-aria="nav.menu" aria-expanded="false" aria-controls="menu-principal">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </header>
 
@@ -86,10 +199,11 @@
         <div class="floating-shape square" style="bottom: 40%; left: 8%;"></div>
     </div>
 
+    <main>
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" aria-label="Destaques da OWLIN" data-i18n-aria="hero.label">
         <div class="hero-slider">
-            <!-- Slide 1: Transforme seu Negócio Digital -->
+            <!-- Slide 1: Marketing digital que gera resultados (único H1 da página) -->
             <div class="slide active" data-slide="0">
                 <div class="slide-bg"
                     style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop')">
@@ -98,120 +212,122 @@
                 <div class="slide-content">
                     <div class="container">
                         <div class="hero-text">
-                            <h1 class="animate-fade-in-up delay-100" data-i18n="hero.title1">Transforme seu Negócio com Marketing Digital</h1>
-                            <p class="animate-fade-in-up delay-200" data-i18n="hero.desc1">Estratégias personalizadas que geram resultados
-                                reais. Aumente suas vendas, fortaleça sua marca e conquiste novos clientes com
-                                excelência e calmaria em cada projeto.</p>
-                            <div class="hero-buttons animate-fade-in-up delay-300">
-                                <a href="#contato" class="btn btn-primary">
-                                    <i class="fas fa-rocket"></i> <span data-i18n="hero.cta1">Começar Agora</span>
-                                </a>
-                                <a href="#servicos" class="btn btn-secondary">
-                                    <i class="fas fa-arrow-down"></i> <span data-i18n="hero.cta2">Nossos Serviços</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 2: Estratégias que Geram Vendas -->
-            <div class="slide" data-slide="1">
-                <div class="slide-bg"
-                    style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop')">
-                </div>
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="container">
-                        <div class="hero-text">
-                            <h1 class="animate-fade-in-up delay-100" data-i18n="hero.title2">Estratégias que Geram Vendas Reais</h1>
-                            <p class="animate-fade-in-up delay-200" data-i18n="hero.desc2">Campanhas de tráfego pago otimizadas, SEO
-                                estratégico e automação de marketing. Transformamos investimento em resultados
-                                mensuráveis e crescimento sustentável.</p>
-                            <div class="hero-buttons animate-fade-in-up delay-300">
-                                <a href="/portfolio" class="btn btn-primary">
-                                    <i class="fas fa-chart-line"></i> <span data-i18n="hero.cta3">Ver Cases de Sucesso</span>
-                                </a>
-                                <a href="#contato" class="btn btn-secondary">
-                                    <i class="fas fa-comments"></i> <span data-i18n="hero.cta4">Falar com Especialista</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 3: Sua Marca nas Redes Sociais -->
-            <div class="slide" data-slide="2">
-                <div class="slide-bg"
-                    style="background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2000&auto=format&fit=crop')">
-                </div>
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="container">
-                        <div class="hero-text">
-                            <h1 class="animate-fade-in-up delay-100" data-i18n="hero.title3">Sua Marca Forte nas Redes Sociais</h1>
-                            <p class="animate-fade-in-up delay-200" data-i18n="hero.desc3">Gestão completa de redes sociais com conteúdo
-                                estratégico, design impactante e engajamento autêntico. Construa uma comunidade fiel e
-                                aumente sua presença digital.</p>
-                            <div class="hero-buttons animate-fade-in-up delay-300">
-                                <a href="#servicos" class="btn btn-primary">
-                                    <i class="fab fa-instagram"></i> <span data-i18n="hero.cta5">Gestão de Redes</span>
-                                </a>
-                                <a href="#contato" class="btn btn-secondary">
-                                    <i class="fas fa-calendar-check"></i> <span data-i18n="hero.cta6">Agendar Reunião</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 4: Sites que Convertem -->
-            <div class="slide" data-slide="3">
-                <div class="slide-bg"
-                    style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000&auto=format&fit=crop')">
-                </div>
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="container">
-                        <div class="hero-text">
-                            <h1 class="animate-fade-in-up delay-100" data-i18n="hero.title4">Sites que Convertem Visitantes em Clientes</h1>
-                            <p class="animate-fade-in-up delay-200" data-i18n="hero.desc4">Desenvolvimento de sites responsivos, landing pages
-                                de alta conversão e e-commerce completo. Design moderno, performance otimizada e
-                                experiência do usuário impecável.</p>
-                            <div class="hero-buttons animate-fade-in-up delay-300">
-                                <a href="#servicos" class="btn btn-primary">
-                                    <i class="fas fa-laptop-code"></i> <span data-i18n="hero.cta7">Criar Meu Site</span>
-                                </a>
-                                <a href="/portfolio" class="btn btn-secondary">
-                                    <i class="fas fa-eye"></i> <span data-i18n="hero.cta8">Ver Portfólio</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 5: Marketing com Propósito -->
-            <div class="slide" data-slide="4">
-                <div class="slide-bg"
-                    style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop')">
-                </div>
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="container">
-                        <div class="hero-text">
-                            <h1 class="animate-fade-in-up delay-100" data-i18n="hero.title5">Marketing Digital com Propósito e Resultados</h1>
-                            <p class="animate-fade-in-up delay-200" data-i18n="hero.desc5">Mais que uma agência, somos seu parceiro
-                                estratégico. Trabalhamos com transparência, dedicação e foco total no crescimento do seu
+                            <h1 class="animate-fade-in-up delay-100">
+                                <span data-i18n="hero.title1">Marketing digital que gera</span>
+                                <span class="hero-rotator" data-rotate="hero.rotate1">mais clientes</span>
+                            </h1>
+                            <p class="animate-fade-in-up delay-200" data-i18n="hero.desc1">Sites, tráfego pago, redes sociais e
+                                branding trabalhando juntos para atrair, convencer e converter o cliente ideal do seu
                                 negócio. Excelência e calmaria em cada projeto.</p>
                             <div class="hero-buttons animate-fade-in-up delay-300">
-                                <a href="#sobre" class="btn btn-primary">
-                                    <i class="fas fa-users"></i> <span data-i18n="hero.cta9">Conhecer a OWLIN</span>
+                                <a href="/contato" class="btn btn-primary">
+                                    <i class="fas fa-rocket" aria-hidden="true"></i> <span data-i18n="hero.cta1">Quero um orçamento</span>
                                 </a>
-                                <a href="#contato" class="btn btn-secondary">
-                                    <i class="fas fa-handshake"></i> <span data-i18n="hero.cta10">Ser Nosso Cliente</span>
+                                <a href="/servicos/" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-right" aria-hidden="true"></i> <span data-i18n="hero.cta2">Conhecer serviços</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Tráfego pago (imagem carregada depois, via data-bg) -->
+            <div class="slide" data-slide="1">
+                <div class="slide-bg"
+                    data-bg="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="hero-text">
+                            <h2 class="hero-title animate-fade-in-up delay-100" data-i18n="hero.title2">Anúncios que viram vendas, não&nbsp;só cliques</h2>
+                            <p class="animate-fade-in-up delay-200" data-i18n="hero.desc2">Campanhas no Google, Meta e TikTok Ads
+                                com gestores certificados, metas claras e relatórios que mostram o retorno de cada real
+                                investido.</p>
+                            <div class="hero-buttons animate-fade-in-up delay-300">
+                                <a href="/portfolio" class="btn btn-primary">
+                                    <i class="fas fa-chart-line" aria-hidden="true"></i> <span data-i18n="hero.cta3">Ver projetos</span>
+                                </a>
+                                <a href="/contato" class="btn btn-secondary">
+                                    <i class="fas fa-comments" aria-hidden="true"></i> <span data-i18n="hero.cta4">Falar com especialista</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Redes sociais -->
+            <div class="slide" data-slide="2">
+                <div class="slide-bg"
+                    data-bg="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2000&auto=format&fit=crop">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="hero-text">
+                            <h2 class="hero-title animate-fade-in-up delay-100" data-i18n="hero.title3">Redes sociais que engajam e vendem</h2>
+                            <p class="animate-fade-in-up delay-200" data-i18n="hero.desc3">Planejamento, design e conteúdo
+                                estratégico com constância e a cara do seu negócio, para transformar seguidores em
+                                clientes fiéis.</p>
+                            <div class="hero-buttons animate-fade-in-up delay-300">
+                                <a href="/servicos/gestao-redes-sociais" class="btn btn-primary">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span data-i18n="hero.cta5">Gestão de redes</span>
+                                </a>
+                                <a href="/contato" class="btn btn-secondary">
+                                    <i class="fas fa-calendar-check" aria-hidden="true"></i> <span data-i18n="hero.cta6">Agendar reunião</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Sites -->
+            <div class="slide" data-slide="3">
+                <div class="slide-bg"
+                    data-bg="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000&auto=format&fit=crop">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="hero-text">
+                            <h2 class="hero-title animate-fade-in-up delay-100" data-i18n="hero.title4">Sites que vendem por você 24 horas por dia</h2>
+                            <p class="animate-fade-in-up delay-200" data-i18n="hero.desc4">Sites rápidos, responsivos e prontos
+                                para o Google, com WhatsApp integrado e foco total em transformar visitas em contatos.</p>
+                            <div class="hero-buttons animate-fade-in-up delay-300">
+                                <a href="/servicos/site-institucional" class="btn btn-primary">
+                                    <i class="fas fa-laptop-code" aria-hidden="true"></i> <span data-i18n="hero.cta7">Criar meu site</span>
+                                </a>
+                                <a href="/portfolio" class="btn btn-secondary">
+                                    <i class="fas fa-eye" aria-hidden="true"></i> <span data-i18n="hero.cta8">Ver portfólio</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Parceria -->
+            <div class="slide" data-slide="4">
+                <div class="slide-bg"
+                    data-bg="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="hero-text">
+                            <h2 class="hero-title animate-fade-in-up delay-100" data-i18n="hero.title5">Um parceiro, não&nbsp;só um fornecedor</h2>
+                            <p class="animate-fade-in-up delay-200" data-i18n="hero.desc5">Trabalhamos lado a lado com você, com
+                                transparência, estratégia e foco total nos resultados do seu negócio. Excelência e
+                                calmaria em cada projeto.</p>
+                            <div class="hero-buttons animate-fade-in-up delay-300">
+                                <a href="/sobre" class="btn btn-primary">
+                                    <i class="fas fa-users" aria-hidden="true"></i> <span data-i18n="hero.cta9">Conhecer a OWLIN</span>
+                                </a>
+                                <a href="/contato" class="btn btn-secondary">
+                                    <i class="fas fa-handshake" aria-hidden="true"></i> <span data-i18n="hero.cta10">Ser nosso cliente</span>
                                 </a>
                             </div>
                         </div>
@@ -220,613 +336,232 @@
             </div>
         </div>
 
-
+        <!-- Seletor de destaques -->
+        <div class="hero-nav">
+            <div class="container">
+                <div class="hero-tabs" role="group" aria-label="Escolher destaque" data-i18n-aria="hero.nav">
+                    <button type="button" class="hero-tab active" aria-current="true">
+                        <span class="hero-tab-progress" aria-hidden="true"></span>
+                        <span class="hero-tab-num" aria-hidden="true">01</span>
+                        <span class="hero-tab-label" data-i18n="hero.tab1">Marketing</span>
+                    </button>
+                    <button type="button" class="hero-tab" aria-current="false">
+                        <span class="hero-tab-progress" aria-hidden="true"></span>
+                        <span class="hero-tab-num" aria-hidden="true">02</span>
+                        <span class="hero-tab-label" data-i18n="hero.tab2">Tráfego pago</span>
+                    </button>
+                    <button type="button" class="hero-tab" aria-current="false">
+                        <span class="hero-tab-progress" aria-hidden="true"></span>
+                        <span class="hero-tab-num" aria-hidden="true">03</span>
+                        <span class="hero-tab-label" data-i18n="hero.tab3">Redes sociais</span>
+                    </button>
+                    <button type="button" class="hero-tab" aria-current="false">
+                        <span class="hero-tab-progress" aria-hidden="true"></span>
+                        <span class="hero-tab-num" aria-hidden="true">04</span>
+                        <span class="hero-tab-label" data-i18n="hero.tab4">Sites</span>
+                    </button>
+                    <button type="button" class="hero-tab" aria-current="false">
+                        <span class="hero-tab-progress" aria-hidden="true"></span>
+                        <span class="hero-tab-num" aria-hidden="true">05</span>
+                        <span class="hero-tab-label" data-i18n="hero.tab5">Parceria</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Sobre Section -->
-    <section class="sobre" id="sobre">
+    <!-- Faixa de confiança -->
+    <div class="trust-strip">
         <div class="container">
-            <div class="section-header">
-                <h2 class="scroll-reveal" data-i18n="about.title">Conheça a OWLIN</h2>
-                <p class="scroll-reveal delay-100" data-i18n="about.subtitle">Mais que uma agência, somos seu parceiro estratégico de crescimento
-                </p>
-            </div>
+            <ul class="trust-grid">
+                <li class="trust-item scroll-reveal">
+                    <div class="trust-icon" aria-hidden="true"><i class="fas fa-calendar-check"></i></div>
+                    <div class="trust-text">
+                        <strong data-i18n="trust.1.title">Desde 2019</strong>
+                        <span data-i18n="trust.1.desc">no mercado digital</span>
+                    </div>
+                </li>
+                <li class="trust-item scroll-reveal delay-100">
+                    <div class="trust-icon" aria-hidden="true"><i class="fas fa-certificate"></i></div>
+                    <div class="trust-text">
+                        <strong data-i18n="trust.2.title">Gestores certificados</strong>
+                        <span data-i18n="trust.2.desc">Meta, Google e TikTok Ads</span>
+                    </div>
+                </li>
+                <li class="trust-item scroll-reveal delay-200">
+                    <div class="trust-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></div>
+                    <div class="trust-text">
+                        <strong data-i18n="trust.3.title">Soluções 360°</strong>
+                        <span data-i18n="trust.3.desc">marketing, web e audiovisual</span>
+                    </div>
+                </li>
+                <li class="trust-item scroll-reveal delay-300">
+                    <div class="trust-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></div>
+                    <div class="trust-text">
+                        <strong data-i18n="trust.4.title">Atendimento ágil</strong>
+                        <span data-i18n="trust.4.desc">direto pelo WhatsApp</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-            <div class="sobre-content">
-                <div class="sobre-text scroll-reveal">
-                    <h3 data-i18n="about.who">Quem Somos</h3>
+    <!-- Resumo do Sobre (a página completa fica em /sobre) -->
+    <section class="home-about" id="sobre-resumo">
+        <div class="container">
+            <div class="home-about-grid">
+                <div class="home-about-text scroll-reveal">
+                    <h2 data-i18n="about.title">Conheça a OWLIN</h2>
+                    <p class="home-about-lead" data-i18n="about.subtitle">Mais que uma agência, somos seu parceiro estratégico de crescimento</p>
                     <p data-i18n="about.text1">Na OWLIN, não apenas criamos presença digital; nós a posicionamos. Atuamos desde 2019 e somos a
                         fusão perfeita entre uma agência de marketing digital completa e uma produtora audiovisual de
                         excelência, com soluções 360° para marcas, empresas, infoprodutores, profissionais liberais,
                         igrejas e podcasts que buscam liderança e autoridade online.</p>
-
-                    <p data-i18n="about.text2">Nossa essência está na <strong>VISÃO QUE POSICIONA</strong>. Com o olhar aguçado da coruja,
-                        agimos com precisão e estratégia para:</p>
-
-                    <p><strong data-i18n="about.text3.title">REBRANDING E IDENTIDADE VISUAL:</strong> <span data-i18n="about.text3">Somos referência na criação de identidades
-                        visuais impactantes e estratégias de rebranding que reconectam sua marca ao futuro, garantindo
-                        uma imagem profissional e memorável.</span></p>
-
-                    <p><strong data-i18n="about.text4.title">ESTRATÉGIA DIGITAL INTEGRADA:</strong> <span data-i18n="about.text4">Conectamos seu propósito, estratégia e
-                        performance. Nossa equipe conta com gestores de tráfego pago certificados (Meta, Google,
-                        TikTok), que impulsionam resultados reais, além de especialistas em social media (Instagram,
-                        Facebook, TikTok) para engajar e construir comunidades.</span></p>
-
-                    <p><strong data-i18n="about.text5.title">PRODUÇÃO AUDIOVISUAL DE ALTO NÍVEL:</strong> <span data-i18n="about.text5">Elevamos sua comunicação com fotografia
-                        profissional, videomaker para conteúdo estratégico e transmissões ao vivo de qualidade que
-                        capturam a atenção e contam sua história.</span></p>
-
-                    <p><strong data-i18n="about.text6.title">DESENVOLVIMENTO WEB:</strong> <span data-i18n="about.text6">Criamos websites corporativos e landing pages otimizadas,
-                        transformando visitantes em clientes com design intuitivo e foco em conversão.</span></p>
-
-                    <p><strong data-i18n="about.text7.title">CONSULTORIA ESPECIALIZADA:</strong> <span data-i18n="about.text7">Oferecemos orientação estratégica e personalizada,
-                        com foco em resultados, para que cada projeto alcance seu máximo potencial.</span></p>
-
-                    <p data-i18n="about.text8">Na OWLIN, cada projeto é uma oportunidade de demonstrar nossa excelência criativa e técnica.
-                        Transformamos ideias em soluções prontas para impactar e consolidar sua marca no cenário
-                        digital.</p>
-
-                    <p data-i18n="about.text9"><strong>Pronto para ter uma VISÃO QUE POSICIONA sua marca no lugar certo?</strong> Conheça nossos
-                        cases e descubra como podemos fazer a diferença para você!</p>
+                    <a href="/sobre" class="btn btn-outline">
+                        <span data-i18n="home.about.cta">Sobre nós e como trabalhamos</span> <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
                 </div>
-
-                <div class="sobre-image-side scroll-reveal delay-200">
+                <div class="home-about-image scroll-reveal delay-200">
                     <img src="https://images.unsplash.com/photo-1628126907372-761f54441c1b?q=80&w=800&auto=format&fit=crop"
-                        alt="OWLIN Marketing Digital">
-                </div>
-            </div>
-
-            <!-- Valores -->
-            <div class="sobre-valores">
-                <h3 class="scroll-reveal" data-i18n="about.values">Nossos Valores</h3>
-                <div class="valores-grid">
-                    <div class="valor-card scroll-reveal delay-100">
-                        <div class="valor-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h4 data-i18n="value.excellence">Excelência</h4>
-                        <p data-i18n="value.excellence.desc">Com um olhar minucioso, buscamos a perfeição em cada detalhe e entregamos o mais alto padrão
-                            em cada projeto, garantindo resultados que superam expectativas.</p>
-                    </div>
-
-                    <div class="valor-card scroll-reveal delay-200">
-                        <div class="valor-icon">
-                            <i class="fas fa-chess"></i>
-                        </div>
-                        <h4 data-i18n="value.strategy">Estratégia</h4>
-                        <p data-i18n="value.strategy.desc">Guiados por uma visão aguçada, planejamos cada passo com inteligência e organização. Nosso
-                            processo é focado, eficiente e desenhado para gerar impacto sem estresse.</p>
-                    </div>
-
-                    <div class="valor-card scroll-reveal delay-300">
-                        <div class="valor-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h4 data-i18n="value.transparency">Transparência</h4>
-                        <p data-i18n="value.transparency.desc">Acreditamos na comunicação clara, honesta e contínua. Sem surpresas, construímos relações de
-                            confiança baseadas na verdade e no comprometimento mútuo.</p>
-                    </div>
-
-                    <div class="valor-card scroll-reveal delay-400">
-                        <div class="valor-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h4 data-i18n="value.innovation">Inovação</h4>
-                        <p data-i18n="value.innovation.desc">Sempre à frente, exploramos tendências e tecnologias de ponta. Nossa criatividade se alia à
-                            expertise para desenvolver soluções inovadoras que posicionam sua marca no futuro.</p>
-                    </div>
-
-                    <div class="valor-card scroll-reveal delay-500">
-                        <div class="valor-icon">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h4 data-i18n="value.focus">Foco</h4>
-                        <p data-i18n="value.focus.desc">Nosso propósito é o crescimento do seu negócio. Com base em métricas e análise de ROI,
-                            garantimos que cada investimento se traduza em desempenho e impacto tangível.</p>
-                    </div>
-
-                    <div class="valor-card scroll-reveal delay-600">
-                        <div class="valor-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4 data-i18n="value.partnership">Parceria</h4>
-                        <p data-i18n="value.partnership.desc">Seu sucesso é o nosso maior objetivo. Trabalhamos lado a lado, com dedicação e
-                            comprometimento, como verdadeiros parceiros estratégicos que celebram cada conquista.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Estatísticas -->
-            <!-- <div class="sobre-stats scroll-reveal">
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3 class="stat-number" data-target="7">0</h3>
-                    <p>Anos de Experiência</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-smile"></i>
-                    </div>
-                    <h3 class="stat-number" data-target="150">0</h3>
-                    <p>Clientes Satisfeitos</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3 class="stat-number" data-target="500">0</h3>
-                    <p>Projetos Entregues</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3 class="stat-number" data-target="98">0</h3>
-                    <p>% de Satisfação</p>
-                </div>
-            </div> -->
-        </div>
-    </section>
-
-    <!-- Serviços Section -->
-    <section class="servicos" id="servicos">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="scroll-reveal" data-i18n="services.title">Nossos Serviços</h2>
-                <p class="scroll-reveal delay-100" data-i18n="services.subtitle">Soluções completas de marketing digital para transformar seu negócio
-                </p>
-            </div>
-            <div class="servicos-grid">
-                <div class="servico-card scroll-reveal delay-100" data-service="marketing">
-                    <div class="servico-icon-wrapper">
-                        <div class="servico-icon">
-                            <i class="fas fa-bullhorn"></i>
-                        </div>
-                    </div>
-                    <h3 data-i18n="service.marketing">Marketing Digital Estratégico</h3>
-                    <p class="servico-description" data-i18n="service.marketing.desc">Estratégias completas e personalizadas de marketing digital para
-                        aumentar sua presença online, conquistar novos clientes e gerar resultados consistentes e
-                        mensuráveis.</p>
-                    <ul class="servico-features">
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.planning">Planejamento Estratégico</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.market">Análise de Mercado</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.personas">Definição de Personas</span></li>
-                    </ul>
-                    <a href="servicos/marketing-digital" class="btn-details"><span data-i18n="services.learnmore">Saiba Mais</span> <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="servico-card scroll-reveal delay-200" data-service="social">
-                    <div class="servico-icon-wrapper">
-                        <div class="servico-icon">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                    </div>
-                    <h3 data-i18n="service.social">Gestão de Redes Sociais</h3>
-                    <p class="servico-description" data-i18n="service.social.desc">Criação de conteúdo estratégico, planejamento editorial completo e
-                        gestão profissional das suas redes sociais para engajar seu público e construir uma comunidade
-                        fiel.</p>
-                    <ul class="servico-features">
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.content">Criação de Conteúdo</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.design">Design de Posts</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.community">Gestão de Comunidade</span></li>
-                    </ul>
-                    <a href="servicos/gestao-redes-sociais" class="btn-details"><span data-i18n="services.learnmore">Saiba Mais</span> <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="servico-card scroll-reveal delay-300" data-service="ads">
-                    <div class="servico-icon-wrapper">
-                        <div class="servico-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                    </div>
-                    <h3 data-i18n="service.ads">Tráfego Pago</h3>
-                    <p class="servico-description" data-i18n="service.ads.desc">Campanhas otimizadas no Google Ads, Meta Ads (Facebook/Instagram) e
-                        TikTok Ads para
-                        gerar leads qualificados, aumentar suas vendas e maximizar o retorno sobre investimento.</p>
-                    <ul class="servico-features">
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.google">Google Ads</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.meta">Meta Ads (Facebook/Instagram)</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.tiktok">TikTok Ads</span></li>
-                    </ul>
-                    <a href="servicos/trafego-pago" class="btn-details"><span data-i18n="services.learnmore">Saiba Mais</span> <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="servico-card scroll-reveal delay-100" data-service="web">
-                    <div class="servico-icon-wrapper">
-                        <div class="servico-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                    </div>
-                    <h3 data-i18n="service.web">Desenvolvimento Web & E-commerce</h3>
-                    <p class="servico-description" data-i18n="service.web.desc">Sites responsivos, landing pages de alta conversão e e-commerce
-                        completo desenvolvidos com foco em performance, experiência do usuário e resultados de vendas.
-                    </p>
-                    <ul class="servico-features">
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.sites">Sites Institucionais</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.landing">Landing Pages</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.stores">Lojas Virtuais</span></li>
-                    </ul>
-                    <a href="servicos/desenvolvimento-web" class="btn-details"><span data-i18n="services.learnmore">Saiba Mais</span> <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="servico-card scroll-reveal delay-200" data-service="seo">
-                    <div class="servico-icon-wrapper">
-                        <div class="servico-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                    </div>
-                    <h3 data-i18n="service.seo">SEO & Conteúdo</h3>
-                    <p class="servico-description" data-i18n="service.seo.desc">Otimização para mecanismos de busca e produção de conteúdo
-                        estratégico para posicionar sua marca no topo do Google e atrair tráfego orgânico qualificado.
-                    </p>
-                    <ul class="servico-features">
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.seo">SEO On-Page e Off-Page</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.contentmkt">Marketing de Conteúdo</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.blog">Blog Corporativo</span></li>
-                    </ul>
-                    <a href="servicos/seo-conteudo" class="btn-details"><span data-i18n="services.learnmore">Saiba Mais</span> <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="servico-card scroll-reveal delay-300" data-service="branding">
-                    <div class="servico-icon-wrapper">
-                        <div class="servico-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                    </div>
-                    <h3 data-i18n="service.branding">Branding & Identidade Visual</h3>
-                    <p class="servico-description" data-i18n="service.branding.desc">Criação e desenvolvimento de identidade visual completa, naming,
-                        posicionamento de marca e estratégias para fortalecer sua presença no mercado.</p>
-                    <ul class="servico-features">
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.logo">Criação de Logo</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.brand">Manual de Marca</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.positioning">Posicionamento</span></li>
-                    </ul>
-                    <a href="servicos/branding" class="btn-details"><span data-i18n="services.learnmore">Saiba Mais</span> <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- <div class="servico-card scroll-reveal delay-100" data-service="email">
-                    <div class="servico-icon-wrapper">
-                        <div class="servico-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                    </div>
-                    <h3>Email Marketing & Automação</h3>
-                    <p class="servico-description">Campanhas de email marketing segmentadas e automação de marketing
-                        para nutrir leads, aumentar conversões e manter relacionamento com seus clientes.</p>
-                    <ul class="servico-features">
-                        <li><i class="fas fa-check"></i> Campanhas de Email</li>
-                        <li><i class="fas fa-check"></i> Automação de Marketing</li>
-                        <li><i class="fas fa-check"></i> Nutrição de Leads</li>
-                    </ul>
-                    <button class="btn-details">Saiba Mais <i class="fas fa-arrow-right"></i></button>
-                </div> -->
-
-                <div class="servico-card scroll-reveal delay-200" data-service="audiovisual">
-                    <div class="servico-icon-wrapper">
-                        <div class="servico-icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                    </div>
-                    <h3 data-i18n="service.audiovisual">Produção Audiovisual</h3>
-                    <p class="servico-description" data-i18n="service.audiovisual.desc">Sessões fotográficas profissionais e vídeos de eventos como
-                        casamentos,
-                        festas, eventos corporativos e muito mais para eternizar seus momentos especiais.</p>
-                    <ul class="servico-features">
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.photo">Fotografia Profissional</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.video">Vídeos de Eventos</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.coverage">Cobertura Completa</span></li>
-                    </ul>
-                    <a href="servicos/producao-audiovisual" class="btn-details"><span data-i18n="services.learnmore">Saiba Mais</span> <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="servico-card scroll-reveal delay-300" data-service="analytics">
-                    <div class="servico-icon-wrapper">
-                        <div class="servico-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <h3 data-i18n="service.analytics">Analytics & Business Intelligence</h3>
-                    <p class="servico-description" data-i18n="service.analytics.desc">Monitoramento avançado, análise de métricas e relatórios inteligentes
-                        para otimizar suas estratégias e maximizar o retorno sobre investimento.</p>
-                    <ul class="servico-features">
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.analytics">Google Analytics</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.dashboards">Dashboards Personalizados</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.reports">Relatórios de Performance</span></li>
-                    </ul>
-                    <a href="servicos/analytics" class="btn-details"><span data-i18n="services.learnmore">Saiba Mais</span> <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="servico-card scroll-reveal delay-100" data-service="consultoria">
-                    <div class="servico-icon-wrapper">
-                        <div class="servico-icon">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                    </div>
-                    <h3 data-i18n="service.consulting">Consultoria Digital</h3>
-                    <p class="servico-description" data-i18n="service.consulting.desc">Consultoria especializada em marketing digital, análise de processos,
-                        diagnóstico de oportunidades e desenvolvimento de estratégias personalizadas de crescimento.</p>
-                    <ul class="servico-features">
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.diagnostic">Diagnóstico Digital</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.action">Plano de Ação</span></li>
-                        <li><i class="fas fa-check"></i> <span data-i18n="feature.mentoring">Mentoria Estratégica</span></li>
-                    </ul>
-                    <a href="servicos/consultoria-digital" class="btn-details"><span data-i18n="services.learnmore">Saiba Mais</span> <i
-                            class="fas fa-arrow-right"></i></a>
+                        alt="Coruja de olhar atento, símbolo da OWLIN" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Timeline/Processo Section -->
-    <section class="processo" id="processo">
+    <!-- Serviços em resumo (a página completa fica em /servicos/) -->
+    <section class="home-services" id="servicos-resumo">
         <div class="container">
             <div class="section-header">
-                <h2 class="scroll-reveal" data-i18n="process.title">Nosso Processo de Trabalho</h2>
-                <p class="scroll-reveal delay-100" data-i18n="process.subtitle">Um método comprovado para transformar seu negócio</p>
+                <h2 class="scroll-reveal" data-i18n="services.title">Nossos serviços</h2>
+                <p class="scroll-reveal delay-100" data-i18n="services.subtitle">Tudo o que o seu negócio precisa para ser encontrado,
+                    lembrado e escolhido, em um só lugar</p>
             </div>
 
-            <div class="timeline">
-                <div class="timeline-line"></div>
+            <div class="services-mini-grid">
+                <a class="service-mini-card scroll-reveal" href="/servicos/gestao-redes-sociais">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <h3 data-i18n="service.social">Gestão de redes sociais</h3>
+                    <p data-i18n="portfolio.cta.social.desc">Conteúdo estratégico que engaja e converte</p>
+                </a>
+                <a class="service-mini-card scroll-reveal delay-100" href="/servicos/trafego-pago">
+                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                    <h3 data-i18n="service.ads">Tráfego pago</h3>
+                    <p data-i18n="portfolio.cta.ads.desc">Campanhas otimizadas no Google, Meta e TikTok Ads</p>
+                </a>
+                <a class="service-mini-card scroll-reveal delay-200" href="/servicos/site-institucional">
+                    <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                    <h3 data-i18n="service.web">Desenvolvimento web & e-commerce</h3>
+                    <p data-i18n="portfolio.cta.web.desc">Sites modernos, responsivos e otimizados para conversão</p>
+                </a>
+                <a class="service-mini-card scroll-reveal" href="/servicos/seo">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <h3 data-i18n="service.seo">SEO & conteúdo</h3>
+                    <p data-i18n="svc.seo.short">Conteúdo e otimização para aparecer no topo do Google</p>
+                </a>
+                <a class="service-mini-card scroll-reveal delay-100" href="/servicos/branding">
+                    <i class="fas fa-palette" aria-hidden="true"></i>
+                    <h3 data-i18n="service.branding">Branding & identidade visual</h3>
+                    <p data-i18n="portfolio.cta.branding.desc">Identidade visual que destaca sua marca no mercado</p>
+                </a>
+                <a class="service-mini-card scroll-reveal delay-200" href="/servicos/producao-audiovisual">
+                    <i class="fas fa-video" aria-hidden="true"></i>
+                    <h3 data-i18n="service.audiovisual">Produção audiovisual</h3>
+                    <p data-i18n="portfolio.cta.audiovisual.desc">Fotos e vídeos profissionais para sua comunicação</p>
+                </a>
+            </div>
 
-                <div class="timeline-step scroll-reveal delay-100" data-step="1">
-                    <div class="step-number">01</div>
-                    <div class="step-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 data-i18n="process.step1">Descoberta</h3>
-                        <p data-i18n="process.step1.desc">Entendemos profundamente seu negócio, objetivos, público-alvo e desafios atuais.</p>
-                        <ul class="step-deliverables">
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step1.item1">Reunião de Briefing</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step1.item2">Análise de Mercado</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step1.item3">Definição de Personas</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-step scroll-reveal delay-200" data-step="2">
-                    <div class="step-number">02</div>
-                    <div class="step-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 data-i18n="process.step2">Estratégia</h3>
-                        <p data-i18n="process.step2.desc">Desenvolvemos um plano estratégico personalizado com metas claras e KPIs definidos.</p>
-                        <ul class="step-deliverables">
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step2.item1">Plano de Marketing</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step2.item2">Definição de Metas</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step2.item3">Cronograma de Ações</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-step scroll-reveal delay-300" data-step="3">
-                    <div class="step-number">03</div>
-                    <div class="step-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 data-i18n="process.step3">Criação</h3>
-                        <p data-i18n="process.step3.desc">Produzimos todo o conteúdo, design e materiais necessários para executar a estratégia.</p>
-                        <ul class="step-deliverables">
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step3.item1">Criação de Conteúdo</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step3.item2">Design de Materiais</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step3.item3">Desenvolvimento Técnico</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-step scroll-reveal delay-400" data-step="4">
-                    <div class="step-number">04</div>
-                    <div class="step-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 data-i18n="process.step4">Implementação</h3>
-                        <p data-i18n="process.step4.desc">Colocamos tudo em prática com execução impecável e atenção aos detalhes.</p>
-                        <ul class="step-deliverables">
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step4.item1">Lançamento de Campanhas</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step4.item2">Publicação de Conteúdo</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step4.item3">Ativação de Canais</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-step scroll-reveal delay-500" data-step="5">
-                    <div class="step-number">05</div>
-                    <div class="step-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 data-i18n="process.step5">Otimização</h3>
-                        <p data-i18n="process.step5.desc">Monitoramos resultados e fazemos ajustes contínuos para maximizar performance.</p>
-                        <ul class="step-deliverables">
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step5.item1">Análise de Métricas</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step5.item2">Testes A/B</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step5.item3">Ajustes Estratégicos</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-step scroll-reveal delay-600" data-step="6">
-                    <div class="step-number">06</div>
-                    <div class="step-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 data-i18n="process.step6">Resultados</h3>
-                        <p data-i18n="process.step6.desc">Entregamos relatórios detalhados e celebramos o crescimento do seu negócio.</p>
-                        <ul class="step-deliverables">
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step6.item1">Relatórios Mensais</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step6.item2">Reuniões de Resultados</span></li>
-                            <li><i class="fas fa-check"></i> <span data-i18n="process.step6.item3">Planejamento Futuro</span></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="section-cta scroll-reveal">
+                <a href="/servicos/" class="btn btn-outline">
+                    <span data-i18n="home.services.all">Ver todos os serviços</span> <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section class="blog" id="blog">
+    <!-- Projetos no ar -->
+    <section class="projetos" id="projetos">
         <div class="container">
             <div class="section-header">
-                <h2 class="scroll-reveal" data-i18n="blog.title">Blog & Conteúdo</h2>
-                <p class="scroll-reveal delay-100" data-i18n="blog.subtitle">Dicas, tendências e insights sobre marketing digital</p>
+                <h2 class="scroll-reveal" data-i18n="projects.title">Projetos reais, no ar</h2>
+                <p class="scroll-reveal delay-100" data-i18n="projects.subtitle">Alguns sites que desenvolvemos para negócios de
+                    diferentes segmentos</p>
             </div>
 
-            <div class="blog-grid">
-                <article class="blog-card scroll-reveal delay-100">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
-                            alt="Marketing Digital">
-                        <span class="blog-category" data-i18n="blog.category.marketing">Marketing Digital</span>
+            <div class="projects-grid">
+                <a class="project-card scroll-reveal" href="https://daviflores.com.br/" target="_blank" rel="noopener">
+                    <div class="project-shot">
+                        <img src="img/portfolio/daviflores.webp" alt="Página do site da Davi Flores, floricultura em São Paulo"
+                            width="720" height="1800" loading="lazy" decoding="async">
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-read-time"><i class="far fa-clock"></i> 5 min</span>
-                        </div>
-                        <h3 class="blog-title" data-i18n="blog.post1.title">Tendências do Marketing Digital em 2025</h3>
-                        <p class="blog-excerpt" data-i18n="blog.post1.excerpt">Inteligência artificial, personalização e experiências imersivas lideram
-                            as transformações no marketing digital para este ano.</p>
-                        <a href="https://www.organicadigital.com/blog/tendencias-de-marketing-digital-que-voce-deve-ficar-de-olho/"
-                            target="_blank" rel="noopener noreferrer" class="blog-read-more"><span data-i18n="blog.readmore">Ler mais</span> <i
-                                class="fas fa-arrow-right"></i></a>
+                    <div class="project-body">
+                        <span class="project-type" data-i18n="portfolio.davi.type">Floricultura</span>
+                        <h3>Davi Flores</h3>
+                        <p data-i18n="projects.davi.desc">Catálogo de produtos com filtros por categoria e pedido direto pelo WhatsApp.</p>
+                        <span class="project-link"><span data-i18n="projects.visit">Ver site ao vivo</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
                     </div>
-                </article>
+                </a>
 
-                <article class="blog-card scroll-reveal delay-200">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1683721003111-070bcc053d8b?q=80&w=1100&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Redes Sociais">
-                        <span class="blog-category" data-i18n="blog.category.social">Redes Sociais</span>
+                <a class="project-card scroll-reveal delay-100" href="https://www.vidrosnovazezinho.com.br/" target="_blank" rel="noopener">
+                    <div class="project-shot">
+                        <img src="img/portfolio/novazezinho.webp" alt="Página do site da Vidros Nova Zezinho, distribuidora de vidros em São Paulo"
+                            width="720" height="1800" loading="lazy" decoding="async">
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-read-time"><i class="far fa-clock"></i> 7 min</span>
-                        </div>
-                        <h3 class="blog-title" data-i18n="blog.post2.title">Como as Redes Sociais Transformam Negócios</h3>
-                        <p class="blog-excerpt" data-i18n="blog.post2.excerpt">Empresas brasileiras investem cada vez mais em estratégias de redes
-                            sociais para alcançar novos públicos e aumentar vendas.</p>
-                        <a href="https://ellun.com.br/revolucao-digital-como-as-redes-sociais-transformaram-o-processo-de-vendas/"
-                            target="_blank" rel="noopener noreferrer" class="blog-read-more"><span data-i18n="blog.readmore">Ler mais</span> <i
-                                class="fas fa-arrow-right"></i></a>
+                    <div class="project-body">
+                        <span class="project-type" data-i18n="portfolio.nz.type">Distribuidora de vidros</span>
+                        <h3>Vidros Nova Zezinho</h3>
+                        <p data-i18n="projects.nz.desc">Site institucional com serviços, história, mapa e orçamento pelo WhatsApp.</p>
+                        <span class="project-link"><span data-i18n="projects.visit">Ver site ao vivo</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
                     </div>
-                </article>
+                </a>
 
-                <article class="blog-card scroll-reveal delay-300">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop"
-                            alt="E-commerce">
-                        <span class="blog-category" data-i18n="blog.category.ecommerce">E-commerce</span>
+                <a class="project-card scroll-reveal delay-200" href="https://ipodontologia.com.br/" target="_blank" rel="noopener">
+                    <div class="project-shot">
+                        <img src="img/portfolio/ipodontologia.webp" alt="Página do site da IP Odontologia, clínica odontológica"
+                            width="720" height="1500" loading="lazy" decoding="async">
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-read-time"><i class="far fa-clock"></i> 6 min</span>
-                        </div>
-                        <h3 class="blog-title" data-i18n="blog.post3.title">O Futuro do E-commerce brasileiro</h3>
-                        <p class="blog-excerpt" data-i18n="blog.post3.excerpt">Setor de comércio eletrônico no Brasil registra crescimento expressivo
-                            impulsionado por inovações tecnológicas e mudanças no comportamento do consumidor.</p>
-                        <a href="https://widecommerce.com.br/tendencias-de-e-commerce-para-2025-o-futuro-do-comercio-digital-para-empresas-b2b-e-b2c/"
-                            target="_blank" rel="noopener noreferrer" class="blog-read-more"><span data-i18n="blog.readmore">Ler mais</span> <i
-                                class="fas fa-arrow-right"></i></a>
+                    <div class="project-body">
+                        <span class="project-type" data-i18n="portfolio.ip.type">Saúde & odontologia</span>
+                        <h3>IP Odontologia</h3>
+                        <p data-i18n="projects.ip.desc">Especialidades, equipe e agendamento de consultas pelo WhatsApp.</p>
+                        <span class="project-link"><span data-i18n="projects.visit">Ver site ao vivo</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
                     </div>
-                </article>
-            </div>
-        </div>
-    </section>
+                </a>
 
-    <!-- Contato Section -->
-    <section class="contato" id="contato">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="scroll-reveal" data-i18n="contact.title">Entre em Contato</h2>
-                <p class="scroll-reveal delay-100" data-i18n="contact.subtitle">Pronto para transformar seu negócio? Vamos conversar!</p>
-            </div>
-            <div class="contato-content-simple">
-                <div class="contato-info scroll-reveal">
-                    <h3 data-i18n="contact.info.title">Fale Conosco</h3>
-                    <p data-i18n="contact.info.desc">Entre em contato pelos nossos canais!</p>
-
-                    <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vim pelo site.&type=phone_number&app_absent=0"
-                        target="_blank" class="info-item info-item-clickable">
-                        <div class="info-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>WhatsApp</h4>
-                            <p data-i18n="contact.whatsapp">Entre em contato!</p>
-                        </div>
+                <div class="project-card project-card-cta scroll-reveal delay-300">
+                    <div class="project-cta-icon" aria-hidden="true"><i class="fas fa-store"></i></div>
+                    <h3 data-i18n="projects.next.title">Seu negócio pode ser o próximo</h3>
+                    <p data-i18n="projects.next.desc">Veja modelos de site por segmento e escolha o ponto de partida ideal para a sua empresa.</p>
+                    <a href="/portfolio#modelos" class="btn btn-primary">
+                        <span data-i18n="projects.next.cta">Ver modelos</span> <i class="fas fa-arrow-right" aria-hidden="true"></i>
                     </a>
-
-                    <a href="https://www.instagram.com/owlin.agency/" target="_blank"
-                        class="info-item info-item-clickable">
-                        <div class="info-icon">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Instagram</h4>
-                            <p data-i18n="contact.instagram">Nos siga no instagram!</p>
-                        </div>
-                    </a>
-
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>E-mail</h4>
-                            <p><a href="mailto:contato@owlin.agency">contato@owlin.agency</a></p>
-                        </div>
-                    </div>
-
-                    <div class="cta-box">
-                        <h4 data-i18n="contact.cta.title">Atendimento Rápido</h4>
-                        <p data-i18n="contact.cta.desc">Fale conosco agora pelo WhatsApp e receba uma resposta imediata!</p>
-                        <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Gostaria de solicitar um orçamento.&type=phone_number&app_absent=0"
-                            target="_blank" class="btn btn-primary">
-                            <i class="fab fa-whatsapp"></i> <span data-i18n="contact.cta.btn">Falar no WhatsApp</span>
-                        </a>
-                    </div>
                 </div>
+            </div>
 
-                <!-- Contact Form -->
-                <div class="contact-form-box scroll-reveal delay-200">
-                    <h3 data-i18n="contact.form.title">Ou Solicite um Orçamento</h3>
-                    <p data-i18n="contact.form.desc">Preencha o formulário abaixo e entraremos em contato em breve!</p>
-                    <form action="https://formspree.io/f/mrbyyoll" method="POST" class="contact-form-simple">
-                        <div class="form-row-simple">
-                            <div class="form-field">
-                                <input type="text" name="name" placeholder="Seu nome" data-i18n-placeholder="contact.form.name" required>
-                            </div>
-                            <div class="form-field">
-                                <input type="email" name="email" placeholder="Seu e-mail" data-i18n-placeholder="contact.form.email" required>
-                            </div>
-                        </div>
-                        <div class="form-field">
-                            <input type="tel" name="phone" placeholder="Seu telefone (opcional)" data-i18n-placeholder="contact.form.phone">
-                        </div>
-                        <div class="form-field">
-                            <textarea name="message" rows="4" placeholder="Conte-nos sobre seu projeto..." data-i18n-placeholder="contact.form.message"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fas fa-paper-plane"></i> <span data-i18n="contact.form.submit">Enviar Mensagem</span>
-                        </button>
-                    </form>
-                </div>
+            <div class="section-cta scroll-reveal">
+                <a href="/portfolio" class="btn btn-outline">
+                    <i class="fas fa-briefcase" aria-hidden="true"></i> <span data-i18n="projects.all">Ver portfólio completo</span>
+                </a>
             </div>
         </div>
     </section>
+
+    <!-- Chamada final -->
+    <section class="cta-final">
+        <div class="container">
+            <h2 data-i18n="cta.title">Vamos conversar sobre o seu projeto?</h2>
+            <p data-i18n="contact.subtitle">Pronto para crescer? Conte o seu desafio e receba uma proposta sob medida, sem compromisso.</p>
+            <div class="cta-buttons">
+                <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vim pelo site e gostaria de um orçamento.&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="btn-cta-white">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> <span data-i18n="contact.cta.btn">Falar no WhatsApp</span>
+                </a>
+                <a href="/contato" class="btn-cta-outline">
+                    <i class="fas fa-envelope" aria-hidden="true"></i> <span data-i18n="portfolio.final.quote">Solicitar orçamento</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -835,49 +570,50 @@
                 <div class="footer-grid">
                     <div class="footer-col footer-about">
                         <div class="footer-logo">
-                            <img src="img/OWLIN.png" alt="OWLIN Logo">
+                            <img src="/img/owlin-logo.webp" alt="Logo da OWLIN" width="60" height="60" loading="lazy" decoding="async">
                         </div>
                         <p>Agência de marketing digital especializada em soluções inovadoras para
                             empresas. Excelência e calmaria em cada projeto.</p>
                         <div class="footer-social">
-                            <a href="https://www.instagram.com/owlin.agency/" target="_blank" title="Instagram"
-                                aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/owlin.agency/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
                             </a>
-                            <a href="https://www.tiktok.com/@owlin.agency" target="_blank" title="TikTok"
-                                aria-label="TikTok">
-                                <i class="fab fa-tiktok"></i>
+                            <a href="https://www.tiktok.com/@owlin.agency" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok">
+                                <i class="fab fa-tiktok" aria-hidden="true"></i>
                             </a>
-                            <a href="https://api.whatsapp.com/send/?phone=5511979550970&text&type=phone_number&app_absent=0"
-                                target="_blank" title="WhatsApp" aria-label="WhatsApp">
-                                <i class="fab fa-whatsapp"></i>
+                            <a href="https://www.youtube.com/@OWLINagency" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=5511979550970&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:contato@owlin.com.br" title="E-mail" aria-label="E-mail">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
 
                     <div class="footer-col">
-                        <h4 data-i18n="footer.services">Serviços</h4>
+                        <h3 data-i18n="footer.services">Serviços</h3>
                         <ul class="footer-links">
-                            <li><a href="servicos/marketing-digital">Marketing Digital</a></li>
-                            <li><a href="servicos/gestao-redes-sociais">Gestão de Redes Sociais</a></li>
-                            <li><a href="servicos/trafego-pago">Tráfego Pago</a></li>
-                            <li><a href="servicos/desenvolvimento-web">Desenvolvimento Web</a></li>
-                            <li><a href="servicos/seo-conteudo">SEO & Conteúdo</a></li>
-                            <li><a href="servicos/branding">Branding</a></li>
-                            <li><a href="servicos/producao-audiovisual">Produção Audiovisual</a></li>
-                            <li><a href="servicos/analytics">Analytics & BI</a></li>
-                            <li><a href="servicos/consultoria-digital">Consultoria Digital</a></li>
+                            <li><a href="/servicos/site-institucional">Desenvolvimento web</a></li>
+                            <li><a href="/servicos/seo">SEO &amp; conteúdo</a></li>
+                            <li><a href="/servicos/trafego-pago">Tráfego pago</a></li>
+                            <li><a href="/servicos/gestao-redes-sociais">Gestão de redes sociais</a></li>
+                            <li><a href="/servicos/branding">Branding</a></li>
+                            <li><a href="/servicos/producao-audiovisual">Produção audiovisual</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-col">
-                        <h4 data-i18n="footer.company">Empresa</h4>
+                        <h3 data-i18n="footer.company">Empresa</h3>
                         <ul class="footer-links">
-                            <li><a href="#sobre" data-i18n="nav.about">Sobre Nós</a></li>
-                            <li><a href="#processo">Nosso Processo</a></li>
+                            <li><a href="/sobre" data-i18n="nav.about">Sobre nós</a></li>
+                            <li><a href="/sobre#processo" data-i18n="footer.process">Como trabalhamos</a></li>
                             <li><a href="/portfolio" data-i18n="nav.portfolio">Portfólio</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+                            <li><a href="/blog" data-i18n="nav.blog">Blog</a></li>
+                            <li><a href="/contato#faq" data-i18n="faq.title">Perguntas frequentes</a></li>
+                            <li><a href="/contato" data-i18n="nav.contact">Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -887,11 +623,13 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
-                    <p data-i18n="footer.rights">&copy; 2025 OWLIN - Agência de Marketing Digital. Todos os direitos reservados.</p>
+                    <p data-i18n="footer.rights">&copy; 2026 OWLIN - Agência de marketing digital. CNPJ 53.407.563/0001-65. Todos os direitos reservados.</p>
                     <div class="footer-legal">
-                        <a href="#" data-i18n="footer.privacy">Política de Privacidade</a>
-                        <span>|</span>
-                        <a href="#" data-i18n="footer.terms">Termos de Uso</a>
+                        <a href="/privacidade" data-i18n="footer.privacy">Política de privacidade</a>
+                        <span aria-hidden="true">|</span>
+                        <a href="/termos" data-i18n="footer.terms">Termos de uso</a>
+                        <span aria-hidden="true">|</span>
+                        <button type="button" data-cookie-settings data-i18n="cookies.settings">Preferências de cookies</button>
                     </div>
                 </div>
             </div>
@@ -900,8 +638,8 @@
 
     <!-- WhatsApp Float Button -->
     <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vim pelo site e gostaria de mais informações.&type=phone_number&app_absent=0"
-        class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+        class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
 
     <!-- Scripts -->

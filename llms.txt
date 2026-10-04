@@ -1,0 +1,45 @@
+# OWLIN
+
+> Agência de marketing digital e produtora audiovisual brasileira, em atividade desde 2019. Cria sites, landing pages e lojas virtuais, faz SEO, gerencia tráfego pago (Google Ads, Meta Ads e TikTok Ads) e redes sociais, e oferece branding e produção audiovisual.
+
+Atende empresas, marcas, profissionais liberais, infoprodutores, igrejas e podcasts.
+
+## Páginas principais
+
+- [Início](https://owlin.com.br/): visão geral dos serviços e projetos
+- [Sobre nós e como trabalhamos](https://owlin.com.br/sobre): quem somos, valores e o processo em 6 etapas
+- [Serviços](https://owlin.com.br/servicos/): lista completa dos serviços
+- [Portfólio](https://owlin.com.br/portfolio): vídeos produzidos e sites desenvolvidos para clientes, além de modelos por segmento
+- [Blog](https://owlin.com.br/blog): guias práticos de marketing digital
+- [Contato](https://owlin.com.br/contato): WhatsApp, e-mail, formulário e perguntas frequentes
+
+## Serviços
+
+- [Criação de site institucional](https://owlin.com.br/servicos/site-institucional): sites modernos, responsivos e otimizados para conversão
+- [SEO & conteúdo](https://owlin.com.br/servicos/seo): conteúdo e otimização para aparecer no topo do Google
+- [Tráfego pago](https://owlin.com.br/servicos/trafego-pago): campanhas otimizadas no Google, Meta e TikTok Ads
+- [Gestão de redes sociais](https://owlin.com.br/servicos/gestao-redes-sociais): conteúdo estratégico que engaja e converte
+- [Branding & identidade visual](https://owlin.com.br/servicos/branding): identidade visual que destaca sua marca no mercado
+- [Produção audiovisual](https://owlin.com.br/servicos/producao-audiovisual): fotos e vídeos profissionais para sua comunicação
+
+## Guias
+
+- [Site para profissionais liberais: o que ter para atrair clientes](https://owlin.com.br/site-para-profissionais-liberais): As páginas, os textos e os recursos que fazem advogados, psicólogos, dentistas e consultores serem encontrados e chamados.
+- [SEO local: como aparecer no Google na sua cidade](https://owlin.com.br/seo-local): Perfil da Empresa no Google, avaliações, site e consistência de dados: o passo a passo para ser achado perto de você.
+- [Meta Ads: guia de anúncios no Instagram e no Facebook](https://owlin.com.br/meta-ads-instagram-facebook): Objetivos de campanha, públicos, criativos, pixel e orçamento: como anunciar na Meta sem queimar dinheiro.
+- [Calendário editorial para Instagram: como planejar o mês](https://owlin.com.br/calendario-editorial-instagram): Pilares de conteúdo, frequência, formatos e um modelo simples para nunca mais postar no improviso.
+- [Landing page para Google Ads: como criar uma página que converte](https://owlin.com.br/landing-page-para-google-ads): Por que mandar o anúncio para a home desperdiça verba e o que uma boa página de destino precisa ter.
+- [SEO para e-commerce: como fazer sua loja aparecer no Google](https://owlin.com.br/seo-para-ecommerce): Categorias, páginas de produto, velocidade e conteúdo: onde está o tráfego orgânico de uma loja virtual.
+- [TikTok Ads para empresas: quando vale a pena anunciar](https://owlin.com.br/tiktok-ads-para-empresas): Para quem o TikTok funciona, que tipo de vídeo performa e como começar com um teste controlado.
+- [Vídeo institucional: como planejar um vídeo que apresenta sua empresa](https://owlin.com.br/video-institucional): Objetivo, roteiro, duração, captação e distribuição: o caminho para um vídeo que as pessoas assistem até o fim.
+- [SEO para IA: como aparecer nas respostas do Google e do ChatGPT](https://owlin.com.br/seo-para-ia-geo-aeo): O que são GEO e AEO, o que muda (e o que não muda) no SEO e como preparar o conteúdo para ser citado.
+- [Branding e posicionamento de marca: por onde começar](https://owlin.com.br/branding-e-posicionamento-de-marca): A diferença entre logo, identidade e posicionamento, e as perguntas que definem como sua marca quer ser lembrada.
+
+## Contato
+
+- WhatsApp: +55 11 97955-0970
+- E-mail: contato@owlin.com.br
+- Instagram: https://www.instagram.com/owlin.agency/
+- TikTok: https://www.tiktok.com/@owlin.agency
+- YouTube: https://www.youtube.com/@OWLINagency
+- CNPJ: 53.407.563/0001-65

@@ -4,8 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | OWLIN - Agência de Marketing Digital</title>
-    <meta name="description" content="Conheça nossos projetos de desenvolvimento web e marketing digital. Sites modernos e estratégias que geram resultados reais.">
+    <title>Portfólio: vídeos e sites que criamos | OWLIN</title>
+    <meta name="description" content="Vídeos para igrejas, eventos e empresas e sites reais que a OWLIN criou para clínicas, floriculturas e distribuidoras, além de modelos prontos por segmento.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://owlin.com.br/portfolio">
+    <meta name="theme-color" content="#2E7D32">
+
+    <!-- Open Graph / compartilhamento -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="OWLIN">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://owlin.com.br/portfolio">
+    <meta property="og:title" content="Portfólio: vídeos e sites que criamos | OWLIN">
+    <meta property="og:description" content="Vídeos para igrejas, eventos e empresas e sites reais que a OWLIN criou para clínicas, floriculturas e distribuidoras, além de modelos prontos por segmento.">
+    <meta property="og:image" content="https://owlin.com.br/img/og-owlin.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logo da OWLIN, agência de marketing digital">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfólio: vídeos e sites que criamos | OWLIN">
+    <meta name="twitter:description" content="Vídeos para igrejas, eventos e empresas e sites reais que a OWLIN criou para clínicas, floriculturas e distribuidoras, além de modelos prontos por segmento.">
+    <meta name="twitter:image" content="https://owlin.com.br/img/og-owlin.jpg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/OWLIN.png">
@@ -16,22 +35,24 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <style>
+        /* Fonte do logo direto do arquivo, sem a folha de estilo extra que bloqueava a renderização */
         @font-face {
             font-family: 'Azonix';
-            src: url('https://db.onlinewebfonts.com/t/1e9e6a2e8f5704c3a3e3cc9c9e0e3e3e.woff2') format('woff2'),
-                url('https://db.onlinewebfonts.com/t/1e9e6a2e8f5704c3a3e3cc9c9e0e3e3e.woff') format('woff');
+            src: url('https://fonts.cdnfonts.com/s/16327/Azonix.woff') format('woff');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
         }
     </style>
-    <link href="https://fonts.cdnfonts.com/css/azonix" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome (carregado sem bloquear a renderização) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -39,67 +60,6 @@
 
     <style>
         /* Portfolio Page Styles */
-        .portfolio-hero {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3d3e 100%);
-            padding: 160px 0 100px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .portfolio-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 80%, rgba(40, 167, 69, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(40, 167, 69, 0.1) 0%, transparent 40%),
-                radial-gradient(circle at 40% 40%, rgba(40, 167, 69, 0.08) 0%, transparent 30%),
-                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2328a745' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            animation: subtleMove 20s ease-in-out infinite;
-        }
-
-        @keyframes subtleMove {
-            0%, 100% { transform: translateX(0) translateY(0); }
-            50% { transform: translateX(-10px) translateY(-10px); }
-        }
-
-        .portfolio-hero::after {
-            content: '';
-            position: absolute;
-            bottom: -50%;
-            left: -10%;
-            width: 120%;
-            height: 100%;
-            background: radial-gradient(ellipse at center, rgba(40, 167, 69, 0.1) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .portfolio-hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: white;
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .portfolio-hero h1 span {
-            color: white;
-        }
-
-        .portfolio-hero p {
-            font-size: 1.2rem;
-            color: rgba(255,255,255,0.85);
-            max-width: 600px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
         /* Portfolio Grid */
         .portfolio-section {
             padding: 100px 0;
@@ -124,6 +84,80 @@
         .portfolio-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        /* Barra de navegador sobre as prévias */
+        .browser-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            background: #eef0f3;
+            border-bottom: 1px solid #e1e4e8;
+        }
+
+        .browser-dots {
+            display: flex;
+            gap: 6px;
+            flex-shrink: 0;
+        }
+
+        .browser-dots span {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ff5f57;
+        }
+
+        .browser-dots span:nth-child(2) {
+            background: #febc2e;
+        }
+
+        .browser-dots span:nth-child(3) {
+            background: #28c840;
+        }
+
+        .browser-url {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: white;
+            color: #555;
+            font-size: 0.78rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .browser-url i {
+            color: var(--owlin-green);
+            font-size: 0.7rem;
+        }
+
+        .browser-live {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #15803d;
+            font-weight: 600;
+        }
+
+        .browser-live::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+            animation: livePulse 1.8s ease-out infinite;
+        }
+
+        @keyframes livePulse {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+            100% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
         }
 
         .portfolio-preview {
@@ -157,7 +191,8 @@
             transition: opacity 0.3s ease;
         }
 
-        .portfolio-card:hover .portfolio-preview-overlay {
+        .portfolio-card:hover .portfolio-preview-overlay,
+        .portfolio-preview-overlay:focus-within {
             opacity: 1;
         }
 
@@ -219,6 +254,326 @@
             font-weight: 500;
         }
 
+        /* Link visível também no celular, onde não existe hover */
+        .portfolio-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 22px;
+            color: var(--owlin-green);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .portfolio-link i {
+            font-size: 0.8em;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-link:hover i {
+            transform: translate(3px, -3px);
+        }
+
+        /* ===== Modelos por segmento (B2B) ===== */
+        .models-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3d3e 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .models-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 85% 15%, rgba(255, 193, 7, 0.08) 0%, transparent 35%),
+                radial-gradient(circle at 10% 90%, rgba(40, 167, 69, 0.16) 0%, transparent 45%);
+            pointer-events: none;
+        }
+
+        .models-section .container {
+            position: relative;
+        }
+
+        .models-section .section-header {
+            margin-bottom: 0;
+        }
+
+        .models-section .section-header h2 {
+            color: white;
+        }
+
+        .models-section .section-header p {
+            color: rgba(255,255,255,0.8);
+            max-width: 760px;
+        }
+
+        .models-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 18px;
+            padding: 6px 16px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 193, 7, 0.5);
+            background: rgba(255, 193, 7, 0.12);
+            color: var(--owlin-yellow);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .model-showcase {
+            display: grid;
+            grid-template-columns: 1.15fr 1fr;
+            gap: 64px;
+            align-items: center;
+            margin-top: 64px;
+        }
+
+        .device-stage {
+            position: relative;
+            padding: 0 40px 44px 0;
+        }
+
+        .device-link {
+            display: block;
+            position: relative;
+            border-radius: 14px;
+            overflow: hidden;
+            background: white;
+            border: 1px solid rgba(255,255,255,0.12);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+            text-decoration: none;
+            transition: transform 0.4s ease;
+        }
+
+        .device-link:hover {
+            transform: translateY(-6px);
+        }
+
+        .device-link:focus-visible {
+            outline: 3px solid var(--owlin-yellow);
+            outline-offset: 4px;
+        }
+
+        .device-screen {
+            position: relative;
+            overflow: hidden;
+            background: #0f172a;
+        }
+
+        .device-desktop-screen {
+            height: 360px;
+        }
+
+        .device-desktop-screen iframe {
+            width: 200%;
+            height: 200%;
+            transform: scale(0.5);
+            transform-origin: top left;
+            border: none;
+            pointer-events: none;
+        }
+
+        .device-link:hover .portfolio-preview-overlay,
+        .device-link:focus-visible .portfolio-preview-overlay {
+            opacity: 1;
+        }
+
+        .device-phone {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 176px;
+            padding: 8px;
+            border-radius: 30px;
+            background: #111;
+            border: 2px solid #2a2a2a;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+        }
+
+        .device-phone-screen {
+            width: 156px;
+            height: 336px;
+            border-radius: 22px;
+            background: white;
+        }
+
+        /* 156 / 390 = 0.4: o iframe renderiza a versão de celular do site */
+        .device-phone-screen iframe {
+            width: 390px;
+            height: 840px;
+            transform: scale(0.4);
+            transform-origin: top left;
+            border: none;
+            pointer-events: none;
+        }
+
+        .model-segment {
+            color: var(--owlin-yellow);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .model-info h3 {
+            margin: 12px 0 16px;
+            color: white;
+            font-size: 2rem;
+            line-height: 1.25;
+        }
+
+        .model-info > p {
+            margin-bottom: 26px;
+            color: rgba(255,255,255,0.82);
+            line-height: 1.7;
+        }
+
+        .model-features {
+            display: grid;
+            gap: 14px;
+            margin-bottom: 32px;
+            list-style: none;
+        }
+
+        .model-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: rgba(255,255,255,0.9);
+            line-height: 1.5;
+        }
+
+        .model-features li i {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: rgba(76, 175, 80, 0.18);
+            color: #7bd389;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+        }
+
+        .model-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .model-actions .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 26px;
+        }
+
+        .model-note {
+            margin-top: 18px;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.8rem;
+        }
+
+        .models-why {
+            margin-top: 90px;
+        }
+
+        .models-why > h3 {
+            margin-bottom: 32px;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .models-why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .why-card {
+            padding: 28px 24px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(255,255,255,0.06);
+            transition: all 0.3s ease;
+        }
+
+        .why-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--owlin-yellow);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .why-card i {
+            margin-bottom: 16px;
+            color: var(--owlin-yellow);
+            font-size: 1.6rem;
+        }
+
+        .why-card h4 {
+            margin-bottom: 8px;
+            color: white;
+            font-size: 1.05rem;
+        }
+
+        .why-card p {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .models-segments {
+            margin-top: 64px;
+            text-align: center;
+        }
+
+        .segments-title {
+            margin-bottom: 18px;
+            color: rgba(255,255,255,0.85);
+            font-weight: 500;
+        }
+
+        .segment-chips {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .segment-chips li {
+            padding: 8px 18px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.25);
+            background: rgba(255,255,255,0.04);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .models-custom {
+            margin-top: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .models-custom .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
         /* Services CTA Section */
         .services-cta {
             padding: 100px 0;
@@ -241,116 +596,18 @@
             color: var(--owlin-green);
         }
 
-        .services-mini-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
+        @media (max-width: 992px) {
+            .model-showcase {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
 
-        .service-mini-card {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 16px;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .service-mini-card:hover {
-            border-color: var(--owlin-green);
-            transform: translateY(-5px);
-        }
-
-        .service-mini-card i {
-            font-size: 2.5rem;
-            color: var(--owlin-green);
-            margin-bottom: 20px;
-        }
-
-        .service-mini-card h4 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 10px;
-        }
-
-        .service-mini-card p {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        /* CTA Final */
-        .cta-final {
-            background: linear-gradient(135deg, var(--owlin-green) 0%, #1e7e34 100%);
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .cta-final h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: white;
-            margin-bottom: 20px;
-        }
-
-        .cta-final p {
-            color: rgba(255,255,255,0.9);
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-cta-white {
-            background: white;
-            color: var(--owlin-green);
-            padding: 16px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-cta-white:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .btn-cta-outline {
-            background: transparent;
-            color: white;
-            padding: 16px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            border: 2px solid white;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-cta-outline:hover {
-            background: white;
-            color: var(--owlin-green);
+            .models-why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
-            .portfolio-hero h1 {
-                font-size: 2.5rem;
-            }
-
             .portfolio-grid {
                 grid-template-columns: 1fr;
             }
@@ -359,11 +616,415 @@
                 height: 250px;
             }
 
-            .cta-final h2 {
-                font-size: 1.8rem;
+            .model-info h3 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .models-why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .device-stage {
+                padding: 0 20px 32px 0;
+            }
+
+            .device-desktop-screen {
+                height: 220px;
+            }
+
+            .device-phone {
+                width: 112px;
+                padding: 5px;
+                border-radius: 20px;
+            }
+
+            /* 98 / 390 ≈ 0.25 */
+            .device-phone-screen {
+                width: 98px;
+                height: 211px;
+                border-radius: 15px;
+            }
+
+            .device-phone-screen iframe {
+                transform: scale(0.25);
+            }
+        }
+
+        /* Vídeos */
+        .videos-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .videos-group-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 56px 0 24px;
+            color: var(--text-primary);
+            font-size: 1.35rem;
+            font-weight: 600;
+        }
+
+        .videos-group-title i {
+            color: var(--owlin-green);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .shorts-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .video-card {
+            margin: 0;
+        }
+
+        .video-media {
+            position: relative;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 16px;
+            background: #0f1a14;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .video-short .video-media {
+            aspect-ratio: 9 / 16;
+        }
+
+        .yt-lite,
+        .yt-frame {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .yt-lite {
+            padding: 0;
+            background: none;
+            cursor: pointer;
+        }
+
+        .yt-lite img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .yt-lite::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, 0.35));
+        }
+
+        .yt-lite:hover img,
+        .yt-lite:focus-visible img {
+            transform: scale(1.04);
+        }
+
+        .yt-lite:focus-visible {
+            outline: 3px solid var(--owlin-yellow);
+            outline-offset: -3px;
+        }
+
+        .yt-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            display: grid;
+            place-items: center;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background: rgba(46, 125, 50, 0.92);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 1.4rem;
+            transform: translate(-50%, -50%);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .yt-play i {
+            margin-left: 4px;
+        }
+
+        .yt-lite:hover .yt-play,
+        .yt-lite:focus-visible .yt-play {
+            background: var(--owlin-green);
+            transform: translate(-50%, -50%) scale(1.08);
+        }
+
+        .video-short .yt-play {
+            width: 54px;
+            height: 54px;
+            font-size: 1.1rem;
+        }
+
+        .video-card figcaption {
+            margin-top: 12px;
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+
+        .video-card figcaption strong {
+            display: block;
+            font-weight: 600;
+        }
+
+        .video-card figcaption span {
+            color: #666;
+            font-size: 0.88rem;
+        }
+
+        .videos-section .section-cta {
+            margin-top: 56px;
+        }
+
+        @media (max-width: 1100px) {
+            .shorts-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            /* Vídeos curtos viram uma fileira com rolagem lateral */
+            .shorts-grid {
+                grid-template-columns: none;
+                grid-auto-flow: column;
+                grid-auto-columns: 58%;
+                overflow-x: auto;
+                padding-bottom: 10px;
+                scroll-snap-type: x mandatory;
+            }
+
+            .video-short {
+                scroll-snap-align: start;
             }
         }
     </style>
+    <!-- Dados estruturados -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "CollectionPage",
+                "@id": "https://owlin.com.br/portfolio#webpage",
+                "url": "https://owlin.com.br/portfolio",
+                "name": "Portfólio: vídeos e sites que criamos",
+                "description": "Vídeos para igrejas, eventos e empresas e sites reais que a OWLIN criou para clínicas, floriculturas e distribuidoras, além de modelos prontos por segmento.",
+                "inLanguage": "pt-BR",
+                "isPartOf": {
+                    "@id": "https://owlin.com.br/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://owlin.com.br/portfolio#breadcrumb"
+                },
+                "hasPart": [
+                    {
+                        "@id": "https://owlin.com.br/portfolio#video-b-4nh1OJDEc"
+                    },
+                    {
+                        "@id": "https://owlin.com.br/portfolio#video-AI4lqdFzXo8"
+                    },
+                    {
+                        "@id": "https://owlin.com.br/portfolio#video-Sj3r78aNFzU"
+                    },
+                    {
+                        "@id": "https://owlin.com.br/portfolio#video-yNnmCx_0urg"
+                    },
+                    {
+                        "@id": "https://owlin.com.br/portfolio#video-Xe6OcRn-9cM"
+                    },
+                    {
+                        "@id": "https://owlin.com.br/portfolio#video-GD5yG_OIjGg"
+                    },
+                    {
+                        "@id": "https://owlin.com.br/portfolio#video-CzlSXRBiJYs"
+                    },
+                    {
+                        "@id": "https://owlin.com.br/portfolio#video-YJDHAjrJmZI"
+                    },
+                    {
+                        "@id": "https://owlin.com.br/portfolio#video-IPMj0StJ7c8"
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://owlin.com.br/portfolio#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Início",
+                        "item": "https://owlin.com.br/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Portfólio",
+                        "item": "https://owlin.com.br/portfolio"
+                    }
+                ]
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://owlin.com.br/#organization",
+                "name": "OWLIN",
+                "url": "https://owlin.com.br/",
+                "logo": "https://owlin.com.br/img/OWLIN.png"
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://owlin.com.br/#website",
+                "url": "https://owlin.com.br/",
+                "name": "OWLIN",
+                "inLanguage": "pt-BR",
+                "publisher": {
+                    "@id": "https://owlin.com.br/#organization"
+                }
+            },
+            {
+                "@type": "VideoObject",
+                "@id": "https://owlin.com.br/portfolio#video-b-4nh1OJDEc",
+                "name": "My life as a creator",
+                "description": "Vídeo produzido pela OWLIN para criador de conteúdo.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/b-4nh1OJDEc/hq720.jpg",
+                "uploadDate": "2026-04-30T13:35:44-07:00",
+                "duration": "PT26S",
+                "embedUrl": "https://www.youtube.com/embed/b-4nh1OJDEc",
+                "creator": {
+                    "@id": "https://owlin.com.br/#organization"
+                }
+            },
+            {
+                "@type": "VideoObject",
+                "@id": "https://owlin.com.br/portfolio#video-AI4lqdFzXo8",
+                "name": "Culto",
+                "description": "Vídeo de culto produzido pela OWLIN.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/AI4lqdFzXo8/hq720.jpg",
+                "uploadDate": "2026-04-30T13:33:22-07:00",
+                "duration": "PT54S",
+                "embedUrl": "https://www.youtube.com/embed/AI4lqdFzXo8",
+                "creator": {
+                    "@id": "https://owlin.com.br/#organization"
+                }
+            },
+            {
+                "@type": "VideoObject",
+                "@id": "https://owlin.com.br/portfolio#video-Sj3r78aNFzU",
+                "name": "Conexão",
+                "description": "Vídeo do evento Conexão produzido pela OWLIN.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/Sj3r78aNFzU/hq720.jpg",
+                "uploadDate": "2026-04-30T13:30:16-07:00",
+                "duration": "PT32S",
+                "embedUrl": "https://www.youtube.com/embed/Sj3r78aNFzU",
+                "creator": {
+                    "@id": "https://owlin.com.br/#organization"
+                }
+            },
+            {
+                "@type": "VideoObject",
+                "@id": "https://owlin.com.br/portfolio#video-yNnmCx_0urg",
+                "name": "Conferência Interligados",
+                "description": "Vídeo da Conferência Interligados produzido pela OWLIN.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/yNnmCx_0urg/hq720.jpg",
+                "uploadDate": "2026-04-30T13:28:00-07:00",
+                "duration": "PT46S",
+                "embedUrl": "https://www.youtube.com/embed/yNnmCx_0urg",
+                "creator": {
+                    "@id": "https://owlin.com.br/#organization"
+                }
+            },
+            {
+                "@type": "VideoObject",
+                "@id": "https://owlin.com.br/portfolio#video-Xe6OcRn-9cM",
+                "name": "Construtora",
+                "description": "Vídeo curto produzido pela OWLIN para uma construtora.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/Xe6OcRn-9cM/hq720.jpg",
+                "uploadDate": "2026-05-15T10:49:30-07:00",
+                "duration": "PT174S",
+                "embedUrl": "https://www.youtube.com/embed/Xe6OcRn-9cM",
+                "creator": {
+                    "@id": "https://owlin.com.br/#organization"
+                }
+            },
+            {
+                "@type": "VideoObject",
+                "@id": "https://owlin.com.br/portfolio#video-GD5yG_OIjGg",
+                "name": "Concessionária",
+                "description": "Vídeo curto produzido pela OWLIN para uma concessionária de veículos.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/GD5yG_OIjGg/hq720.jpg",
+                "uploadDate": "2026-10-02T22:07:41-07:00",
+                "duration": "PT14S",
+                "embedUrl": "https://www.youtube.com/embed/GD5yG_OIjGg",
+                "creator": {
+                    "@id": "https://owlin.com.br/#organization"
+                }
+            },
+            {
+                "@type": "VideoObject",
+                "@id": "https://owlin.com.br/portfolio#video-CzlSXRBiJYs",
+                "name": "Vidros Nova Zezinho",
+                "description": "Vídeo curto produzido pela OWLIN para a Vidros Nova Zezinho, distribuidora de vidros.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/CzlSXRBiJYs/hq720.jpg",
+                "uploadDate": "2026-10-02T22:09:19-07:00",
+                "duration": "PT22S",
+                "embedUrl": "https://www.youtube.com/embed/CzlSXRBiJYs",
+                "creator": {
+                    "@id": "https://owlin.com.br/#organization"
+                }
+            },
+            {
+                "@type": "VideoObject",
+                "@id": "https://owlin.com.br/portfolio#video-YJDHAjrJmZI",
+                "name": "Mapeamento com drone em Atibaia",
+                "description": "Vídeo curto produzido pela OWLIN sobre mapeamento com drone em Atibaia.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/YJDHAjrJmZI/hq720.jpg",
+                "uploadDate": "2026-10-02T22:13:28-07:00",
+                "duration": "PT50S",
+                "embedUrl": "https://www.youtube.com/embed/YJDHAjrJmZI",
+                "creator": {
+                    "@id": "https://owlin.com.br/#organization"
+                }
+            },
+            {
+                "@type": "VideoObject",
+                "@id": "https://owlin.com.br/portfolio#video-IPMj0StJ7c8",
+                "name": "Concessionária, parte 2",
+                "description": "Segundo vídeo curto produzido pela OWLIN para uma concessionária de veículos.",
+                "thumbnailUrl": "https://i.ytimg.com/vi/IPMj0StJ7c8/hq720.jpg",
+                "uploadDate": "2026-10-02T22:16:01-07:00",
+                "duration": "PT53S",
+                "embedUrl": "https://www.youtube.com/embed/IPMj0StJ7c8",
+                "creator": {
+                    "@id": "https://owlin.com.br/#organization"
+                }
+            }
+        ]
+    }
+    </script>
+    <script src="/js/tracking.js" defer></script>
 </head>
 
 <body>
@@ -372,92 +1033,392 @@
         <div class="container">
             <div class="logo">
                 <a href="/">
-                    <img src="img/OWLIN.png" alt="OWLIN - Agência de Marketing Digital">
+                    <img src="/img/owlin-logo.webp" alt="OWLIN - Agência de marketing digital" width="60" height="60">
                     <span class="logo-text">OWLIN</span>
                 </a>
             </div>
-            <nav class="nav-menu">
+            <nav class="nav-menu" id="menu-principal">
                 <ul>
                     <li><a href="/" data-i18n="nav.home">Início</a></li>
-                    <li><a href="/#sobre" data-i18n="nav.about">Sobre Nós</a></li>
-                    <li><a href="/#servicos" data-i18n="nav.services">Serviços</a></li>
-                    <li><a href="/portfolio" class="active" data-i18n="nav.portfolio">Portfólio</a></li>
-                    <li><a href="/#contato" data-i18n="nav.contact">Contato</a></li>
+                    <li><a href="/sobre" data-i18n="nav.about">Sobre nós</a></li>
+                    <li><a href="/servicos/" data-i18n="nav.services">Serviços</a></li>
+                    <li class="has-submenu">
+                        <a href="/portfolio" class="active" aria-current="page" data-i18n="nav.portfolio">Portfólio</a>
+                        <button type="button" class="submenu-toggle" aria-expanded="false" aria-controls="submenu-portfolio" aria-label="Mostrar opções do portfólio" data-i18n-aria="nav.portfolio.toggle">
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="submenu" id="submenu-portfolio">
+                            <li><a href="/portfolio#videos"><i class="fas fa-play" aria-hidden="true"></i> <span data-i18n="nav.portfolio.videos">Vídeos</span></a></li>
+                            <li><a href="/portfolio#desenvolvimento-web"><i class="fas fa-laptop-code" aria-hidden="true"></i> <span data-i18n="nav.portfolio.web">Desenvolvimento web</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/blog" data-i18n="nav.blog">Blog</a></li>
+                    <li><a href="/contato" data-i18n="nav.contact">Contato</a></li>
                     <li class="lang-selector-wrapper">
-                        <button class="lang-btn active" onclick="changeLanguage('pt-BR')" title="Português">
-                            <img src="https://flagcdn.com/w20/br.png" alt="BR"> PT
+                        <button type="button" class="lang-btn active" data-lang="pt-BR" lang="pt-BR" aria-label="Português" aria-pressed="true" onclick="changeLanguage('pt-BR')" title="Português">
+                            <img src="https://flagcdn.com/w20/br.png" alt="" width="18" height="12"> PT
                         </button>
-                        <button class="lang-btn" onclick="changeLanguage('en')" title="English">
-                            <img src="https://flagcdn.com/w20/us.png" alt="US"> EN
+                        <button type="button" class="lang-btn" data-lang="en" lang="en" aria-label="English" aria-pressed="false" onclick="changeLanguage('en')" title="English">
+                            <img src="https://flagcdn.com/w20/us.png" alt="" width="18" height="12"> EN
                         </button>
-                        <button class="lang-btn" onclick="changeLanguage('es')" title="Español">
-                            <img src="https://flagcdn.com/w20/es.png" alt="ES"> ES
+                        <button type="button" class="lang-btn" data-lang="es" lang="es" aria-label="Español" aria-pressed="false" onclick="changeLanguage('es')" title="Español">
+                            <img src="https://flagcdn.com/w20/es.png" alt="" width="18" height="12"> ES
                         </button>
                     </li>
                 </ul>
             </nav>
-            <div class="mobile-menu-btn">
+            <button type="button" class="mobile-menu-btn" aria-label="Abrir menu" data-i18n-aria="nav.menu" aria-expanded="false" aria-controls="menu-principal">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </header>
 
+    <main>
     <!-- Hero Section -->
-    <section class="portfolio-hero">
+    <section class="page-hero">
         <div class="container">
-            <h1 data-i18n="portfolio.title">Nosso Portfólio</h1>
-            <p data-i18n="portfolio.subtitle">Conheça alguns dos projetos que desenvolvemos com excelência e dedicação para nossos clientes</p>
+            <h1 data-i18n="portfolio.title">Nosso portfólio</h1>
+            <p data-i18n="portfolio.subtitle">Vídeos e sites que criamos para clientes reais, além de modelos prontos para o seu segmento</p>
+            <nav class="page-hero-nav" aria-label="Seções da página" data-i18n-aria="page.sections">
+                <a href="#videos"><i class="fas fa-play" aria-hidden="true"></i> <span data-i18n="nav.portfolio.videos">Vídeos</span></a>
+                <a href="#desenvolvimento-web"><i class="fas fa-laptop-code" aria-hidden="true"></i> <span data-i18n="nav.portfolio.web">Desenvolvimento web</span></a>
+            </nav>
         </div>
     </section>
 
-    <!-- Portfolio Grid -->
-    <section class="portfolio-section">
+    <!-- Vídeos -->
+    <section class="videos-section" id="videos">
         <div class="container">
+            <div class="section-header">
+                <h2 class="scroll-reveal" data-i18n="portfolio.videos.title">Vídeos</h2>
+                <p class="scroll-reveal delay-100" data-i18n="portfolio.videos.subtitle">Produção audiovisual para igrejas, eventos, criadores e empresas, da captação à edição</p>
+            </div>
+            <span id="yt-play-label" class="visually-hidden" data-i18n="portfolio.videos.play">Assistir ao vídeo</span>
+
+            <h3 class="videos-group-title"><i class="fas fa-film" aria-hidden="true"></i> <span data-i18n="portfolio.videos.long">Eventos, igrejas e criadores</span></h3>
+            <div class="video-grid">
+                <figure class="video-card scroll-reveal">
+                    <div class="video-media">
+                        <button type="button" class="yt-lite" data-yt="b-4nh1OJDEc" data-title="My life as a creator" aria-labelledby="yt-play-label video-1">
+                            <img src="https://i.ytimg.com/vi/b-4nh1OJDEc/hq720.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="yt-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                        </button>
+                    </div>
+                    <figcaption id="video-1"><strong>My life as a creator</strong> <span data-i18n="video.type.creator">Criador de conteúdo</span></figcaption>
+                </figure>
+                <figure class="video-card scroll-reveal">
+                    <div class="video-media">
+                        <button type="button" class="yt-lite" data-yt="AI4lqdFzXo8" data-title="Culto" aria-labelledby="yt-play-label video-2">
+                            <img src="https://i.ytimg.com/vi/AI4lqdFzXo8/hq720.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="yt-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                        </button>
+                    </div>
+                    <figcaption id="video-2"><strong>Culto</strong> <span data-i18n="video.type.church">Igreja</span></figcaption>
+                </figure>
+                <figure class="video-card scroll-reveal">
+                    <div class="video-media">
+                        <button type="button" class="yt-lite" data-yt="Sj3r78aNFzU" data-title="Conexão" aria-labelledby="yt-play-label video-3">
+                            <img src="https://i.ytimg.com/vi/Sj3r78aNFzU/hq720.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="yt-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                        </button>
+                    </div>
+                    <figcaption id="video-3"><strong>Conexão</strong> <span data-i18n="video.type.event">Evento</span></figcaption>
+                </figure>
+                <figure class="video-card scroll-reveal">
+                    <div class="video-media">
+                        <button type="button" class="yt-lite" data-yt="yNnmCx_0urg" data-title="Conferência Interligados" aria-labelledby="yt-play-label video-4">
+                            <img src="https://i.ytimg.com/vi/yNnmCx_0urg/hq720.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="yt-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                        </button>
+                    </div>
+                    <figcaption id="video-4"><strong>Conferência Interligados</strong> <span data-i18n="video.type.conference">Conferência</span></figcaption>
+                </figure>
+            </div>
+
+            <h3 class="videos-group-title"><i class="fas fa-mobile-screen" aria-hidden="true"></i> <span data-i18n="portfolio.videos.short">Vídeos curtos para redes sociais</span></h3>
+            <div class="shorts-grid">
+                <figure class="video-card video-short scroll-reveal">
+                    <div class="video-media">
+                        <button type="button" class="yt-lite" data-yt="Xe6OcRn-9cM" data-title="Construtora" aria-labelledby="yt-play-label video-5">
+                            <img src="https://i.ytimg.com/vi/Xe6OcRn-9cM/hq720.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="yt-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                        </button>
+                    </div>
+                    <figcaption id="video-5"><strong>Construtora</strong> <span data-i18n="video.type.construction">Construção civil</span></figcaption>
+                </figure>
+                <figure class="video-card video-short scroll-reveal">
+                    <div class="video-media">
+                        <button type="button" class="yt-lite" data-yt="GD5yG_OIjGg" data-title="Concessionária" aria-labelledby="yt-play-label video-6">
+                            <img src="https://i.ytimg.com/vi/GD5yG_OIjGg/hq720.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="yt-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                        </button>
+                    </div>
+                    <figcaption id="video-6"><strong>Concessionária</strong> <span data-i18n="video.type.auto">Setor automotivo</span></figcaption>
+                </figure>
+                <figure class="video-card video-short scroll-reveal">
+                    <div class="video-media">
+                        <button type="button" class="yt-lite" data-yt="CzlSXRBiJYs" data-title="Vidros Nova Zezinho" aria-labelledby="yt-play-label video-7">
+                            <img src="https://i.ytimg.com/vi/CzlSXRBiJYs/hq720.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="yt-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                        </button>
+                    </div>
+                    <figcaption id="video-7"><strong>Vidros Nova Zezinho</strong> <span data-i18n="video.type.glass">Distribuidora de vidros</span></figcaption>
+                </figure>
+                <figure class="video-card video-short scroll-reveal">
+                    <div class="video-media">
+                        <button type="button" class="yt-lite" data-yt="YJDHAjrJmZI" data-title="Mapeamento com drone em Atibaia" aria-labelledby="yt-play-label video-8">
+                            <img src="https://i.ytimg.com/vi/YJDHAjrJmZI/hq720.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="yt-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                        </button>
+                    </div>
+                    <figcaption id="video-8"><strong>Mapeamento com drone em Atibaia</strong> <span data-i18n="video.type.drone">Imagens aéreas</span></figcaption>
+                </figure>
+                <figure class="video-card video-short scroll-reveal">
+                    <div class="video-media">
+                        <button type="button" class="yt-lite" data-yt="IPMj0StJ7c8" data-title="Concessionária, parte 2" aria-labelledby="yt-play-label video-9">
+                            <img src="https://i.ytimg.com/vi/IPMj0StJ7c8/hq720.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="yt-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+                        </button>
+                    </div>
+                    <figcaption id="video-9"><strong>Concessionária, parte 2</strong> <span data-i18n="video.type.auto">Setor automotivo</span></figcaption>
+                </figure>
+            </div>
+
+            <div class="section-cta">
+                <a href="/servicos/producao-audiovisual" class="btn btn-outline">
+                    <span data-i18n="portfolio.videos.cta">Conheça a produção audiovisual</span> <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desenvolvimento web: sites de clientes -->
+    <section class="portfolio-section" id="desenvolvimento-web">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="scroll-reveal" data-i18n="nav.portfolio.web">Desenvolvimento web</h2>
+                <p class="scroll-reveal delay-100" data-i18n="portfolio.clients.subtitle">Sites que desenvolvemos para negócios de diferentes segmentos</p>
+            </div>
+
             <div class="portfolio-grid">
                 <!-- FF Baumhard -->
                 <div class="portfolio-card scroll-reveal">
+                    <div class="browser-bar" aria-hidden="true">
+                        <span class="browser-dots"><span></span><span></span><span></span></span>
+                        <span class="browser-url"><i class="fas fa-lock"></i> ffbaumhard.com.br</span>
+                    </div>
                     <div class="portfolio-preview">
-                        <iframe src="https://ffbaumhard.com.br/" loading="lazy" title="FF Baumhard"></iframe>
+                        <iframe data-src="https://ffbaumhard.com.br/" loading="lazy" title="Prévia do site FF Baumhard" tabindex="-1" aria-hidden="true"></iframe>
                         <div class="portfolio-preview-overlay">
                             <a href="https://ffbaumhard.com.br/" target="_blank" rel="noopener noreferrer" class="btn-visit">
-                                <i class="fas fa-external-link-alt"></i> <span data-i18n="portfolio.visit">Visitar Site</span>
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> <span data-i18n="portfolio.visit">Visitar site</span>
                             </a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="client-type" data-i18n="portfolio.ff.type">Studio Automotivo</span>
+                        <span class="client-type" data-i18n="portfolio.ff.type">Studio automotivo</span>
                         <h3>FF Baumhard</h3>
                         <p data-i18n="portfolio.ff.desc">Site moderno e profissional para um studio automotivo, com design elegante, navegação intuitiva e otimizado para conversão de clientes.</p>
                         <div class="portfolio-tags">
-                            <span data-i18n="portfolio.tag.web">Desenvolvimento Web</span>
-                            <span data-i18n="portfolio.tag.responsive">Design Responsivo</span>
+                            <span data-i18n="portfolio.tag.web">Desenvolvimento web</span>
+                            <span data-i18n="portfolio.tag.responsive">Design responsivo</span>
                             <span data-i18n="portfolio.tag.seo">SEO</span>
                         </div>
+                        <a href="https://ffbaumhard.com.br/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                            <span data-i18n="portfolio.visit">Visitar site</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- IP Odontologia -->
                 <div class="portfolio-card scroll-reveal delay-200">
+                    <div class="browser-bar" aria-hidden="true">
+                        <span class="browser-dots"><span></span><span></span><span></span></span>
+                        <span class="browser-url"><i class="fas fa-lock"></i> ipodontologia.com.br</span>
+                    </div>
                     <div class="portfolio-preview">
-                        <iframe src="https://ipodontologia.com.br/" loading="lazy" title="IP Odontologia"></iframe>
+                        <iframe data-src="https://ipodontologia.com.br/" loading="lazy" title="Prévia do site IP Odontologia" tabindex="-1" aria-hidden="true"></iframe>
                         <div class="portfolio-preview-overlay">
                             <a href="https://ipodontologia.com.br/" target="_blank" rel="noopener noreferrer" class="btn-visit">
-                                <i class="fas fa-external-link-alt"></i> <span data-i18n="portfolio.visit">Visitar Site</span>
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> <span data-i18n="portfolio.visit">Visitar site</span>
                             </a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="client-type" data-i18n="portfolio.ip.type">Saúde & Odontologia</span>
+                        <span class="client-type" data-i18n="portfolio.ip.type">Saúde & odontologia</span>
                         <h3>IP Odontologia</h3>
                         <p data-i18n="portfolio.ip.desc">Site completo para clínica odontológica com apresentação dos serviços, equipe profissional e sistema de agendamento, transmitindo confiança e profissionalismo.</p>
                         <div class="portfolio-tags">
-                            <span data-i18n="portfolio.tag.web">Desenvolvimento Web</span>
-                            <span data-i18n="portfolio.tag.uiux">UI/UX Design</span>
+                            <span data-i18n="portfolio.tag.web">Desenvolvimento web</span>
+                            <span data-i18n="portfolio.tag.uiux">Design UI/UX</span>
                             <span data-i18n="portfolio.tag.optimization">Otimização</span>
                         </div>
+                        <a href="https://ipodontologia.com.br/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                            <span data-i18n="portfolio.visit">Visitar site</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
                     </div>
+                </div>
+
+                <!-- Davi Flores -->
+                <div class="portfolio-card scroll-reveal">
+                    <div class="browser-bar" aria-hidden="true">
+                        <span class="browser-dots"><span></span><span></span><span></span></span>
+                        <span class="browser-url"><i class="fas fa-lock"></i> daviflores.com.br</span>
+                    </div>
+                    <div class="portfolio-preview">
+                        <iframe data-src="https://daviflores.com.br/" loading="lazy" title="Prévia do site Davi Flores" tabindex="-1" aria-hidden="true"></iframe>
+                        <div class="portfolio-preview-overlay">
+                            <a href="https://daviflores.com.br/" target="_blank" rel="noopener noreferrer" class="btn-visit">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> <span data-i18n="portfolio.visit">Visitar site</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="client-type" data-i18n="portfolio.davi.type">Floricultura</span>
+                        <h3>Davi Flores</h3>
+                        <p data-i18n="portfolio.davi.desc">Site-catálogo para uma floricultura com 15 anos de mercado: produtos com preços, filtros por categoria, pedido direto pelo WhatsApp e perguntas frequentes que tiram dúvidas antes da compra.</p>
+                        <div class="portfolio-tags">
+                            <span data-i18n="portfolio.tag.catalog">Catálogo online</span>
+                            <span data-i18n="portfolio.tag.whatsapp">WhatsApp integrado</span>
+                            <span data-i18n="portfolio.tag.responsive">Design responsivo</span>
+                        </div>
+                        <a href="https://daviflores.com.br/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                            <span data-i18n="portfolio.visit">Visitar site</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vidros Nova Zezinho -->
+                <div class="portfolio-card scroll-reveal delay-200">
+                    <div class="browser-bar" aria-hidden="true">
+                        <span class="browser-dots"><span></span><span></span><span></span></span>
+                        <span class="browser-url"><i class="fas fa-lock"></i> vidrosnovazezinho.com.br</span>
+                    </div>
+                    <div class="portfolio-preview">
+                        <iframe data-src="https://www.vidrosnovazezinho.com.br/" loading="lazy" title="Prévia do site Vidros Nova Zezinho" tabindex="-1" aria-hidden="true"></iframe>
+                        <div class="portfolio-preview-overlay">
+                            <a href="https://www.vidrosnovazezinho.com.br/" target="_blank" rel="noopener noreferrer" class="btn-visit">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> <span data-i18n="portfolio.visit">Visitar site</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="client-type" data-i18n="portfolio.nz.type">Distribuidora de vidros</span>
+                        <h3>Vidros Nova Zezinho</h3>
+                        <p data-i18n="portfolio.nz.desc">Site institucional para uma distribuidora com 26 anos de tradição: páginas de serviços e história, localização no mapa e orçamento pelo WhatsApp, com SEO local para ser encontrada em São Paulo.</p>
+                        <div class="portfolio-tags">
+                            <span data-i18n="portfolio.tag.institutional">Site institucional</span>
+                            <span data-i18n="portfolio.tag.localseo">SEO local</span>
+                            <span data-i18n="portfolio.tag.quotes">Geração de orçamentos</span>
+                        </div>
+                        <a href="https://www.vidrosnovazezinho.com.br/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                            <span data-i18n="portfolio.visit">Visitar site</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modelos por segmento (B2B) -->
+    <section class="models-section" id="modelos">
+        <div class="container">
+            <div class="section-header">
+                <span class="models-badge scroll-reveal"><i class="fas fa-building" aria-hidden="true"></i> <span data-i18n="models.badge">Soluções para empresas</span></span>
+                <h2 class="scroll-reveal" data-i18n="models.title">Exemplos de sites que o seu negócio pode ter</h2>
+                <p class="scroll-reveal delay-100" data-i18n="models.subtitle">Pontos de partida completos, pensados para gerar contatos qualificados e fáceis de administrar. Escolha um modelo e nós personalizamos com a identidade, o conteúdo e as integrações da sua empresa.</p>
+            </div>
+
+            <div class="model-showcase">
+                <div class="device-stage scroll-reveal">
+                    <a class="device-link" href="https://stenioabreu-bit.github.io/site-imobiliario/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Abrir a demonstração do portal imobiliário" data-i18n-aria="models.re.open">
+                        <div class="browser-bar" aria-hidden="true">
+                            <span class="browser-dots"><span></span><span></span><span></span></span>
+                            <span class="browser-url"><span class="browser-live" data-i18n="models.live">Demonstração ao vivo</span></span>
+                        </div>
+                        <div class="device-screen device-desktop-screen">
+                            <iframe data-src="https://stenioabreu-bit.github.io/site-imobiliario/" loading="lazy" title="Demonstração do portal imobiliário (desktop)" tabindex="-1" aria-hidden="true"></iframe>
+                            <div class="portfolio-preview-overlay" aria-hidden="true">
+                                <span class="btn-visit"><i class="fas fa-external-link-alt"></i> <span data-i18n="models.re.demo">Ver demonstração</span></span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="device-phone" aria-hidden="true">
+                        <div class="device-screen device-phone-screen">
+                            <iframe data-src="https://stenioabreu-bit.github.io/site-imobiliario/" loading="lazy" title="Demonstração do portal imobiliário (celular)" tabindex="-1"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-info scroll-reveal delay-200">
+                    <span class="model-segment" data-i18n="models.re.segment">Imobiliárias · Incorporadoras · Corretores</span>
+                    <h3 data-i18n="models.re.title">Portal imobiliário com painel de gestão</h3>
+                    <p data-i18n="models.re.desc">Vitrine de empreendimentos com filtros por fase da obra, ficha completa de cada imóvel e captação de leads direto no WhatsApp do corretor, já com o imóvel de interesse na mensagem.</p>
+                    <ul class="model-features">
+                        <li><i class="fas fa-filter" aria-hidden="true"></i> <span data-i18n="models.re.f1">Catálogo filtrável: lançamentos, em obras, prontos para morar e alto padrão</span></li>
+                        <li><i class="fas fa-images" aria-hidden="true"></i> <span data-i18n="models.re.f2">Ficha do imóvel com galeria de fotos, quartos, área, vagas e valor</span></li>
+                        <li><i class="fab fa-whatsapp" aria-hidden="true"></i> <span data-i18n="models.re.f3">Lead qualificado no WhatsApp, com nome, imóvel e interesse do cliente</span></li>
+                        <li><i class="fas fa-sliders" aria-hidden="true"></i> <span data-i18n="models.re.f4">Painel administrativo para cadastrar e editar imóveis sem programador</span></li>
+                        <li><i class="fas fa-mobile-screen" aria-hidden="true"></i> <span data-i18n="models.re.f5">Responsivo e preparado para o Google e para campanhas de tráfego pago</span></li>
+                    </ul>
+                    <div class="model-actions">
+                        <a href="https://api.whatsapp.com/send/?phone=5511979550970&amp;text=Ol%C3%A1%21%20Vi%20o%20modelo%20de%20portal%20imobili%C3%A1rio%20no%20portf%C3%B3lio%20da%20OWLIN%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio.&amp;type=phone_number&amp;app_absent=0"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> <span data-i18n="models.re.cta">Quero um site assim</span>
+                        </a>
+                        <a href="https://stenioabreu-bit.github.io/site-imobiliario/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fas fa-eye" aria-hidden="true"></i> <span data-i18n="models.re.demo">Ver demonstração</span>
+                        </a>
+                    </div>
+                    <p class="model-note" data-i18n="models.re.note">Projeto demonstrativo: marca e dados fictícios.</p>
+                </div>
+            </div>
+
+            <div class="models-why">
+                <h3 class="scroll-reveal" data-i18n="models.why.title">Por que empresas escolhem um site OWLIN</h3>
+                <div class="models-why-grid">
+                    <div class="why-card scroll-reveal">
+                        <i class="fas fa-bullseye" aria-hidden="true"></i>
+                        <h4 data-i18n="models.why.1.title">Feito para gerar leads</h4>
+                        <p data-i18n="models.why.1.desc">Cada página conduz a uma ação: WhatsApp, orçamento ou agendamento.</p>
+                    </div>
+                    <div class="why-card scroll-reveal delay-100">
+                        <i class="fas fa-user-gear" aria-hidden="true"></i>
+                        <h4 data-i18n="models.why.2.title">Autonomia para a equipe</h4>
+                        <p data-i18n="models.why.2.desc">Painel simples para atualizar produtos, imóveis e conteúdos quando precisar.</p>
+                    </div>
+                    <div class="why-card scroll-reveal delay-200">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        <h4 data-i18n="models.why.3.title">Pronto para campanhas</h4>
+                        <p data-i18n="models.why.3.desc">Estrutura preparada para Google Ads, Meta Ads e acompanhamento de resultados.</p>
+                    </div>
+                    <div class="why-card scroll-reveal delay-300">
+                        <i class="fas fa-palette" aria-hidden="true"></i>
+                        <h4 data-i18n="models.why.4.title">Com a cara da sua marca</h4>
+                        <p data-i18n="models.why.4.desc">Identidade visual, textos e fotos personalizados para o seu negócio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="models-segments scroll-reveal">
+                <p class="segments-title" data-i18n="models.segments.title">O mesmo cuidado para outros segmentos:</p>
+                <ul class="segment-chips">
+                    <li data-i18n="models.seg.1">Clínicas e consultórios</li>
+                    <li data-i18n="models.seg.2">Advocacia e contabilidade</li>
+                    <li data-i18n="models.seg.3">Construtoras</li>
+                    <li data-i18n="models.seg.4">Indústria e distribuição</li>
+                    <li data-i18n="models.seg.5">Varejo e catálogos</li>
+                    <li data-i18n="models.seg.6">Prestadores de serviço</li>
+                </ul>
+                <div class="models-custom">
+                    <span data-i18n="models.custom">Não encontrou o seu segmento? Criamos o modelo ideal do zero para a sua empresa.</span>
+                    <a href="https://api.whatsapp.com/send/?phone=5511979550970&amp;text=Ol%C3%A1%21%20Vi%20os%20modelos%20de%20site%20no%20portf%C3%B3lio%20da%20OWLIN%20e%20quero%20um%20projeto%20para%20o%20meu%20segmento.&amp;type=phone_number&amp;app_absent=0"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fas fa-comments" aria-hidden="true"></i> <span data-i18n="hero.cta4">Falar com especialista</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -467,41 +1428,41 @@
     <section class="services-cta">
         <div class="container">
             <div class="section-header">
-                <h2 data-i18n="portfolio.cta.title">Transforme sua Presença Digital</h2>
+                <h2 data-i18n="portfolio.cta.title">Transforme sua presença digital</h2>
                 <p data-i18n="portfolio.cta.subtitle">Oferecemos soluções completas para levar seu negócio ao próximo nível</p>
             </div>
 
             <div class="services-mini-grid">
-                <div class="service-mini-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h4 data-i18n="portfolio.cta.web">Desenvolvimento Web</h4>
+                <a class="service-mini-card" href="/servicos/site-institucional">
+                    <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                    <h3 data-i18n="portfolio.cta.web">Desenvolvimento web</h3>
                     <p data-i18n="portfolio.cta.web.desc">Sites modernos, responsivos e otimizados para conversão</p>
-                </div>
-                <div class="service-mini-card">
-                    <i class="fas fa-bullhorn"></i>
-                    <h4 data-i18n="portfolio.cta.marketing">Marketing Digital</h4>
-                    <p data-i18n="portfolio.cta.marketing.desc">Estratégias personalizadas para aumentar sua visibilidade</p>
-                </div>
-                <div class="service-mini-card">
-                    <i class="fab fa-instagram"></i>
-                    <h4 data-i18n="portfolio.cta.social">Gestão de Redes Sociais</h4>
+                </a>
+                <a class="service-mini-card" href="/servicos/seo">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <h3 data-i18n="service.seo">SEO &amp; conteúdo</h3>
+                    <p data-i18n="svc.seo.short">Conteúdo e otimização para aparecer no topo do Google</p>
+                </a>
+                <a class="service-mini-card" href="/servicos/gestao-redes-sociais">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <h3 data-i18n="portfolio.cta.social">Gestão de redes sociais</h3>
                     <p data-i18n="portfolio.cta.social.desc">Conteúdo estratégico que engaja e converte</p>
-                </div>
-                <div class="service-mini-card">
-                    <i class="fas fa-rocket"></i>
-                    <h4 data-i18n="portfolio.cta.ads">Tráfego Pago</h4>
+                </a>
+                <a class="service-mini-card" href="/servicos/trafego-pago">
+                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                    <h3 data-i18n="portfolio.cta.ads">Tráfego pago</h3>
                     <p data-i18n="portfolio.cta.ads.desc">Campanhas otimizadas no Google, Meta e TikTok Ads</p>
-                </div>
-                <div class="service-mini-card">
-                    <i class="fas fa-palette"></i>
-                    <h4 data-i18n="portfolio.cta.branding">Branding</h4>
+                </a>
+                <a class="service-mini-card" href="/servicos/branding">
+                    <i class="fas fa-palette" aria-hidden="true"></i>
+                    <h3 data-i18n="portfolio.cta.branding">Branding</h3>
                     <p data-i18n="portfolio.cta.branding.desc">Identidade visual que destaca sua marca no mercado</p>
-                </div>
-                <div class="service-mini-card">
-                    <i class="fas fa-video"></i>
-                    <h4 data-i18n="portfolio.cta.audiovisual">Produção Audiovisual</h4>
+                </a>
+                <a class="service-mini-card" href="/servicos/producao-audiovisual">
+                    <i class="fas fa-video" aria-hidden="true"></i>
+                    <h3 data-i18n="portfolio.cta.audiovisual">Produção audiovisual</h3>
                     <p data-i18n="portfolio.cta.audiovisual.desc">Fotos e vídeos profissionais para sua comunicação</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -513,14 +1474,15 @@
             <p data-i18n="portfolio.final.subtitle">Entre em contato conosco e vamos transformar sua ideia em realidade!</p>
             <div class="cta-buttons">
                 <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vi o portfólio de vocês e gostaria de um orçamento.&type=phone_number&app_absent=0" target="_blank" class="btn-cta-white">
-                    <i class="fab fa-whatsapp"></i> <span data-i18n="portfolio.final.whatsapp">Falar no WhatsApp</span>
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> <span data-i18n="portfolio.final.whatsapp">Falar no WhatsApp</span>
                 </a>
-                <a href="/#contato" class="btn-cta-outline">
-                    <i class="fas fa-envelope"></i> <span data-i18n="portfolio.final.quote">Solicitar Orçamento</span>
+                <a href="/contato" class="btn-cta-outline">
+                    <i class="fas fa-envelope" aria-hidden="true"></i> <span data-i18n="portfolio.final.quote">Solicitar orçamento</span>
                 </a>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -529,41 +1491,50 @@
                 <div class="footer-grid">
                     <div class="footer-col footer-about">
                         <div class="footer-logo">
-                            <img src="img/OWLIN.png" alt="OWLIN Logo">
+                            <img src="/img/owlin-logo.webp" alt="Logo da OWLIN" width="60" height="60" loading="lazy" decoding="async">
                         </div>
-                        <p>Agência de marketing digital especializada em soluções inovadoras para empresas. Excelência e calmaria em cada projeto.</p>
+                        <p>Agência de marketing digital especializada em soluções inovadoras para
+                            empresas. Excelência e calmaria em cada projeto.</p>
                         <div class="footer-social">
-                            <a href="https://www.instagram.com/owlin.agency/" target="_blank" title="Instagram" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/owlin.agency/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
                             </a>
-                            <a href="https://www.tiktok.com/@owlin.agency" target="_blank" title="TikTok" aria-label="TikTok">
-                                <i class="fab fa-tiktok"></i>
+                            <a href="https://www.tiktok.com/@owlin.agency" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok">
+                                <i class="fab fa-tiktok" aria-hidden="true"></i>
                             </a>
-                            <a href="https://api.whatsapp.com/send/?phone=5511979550970&text&type=phone_number&app_absent=0" target="_blank" title="WhatsApp" aria-label="WhatsApp">
-                                <i class="fab fa-whatsapp"></i>
+                            <a href="https://www.youtube.com/@OWLINagency" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=5511979550970&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:contato@owlin.com.br" title="E-mail" aria-label="E-mail">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
 
                     <div class="footer-col">
-                        <h4 data-i18n="footer.services">Serviços</h4>
+                        <h3 data-i18n="footer.services">Serviços</h3>
                         <ul class="footer-links">
-                            <li><a href="servicos/marketing-digital">Marketing Digital</a></li>
-                            <li><a href="servicos/gestao-redes-sociais">Gestão de Redes Sociais</a></li>
-                            <li><a href="servicos/trafego-pago">Tráfego Pago</a></li>
-                            <li><a href="servicos/desenvolvimento-web">Desenvolvimento Web</a></li>
-                            <li><a href="servicos/seo-conteudo">SEO & Conteúdo</a></li>
-                            <li><a href="servicos/branding">Branding</a></li>
-                            <li><a href="servicos/producao-audiovisual">Produção Audiovisual</a></li>
+                            <li><a href="/servicos/site-institucional">Desenvolvimento web</a></li>
+                            <li><a href="/servicos/seo">SEO &amp; conteúdo</a></li>
+                            <li><a href="/servicos/trafego-pago">Tráfego pago</a></li>
+                            <li><a href="/servicos/gestao-redes-sociais">Gestão de redes sociais</a></li>
+                            <li><a href="/servicos/branding">Branding</a></li>
+                            <li><a href="/servicos/producao-audiovisual">Produção audiovisual</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-col">
-                        <h4 data-i18n="footer.company">Empresa</h4>
+                        <h3 data-i18n="footer.company">Empresa</h3>
                         <ul class="footer-links">
-                            <li><a href="/#sobre" data-i18n="nav.about">Sobre Nós</a></li>
-                            <li><a href="/portfolio">Portfólio</a></li>
-                            <li><a href="/#contato" data-i18n="nav.contact">Contato</a></li>
+                            <li><a href="/sobre" data-i18n="nav.about">Sobre nós</a></li>
+                            <li><a href="/sobre#processo" data-i18n="footer.process">Como trabalhamos</a></li>
+                            <li><a href="/portfolio" data-i18n="nav.portfolio">Portfólio</a></li>
+                            <li><a href="/blog" data-i18n="nav.blog">Blog</a></li>
+                            <li><a href="/contato#faq" data-i18n="faq.title">Perguntas frequentes</a></li>
+                            <li><a href="/contato" data-i18n="nav.contact">Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -573,11 +1544,13 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
-                    <p data-i18n="footer.rights">&copy; 2025 OWLIN - Agência de Marketing Digital. Todos os direitos reservados.</p>
+                    <p data-i18n="footer.rights">&copy; 2026 OWLIN - Agência de marketing digital. CNPJ 53.407.563/0001-65. Todos os direitos reservados.</p>
                     <div class="footer-legal">
-                        <a href="#" data-i18n="footer.privacy">Política de Privacidade</a>
-                        <span>|</span>
-                        <a href="#" data-i18n="footer.terms">Termos de Uso</a>
+                        <a href="/privacidade" data-i18n="footer.privacy">Política de privacidade</a>
+                        <span aria-hidden="true">|</span>
+                        <a href="/termos" data-i18n="footer.terms">Termos de uso</a>
+                        <span aria-hidden="true">|</span>
+                        <button type="button" data-cookie-settings data-i18n="cookies.settings">Preferências de cookies</button>
                     </div>
                 </div>
             </div>
@@ -585,8 +1558,8 @@
     </footer>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vim pelo site e gostaria de mais informações.&type=phone_number&app_absent=0" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+    <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vim pelo site e gostaria de mais informações.&type=phone_number&app_absent=0" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
 
     <!-- Scripts -->

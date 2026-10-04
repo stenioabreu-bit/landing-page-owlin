@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://owlin.com.br/sitemap.xml

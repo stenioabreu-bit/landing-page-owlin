@@ -2,8 +2,15 @@
 RewriteEngine On
 RewriteBase /
 
-# Redirect /index to root (clean URL)
-RewriteRule ^index$ / [R=301,L]
+# /index, /index.html, /servicos/index e /servicos/index.html vão para o endereço da pasta
+# (evita a mesma página em dois endereços)
+RewriteCond %{THE_REQUEST} \s/+(.+/)?index(?:\.html)?[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Serviços que saíram do site ou mudaram de endereço (relatório de SEO de 02/10/2026)
+RewriteRule ^servicos/(marketing-digital|analytics|consultoria-digital)(\.html)?/?$ /servicos/ [R=301,L]
+RewriteRule ^servicos/desenvolvimento-web(\.html)?/?$ /servicos/site-institucional [R=301,L]
+RewriteRule ^servicos/seo-conteudo(\.html)?/?$ /servicos/seo [R=301,L]
 
 # Redirect .html URLs to clean URLs (do this first)
 RewriteCond %{THE_REQUEST} ^GET\ /(.*)\.html\ HTTP

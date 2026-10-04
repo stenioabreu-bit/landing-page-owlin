@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página não encontrada | OWLIN</title>
+    <meta name="description" content="A página que você procurou não existe ou mudou de endereço. Veja os serviços da OWLIN, o portfólio ou fale com a nossa equipe.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#2E7D32">
+
+    <!-- Favicon (caminhos absolutos: esta página aparece em qualquer endereço inexistente) -->
+    <link rel="icon" href="/img/OWLIN.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/img/OWLIN.png">
+
+    <!-- Conexões antecipadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Azonix';
+            src: url('https://fonts.cdnfonts.com/s/16327/Azonix.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+
+    <!-- Font Awesome (carregado sem bloquear a renderização) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <script src="/js/tracking.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img src="/img/owlin-logo.webp" alt="OWLIN - Agência de marketing digital" width="60" height="60">
+                    <span class="logo-text">OWLIN</span>
+                </a>
+            </div>
+            <nav class="nav-menu" id="menu-principal">
+                <ul>
+                    <li><a href="/" data-i18n="nav.home">Início</a></li>
+                    <li><a href="/sobre" data-i18n="nav.about">Sobre nós</a></li>
+                    <li><a href="/servicos/" data-i18n="nav.services">Serviços</a></li>
+                    <li class="has-submenu">
+                        <a href="/portfolio" data-i18n="nav.portfolio">Portfólio</a>
+                        <button type="button" class="submenu-toggle" aria-expanded="false" aria-controls="submenu-portfolio" aria-label="Mostrar opções do portfólio" data-i18n-aria="nav.portfolio.toggle">
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="submenu" id="submenu-portfolio">
+                            <li><a href="/portfolio#videos"><i class="fas fa-play" aria-hidden="true"></i> <span data-i18n="nav.portfolio.videos">Vídeos</span></a></li>
+                            <li><a href="/portfolio#desenvolvimento-web"><i class="fas fa-laptop-code" aria-hidden="true"></i> <span data-i18n="nav.portfolio.web">Desenvolvimento web</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/blog" data-i18n="nav.blog">Blog</a></li>
+                    <li><a href="/contato" data-i18n="nav.contact">Contato</a></li>
+                    <li class="lang-selector-wrapper">
+                        <button type="button" class="lang-btn active" data-lang="pt-BR" lang="pt-BR" aria-label="Português" aria-pressed="true" onclick="changeLanguage('pt-BR')" title="Português">
+                            <img src="https://flagcdn.com/w20/br.png" alt="" width="18" height="12"> PT
+                        </button>
+                        <button type="button" class="lang-btn" data-lang="en" lang="en" aria-label="English" aria-pressed="false" onclick="changeLanguage('en')" title="English">
+                            <img src="https://flagcdn.com/w20/us.png" alt="" width="18" height="12"> EN
+                        </button>
+                        <button type="button" class="lang-btn" data-lang="es" lang="es" aria-label="Español" aria-pressed="false" onclick="changeLanguage('es')" title="Español">
+                            <img src="https://flagcdn.com/w20/es.png" alt="" width="18" height="12"> ES
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="mobile-menu-btn" aria-label="Abrir menu" data-i18n-aria="nav.menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+    <!-- Aviso de página inexistente -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 data-i18n="notfound.title">Página não encontrada</h1>
+            <p data-i18n="notfound.text">O endereço que você acessou não existe ou mudou de lugar. Escolha um dos caminhos abaixo para continuar.</p>
+            <nav class="page-hero-nav" aria-label="Atalhos" data-i18n-aria="notfound.nav">
+                <a href="/"><i class="fas fa-house" aria-hidden="true"></i> <span data-i18n="nav.home">Início</span></a>
+                <a href="/servicos/"><i class="fas fa-briefcase" aria-hidden="true"></i> <span data-i18n="nav.services">Serviços</span></a>
+                <a href="/portfolio"><i class="fas fa-images" aria-hidden="true"></i> <span data-i18n="nav.portfolio">Portfólio</span></a>
+                <a href="/contato"><i class="fas fa-envelope" aria-hidden="true"></i> <span data-i18n="nav.contact">Contato</span></a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="home-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="notfound.services">Talvez você esteja procurando</h2>
+            </div>
+
+            <div class="services-mini-grid">
+                <a class="service-mini-card" href="/servicos/gestao-redes-sociais">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <h3 data-i18n="service.social">Gestão de redes sociais</h3>
+                    <p data-i18n="portfolio.cta.social.desc">Conteúdo estratégico que engaja e converte</p>
+                </a>
+                <a class="service-mini-card" href="/servicos/trafego-pago">
+                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                    <h3 data-i18n="service.ads">Tráfego pago</h3>
+                    <p data-i18n="portfolio.cta.ads.desc">Campanhas otimizadas no Google, Meta e TikTok Ads</p>
+                </a>
+                <a class="service-mini-card" href="/servicos/site-institucional">
+                    <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                    <h3 data-i18n="service.web">Desenvolvimento web &amp; e-commerce</h3>
+                    <p data-i18n="portfolio.cta.web.desc">Sites modernos, responsivos e otimizados para conversão</p>
+                </a>
+                <a class="service-mini-card" href="/servicos/seo">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <h3 data-i18n="service.seo">SEO &amp; conteúdo</h3>
+                    <p data-i18n="svc.seo.short">Conteúdo e otimização para aparecer no topo do Google</p>
+                </a>
+                <a class="service-mini-card" href="/servicos/branding">
+                    <i class="fas fa-palette" aria-hidden="true"></i>
+                    <h3 data-i18n="service.branding">Branding &amp; identidade visual</h3>
+                    <p data-i18n="portfolio.cta.branding.desc">Identidade visual que destaca sua marca no mercado</p>
+                </a>
+                <a class="service-mini-card" href="/servicos/producao-audiovisual">
+                    <i class="fas fa-video" aria-hidden="true"></i>
+                    <h3 data-i18n="service.audiovisual">Produção audiovisual</h3>
+                    <p data-i18n="portfolio.cta.audiovisual.desc">Fotos e vídeos profissionais para sua comunicação</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chamada final -->
+    <section class="cta-final">
+        <div class="container">
+            <h2 data-i18n="cta.title">Vamos conversar sobre o seu projeto?</h2>
+            <p data-i18n="contact.subtitle">Pronto para crescer? Conte o seu desafio e receba uma proposta sob medida, sem compromisso.</p>
+            <div class="cta-buttons">
+                <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vim pelo site e gostaria de um orçamento.&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="btn-cta-white">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> <span data-i18n="contact.cta.btn">Falar no WhatsApp</span>
+                </a>
+                <a href="/contato" class="btn-cta-outline">
+                    <i class="fas fa-envelope" aria-hidden="true"></i> <span data-i18n="portfolio.final.quote">Solicitar orçamento</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-about">
+                        <div class="footer-logo">
+                            <img src="/img/owlin-logo.webp" alt="Logo da OWLIN" width="60" height="60" loading="lazy" decoding="async">
+                        </div>
+                        <p>Agência de marketing digital especializada em soluções inovadoras para
+                            empresas. Excelência e calmaria em cada projeto.</p>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/owlin.agency/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@owlin.agency" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok">
+                                <i class="fab fa-tiktok" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@OWLINagency" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=5511979550970&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:contato@owlin.com.br" title="E-mail" aria-label="E-mail">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h3 data-i18n="footer.services">Serviços</h3>
+                        <ul class="footer-links">
+                            <li><a href="/servicos/site-institucional">Desenvolvimento web</a></li>
+                            <li><a href="/servicos/seo">SEO &amp; conteúdo</a></li>
+                            <li><a href="/servicos/trafego-pago">Tráfego pago</a></li>
+                            <li><a href="/servicos/gestao-redes-sociais">Gestão de redes sociais</a></li>
+                            <li><a href="/servicos/branding">Branding</a></li>
+                            <li><a href="/servicos/producao-audiovisual">Produção audiovisual</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h3 data-i18n="footer.company">Empresa</h3>
+                        <ul class="footer-links">
+                            <li><a href="/sobre" data-i18n="nav.about">Sobre nós</a></li>
+                            <li><a href="/sobre#processo" data-i18n="footer.process">Como trabalhamos</a></li>
+                            <li><a href="/portfolio" data-i18n="nav.portfolio">Portfólio</a></li>
+                            <li><a href="/blog" data-i18n="nav.blog">Blog</a></li>
+                            <li><a href="/contato#faq" data-i18n="faq.title">Perguntas frequentes</a></li>
+                            <li><a href="/contato" data-i18n="nav.contact">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p data-i18n="footer.rights">&copy; 2026 OWLIN - Agência de marketing digital. CNPJ 53.407.563/0001-65. Todos os direitos reservados.</p>
+                    <div class="footer-legal">
+                        <a href="/privacidade" data-i18n="footer.privacy">Política de privacidade</a>
+                        <span aria-hidden="true">|</span>
+                        <a href="/termos" data-i18n="footer.terms">Termos de uso</a>
+                        <span aria-hidden="true">|</span>
+                        <button type="button" data-cookie-settings data-i18n="cookies.settings">Preferências de cookies</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://api.whatsapp.com/send/?phone=5511979550970&text=Olá! Vim pelo site e gostaria de mais informações.&type=phone_number&app_absent=0"
+        class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="/js/i18n.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
